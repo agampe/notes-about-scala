@@ -497,12 +497,11 @@ keine besondere Notation für die Elemente der Aufzählung nötig
 \begin{itemize}
   \item Unterschied zwischen \texttt{def x = e} \und \texttt{val x = e}:
   \begin{itemize}
-    \item \texttt{def x = e} - hier wird e nicht ausgewertet, sondern erst,
-    wenn x verwendet wird
-    \item \texttt{val x = e} - hier wird e sofort ausgewertet \und falls
-    man x verwendet, so wird sofort e verwendet, ohne dass der Ausdruck
-    ausgewertet werden muss
-    \item 
+    \item \texttt{def} - hier wird \texttt{e} nicht ausgewertet, sondern erst,
+    wenn \texttt{x} verwendet wird
+    \item \texttt{val} - hier wird \texttt{e} sofort 
+    ausgewertet\footnote{sobald man \texttt{x} verwendet, ist der Ausdruck 
+    \texttt{e} bereits vorhanden}
   \end{itemize}
   \item \ulab{Frage}: Wie werden Ausdrücke ausgewertet? \begin{itemize}
     \item schnappe die die am meisten links stehende Operation
@@ -514,7 +513,8 @@ keine besondere Notation für die Elemente der Aufzählung nötig
 
 \subsection{Methodenaufrufe}
 \begin{itemize}
-  \item anders als in Java kann man Methoden ohne Parameter auch ohne Klammern aufrufen
+  \item anders als in Java kann man Methoden ohne Parameter auch ohne Klammern
+  aufrufen
   \item Methoden mit \uline{einem} Parameter können ebenfalls ohne Klammern aufgerufen werden
   
   \lstinputlisting[label=src:method_invocation.scala]{beispiele/method_invocation.scala}
