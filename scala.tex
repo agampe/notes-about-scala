@@ -270,62 +270,61 @@ Günther veröffentlich.)}
 \end{itemize}
 
 
-\subsection{Paradigmen von Scala}
-\label{abs:Paradigmen von Scala}
-\ulbf{Mixed Paradigm - OOP}
+\subsection{Paradigmen}
+\ulbf{\kreis{1. } OOP-Paradigma}
+
 
 
 \begin{itemize}
+  \item alles ist ein Objekt
   \item Scala hat die typischen Mechanismen von OOP, aber ergänzt das ganze
   noch durch \textit{traits}, \textit{mixin composition}
-  \item alles ist ein Objekt
   \item es gibt keine primitven Datentypen wie in Java, anstelle sind alle 
   numerischen Typen Objekte
   \item Scala unterstützt \textit{singleton object construct}
 \end{itemize}
 
 
-\ulbf{Mixed Paradigm - FP}
+\ulbf{\kreis{2. }FP-Paradigma}
 
 
 \begin{itemize}
   \item FP sind gut für Design-Probs wie \textit{concurrency}, da pure FP
-  keine veränderlichen Zustände erlaubt, muss man sich auch nicht um die
-  Synchronisation kümmern
+  keine $\Delta$ Zustände erlaubt\footnote{um Synchronisation muss man
+  sich nicht kümmern}
   \item in puren FP kommunizieren Programme durch den Autausch von
   nebenläufigen autonomen Prozessen $\Rightarrow$ Scala unterstützt dass
   durch seine \texttt{Actors Library}, aber es unterstützt auch
   veränderliche Elemente, wenn man das will
-  \item Funktionen sind \itbf{first class}, d.h. sie können an Variablen, an
-  andere Funktionen usw. ähnlich wie Werte übergeben werden
-  \item Scala bietet \itbf{closures} an, d.h. 
-  \textit{bezeichnet man eine Programmfunktion, die beim Aufruf einen Teil ihres vorherigen Aufrufkontexts reproduziert, selbst wenn dieser Kontext außerhalb der Funktion schon nicht mehr existiert} $\Rightarrow$ sind
-  ein mächtiges Werkzeug zur Abstraktion
+  \item Funktionen sind \itbf{first class}\footnote{d.h. sie können 
+  an Variablen, an andere Funktionen usw. ähnlich wie Werte übergeben werden}
+  \und Scala bietet \itbf{closures}\footnote{bezeichnet man 
+  eine Programmfunktion, die beim Aufruf einen Teil ihres vorherigen
+  Aufrufkontexts reproduziert, selbst wenn dieser Kontext außerhalb der 
+  Funktion schon nicht mehr existiert $\Rightarrow$ sind ein mächtiges 
+  Werkzeug zur Abstraktion} 
 \end{itemize}
 
 
-\ulbf{Skalierbarkeit}
+\ulbf{\kreis{3. } Skalierbarkeit}\footnote{es wurde designt, um von kleinen, interpretierten
+Skripten zu großen, verteilten Anwendungen zu skalieren} wird durch folgende
+Sachen gewährleistet:
 
 
-\begin{itemize}
-  \item es wurde designtm um von kleinen, interpretierten Skripten zu
-  großen, verteilten Anwendungen zu skalieren
-  \item Skalierbarkeit wird durch folgende Sachen gewährleistet:
-  \begin{enumerate}
-    \item explizite \textit{self types}
-    \item abstrakte \textit{type members} \und \textit{generics}
-    \item verschachtelte Klassen
-    \item \textit{mixin} Komposition durch Verwendung von \textit{traits}
-  \end{enumerate}
-\end{itemize}
+\begin{enumerate}
+  \item explizite \textit{self types}
+  \item abstrakte \textit{type members} \und \textit{generics}
+  \item verschachtelte Klassen
+  \item \textit{mixin} Komposition durch Verwendung von \textit{traits}
+\end{enumerate}
 
 
-\ulbf{Performanz}
+\ulbf{\kreis{4. }Performanz}
 
 
 \begin{itemize}
   \item da Scala ja auf der JVM läuft, unterstützt auch die ganzen dafür
-  entwickelten Optimierungsmtehoden (Profilers, verteilter Cache, Clustering)
+  entwickelten Optimierungsmethoden (Profilers, verteilter Cache, Clustering)
 \end{itemize}
 
 
