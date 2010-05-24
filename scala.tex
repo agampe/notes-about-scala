@@ -920,17 +920,15 @@ von Objekten via Pattern-Matching
   Namen wie die Klasse trägt
   \item Case-Klassen \und Case-Objekte haben implizit die Methoden
   \texttt{toString, equals} \und \texttt{hashCode} implementiert \und 
-  überschreiben die Methoden von \texttt{AnyRef}
-  \item Case-Klassen haben implizite getter-Methoden, um an die Argumente
-  der Konstruktoren zu gelangen
+  überschreiben die Methoden von \texttt{AnyRef}; sie haben implizite 
+  getter-Methoden, um an die Argumente der Konstruktoren zu gelangen
   \item Instanzen von Case-Klassen können ohne die \texttt{new}-Anweisung
   erzeugt werden
   
   \lstinputlisting[label=src:case_class.scala]{beispiele/case_class.scala}  
   
   \item Case-Klassen erlauben die Erstellung von \textit{patterns}, welche
-  zu case-class Konstruktoren gehören
-  \item weiteres \uline{Bsp.}:
+  zu case-class Konstruktoren gehören:
   
   \lstinputlisting[label=src:case_class_one_more_example.scala]{beispiele/case_class_one_more_example.scala}
   
