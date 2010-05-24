@@ -149,6 +149,9 @@ Günther veröffentlich.)}
   \item Funktionen-Def mit nur einer Zeile benötigen keine geschweiften Klammern
   \item \textbf{id: type}-Syntax wird von Scala verwendet 
   \item \textbf{unit} wird statt void in Scala verwendet
+  \item Scala hat eine Darstellung on Javas \texttt{void}, nämlich 
+  \texttt{Unit}\footnote{kann man explizit zurückgeben, wenn man einfach
+  () beim Returnwert einer Funktion hinschreibt}
   \item alle Kontrollstrukturen von Java sind auch in 
   Scala\footnote{for-Schleifen wurde stark vereinfacht :)} vorhanden
   \item in Scala hat alles einen öffentlichen Zugriff, es sein denn
@@ -334,32 +337,36 @@ Sachen gewährleistet:
 \begin{itemize}
   \item werden in Packeten definiert \und spielen eine ähnliche Rolle wie
   in Java
-  \item jedes Java-Packet ist auch eine Scala-Pracket (vice versa)
+  \item jedes Java-Packet ist auch eine Scala-Packet (vice versa)
   \item jede Klasse kann via \textit{mixin} von mehr als einer Klasse
   erben, denn per default kann nur von einer Klasse gererbt werden
   \item jede Java-Klasse wird als gewöhnliche Scala-Klasse angesehen \und 
   jedes Java-Interface kann als Scala-\textit{trait} angesehen werden
 \end{itemize}
-d
+
 
 \subsubsection{Klassenhierarchie}
 \begin{itemize}
   \item in Scala ist alles, bis auf eine Methode eine Instanz von
   einer Klasse $\Rightarrow$ alle Primitven aus Java (wie \uline{z.B.} int) 
   werden als Instanzen behandelt \und dies wird bei Kompilierung gemacht
-  \item wenn man sich an die Namenskonventionen hält, dann sind
-  die Scala-Repräsentanten der Primitiven Datentypen der JVM 
-  \texttt{Int, Long, Double, Float, Boolean, Char} \und 
-  \texttt{Byte} alle Unterklassen von der Klasse \texttt{AnyVal}
-  \item Scala hat eine Darstellung on Javas \texttt{void}, nämlich 
-  \texttt{Unit}
-  \item man kann \texttt{Unit} explizit zurückgeben, wenn man einfach
-  () hinschreibt
   \item \texttt{Any} ist die Top-Klasse, es hat zwei Unterklassen:
   \texttt{AnyVal} \und \texttt{AnyRef}
   \item \texttt{AnyVal}  basiert auf \textit{value classes}, also
   \textbf{boolean, byte, short, char, int, long, float, double}
-  \item \texttt{Unit}-Klasse entspricht dem \texttt{void} aus Java
+  \item wenn man sich an die Namenskonventionen hält, dann sind
+  die Scala-Repräsentanten der Primitiven Datentypen der JVM:
+  \begin{itemize}
+    \item \texttt{Int}
+    \item \texttt{Long}
+    \item \texttt{Double}
+    \item \texttt{Float}
+    \item \texttt{Boolean}
+    \item \texttt{Char}
+    \item \texttt{Byte}
+  \end{itemize} 
+  
+  alle Unterklassen von der Klasse \texttt{AnyVal}
 \end{itemize}
 
 
