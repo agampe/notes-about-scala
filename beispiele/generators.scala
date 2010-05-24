@@ -1,8 +1,12 @@
-for (i <- 1 to 10) println(i *10)
+val clans = List("Eshin", "Test", 2)
 
-// filter einbauen in Generatoren
-for (breed <- dogBreeds
-  if breed.contains("Terrier");
-  if !breed.startsWith("Yorkshire")
-) println(breed)
+// one not so real generator
+for(i <- clans
+  if clans.contains("Eshin")
+) println("Skaven!")
+
+// a real generator
+for(j <- clans
+  if j == "Eshin"
+) println("Skaven are here")
 
