@@ -30,8 +30,7 @@
 \BOOKMARK [2][-]{subsection.4.11}{traits}{section.4}
 \BOOKMARK [1][-]{section.5}{Generische Typen und Methoden}{}
 \BOOKMARK [2][-]{subsection.5.1}{Tuples}{section.5}
-\BOOKMARK [2][-]{subsection.5.2}{Wann man explizite Typannotationen braucht}{section.5}
-\BOOKMARK [1][-]{section.6}{Listen und der Spa\337 mit der Unver\344nderlichkeit}{}
+\BOOKMARK [1][-]{section.6}{Listen}{}
 \BOOKMARK [2][-]{subsection.6.1}{Scala Listen, Tupel and Map-Klassen}{section.6}
 \BOOKMARK [2][-]{subsection.6.2}{List[T]}{section.6}
 \BOOKMARK [2][-]{subsection.6.3}{Transformation}{section.6}
