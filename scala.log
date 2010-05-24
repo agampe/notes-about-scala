@@ -1,0 +1,1080 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.2.9)  24 MAY 2010 06:12
+entering extended mode
+ %&-line parsing enabled.
+**\nonstopmode \input{"/home/helex/proggen/scala/scala.tex"}
+(/home/helex/proggen/scala/scala.tex
+(../../latex/styles/documentclass_normal_oneside.tex
+(/usr/share/texmf-texlive/tex/latex/koma-script/scrartcl.cls
+Document Class: scrartcl 2006/07/30 v2.95b KOMA-Script document class (article)
+
+(/usr/share/texmf-texlive/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2006/07/30 v2.95b KOMA-Script package (basics and keyval use)
+
+
+(/usr/share/texmf-texlive/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2006/03/28 v2.95 KOMA-Script package (loading files)
+
+Package scrlfile, 2006/03/28 v2.95 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+) (/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+))
+Package scrkbase Info: You've used the obsolete option `11pt'.
+(scrkbase)             \KOMAoptions{fontsize=11pt} will be used instead.
+(scrkbase)             You should do this change too on input line 594.
+
+(/usr/share/texmf-texlive/tex/latex/base/size11.clo
+File: size11.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+(/usr/share/texmf-texlive/tex/latex/koma-script/typearea.sty
+Package: typearea 2006/07/30 v2.95b KOMA-Script package (type area)
+
+Package typearea, 2006/07/30 v2.95b KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-2002
+
+\ta@bcor=\skip41
+\ta@div=\count79
+Package scrkbase Info: You've used the obsolete option `a4paper'.
+(scrkbase)             \KOMAoptions{paper=a4} will be used instead.
+(scrkbase)             You should do this change too on input line 419.
+\ta@hblk=\skip42
+\ta@vblk=\skip43
+\ta@temp=\skip44
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV-departure   = -6/100
+(typearea)              \evensidemargin = 17.3562pt
+(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.60002pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 832.
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\abovecaptionskip=\skip45
+\belowcaptionskip=\skip46
+\c@pti@nb@sid@b@x=\box26
+\c@figure=\count86
+\c@table=\count87
+\bibindent=\dimen102
+))
+\@input{../../latex/styles/style_proggen.aux}
+\openout2 = `../../latex/styles/style_proggen.aux'.
+
+(../../latex/styles/style_proggen.tex
+(/usr/share/texmf-texlive/tex/generic/german/ngerman.sty v2.5e 1998-07-08
+Package: ngerman 1998/07/08 v2.5e Support for writing german texts (br)
+\grmnU@D=\dimen103
+ngerman -- \language number for naustrian undefined, default 16 used.
+)
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2006/05/05 v1.1b Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+
+(/usr/share/texmf-texlive/tex/latex/base/utf8.def
+File: utf8.def 2006/03/30 v1.1i UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encodingT1
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2006/03/30 v1.1i UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encodingOT1
+
+(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2006/03/30 v1.1i UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encodingOMS
+
+(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2006/03/30 v1.1i UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
+\Gread@gobject=\count88
+))
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
+)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2007/02/07 v6.75r Hypertext links for LaTeX
+\@linkdim=\dimen104
+\Hy@linkcounter=\count89
+\Hy@pagecounter=\count90
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2007/02/07 v6.75r Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/etc/texmf/tex/latex/config/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2006/08/22 v2.4 Connects package keyval with LaTeX options (
+HO)
+)
+Package hyperref Info: Option `plainpages' set `false' on input line 2238.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 2238.
+Package hyperref Info: Option `colorlinks' set `true' on input line 2238.
+Package hyperref Info: Hyper figures OFF on input line 2288.
+Package hyperref Info: Link nesting OFF on input line 2293.
+Package hyperref Info: Hyper index ON on input line 2296.
+Package hyperref Info: Plain pages OFF on input line 2303.
+Package hyperref Info: Backreferencing OFF on input line 2308.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 2444.
+LaTeX Info: Redefining \url on input line 2599.
+\Fld@menulength=\count91
+\Field@Width=\dimen105
+\Fld@charsize=\dimen106
+\Choice@toks=\toks17
+\Field@toks=\toks18
+Package hyperref Info: Hyper figures OFF on input line 3102.
+Package hyperref Info: Link nesting OFF on input line 3107.
+Package hyperref Info: Hyper index ON on input line 3110.
+Package hyperref Info: backreferencing OFF on input line 3117.
+Package hyperref Info: Link coloring ON on input line 3120.
+\Hy@abspage=\count92
+\c@Item=\count93
+\c@Hfootnote=\count94
+)
+*hyperref using default driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2007/02/07 v6.75r Hyperref driver for pdfTeX
+\Fld@listcount=\count95
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/ulem.sty
+\UL@box=\box27
+\UL@hyphenbox=\box28
+\UL@skip=\skip47
+\UL@hook=\toks19
+\UL@pe=\count96
+\UL@pixel=\dimen107
+\ULC@box=\box29
+Package: ulem 2000/05/26
+\ULdepth=\dimen108
+)
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2005/08/23 v2.4b Tabular extension package (FMi)
+\col@sep=\dimen109
+\extrarowheight=\dimen110
+\NC@list=\toks20
+\extratabsurround=\skip48
+\backup@length=\skip49
+)
+(/usr/share/texmf-texlive/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip50
+\LTright=\skip51
+\LTpre=\skip52
+\LTpost=\skip53
+\LTchunksize=\count97
+\LTcapwidth=\dimen111
+\LT@head=\box30
+\LT@firsthead=\box31
+\LT@foot=\box32
+\LT@lastfoot=\box33
+\LT@cols=\count98
+\LT@rows=\count99
+\c@LT@tables=\count100
+\c@LT@chunks=\count101
+\LT@p@ftn=\toks21
+)
+Class scrartcl Info: longtable captions redefined on input line 31.
+
+(/usr/share/texmf-texlive/tex/latex/caption/caption.sty
+Package: caption 2007/01/07 v3.0k Customising captions (AR)
+
+(/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2007/01/07 v3.0k caption3 kernel (AR)
+\captionmargin=\dimen112
+\captionmarginx=\dimen113
+\captionwidth=\dimen114
+\captionindent=\dimen115
+\captionparindent=\dimen116
+\captionhangindent=\dimen117
+)
+Package caption Info: hyperref package v6.74m (or newer) detected on input line
+ 304.
+Package caption Info: longtable package v3.15 (or newer) detected on input line
+ 359.
+)
+(/usr/share/texmf-texlive/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2009/07/24 v4.4b context-sensitive quotations
+
+(/usr/share/texmf-texlive/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2008/06/28 v1.7 e-TeX tools for LaTeX
+
+(/usr/share/texmf-texlive/tex/latex/etex/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count102
+))
+\csq@reset=\count103
+\csq@gtype=\count104
+\csq@glevel=\count105
+\csq@qlevel=\count106
+\csq@maxlvl=\count107
+\csq@tshold=\count108
+\csq@ltx@everypar=\toks22
+
+(/usr/share/texmf-texlive/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2009/07/24 v4.4b csquotes generic definitions
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texmf-texlive/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 2009/05/30 v4.4 csquotes configuration
+))
+(/usr/share/texmf-texlive/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks23
+\verbatim@line=\toks24
+\verbatim@in@stream=\read1
+)
+(/usr/share/texmf-texlive/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2000/09/19 1.3
+
+Style option: `fancybox' v1.3 <2000/09/19> (tvz)
+\@fancybox=\box34
+\shadowsize=\dimen118
+\@Sbox=\box35
+\do@VerbBox=\toks25
+\the@fancyput=\toks26
+\this@fancyput=\toks27
+\EndVerbatimTokens=\toks28
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read2
+) (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 90.
+)
+\Gin@req@height=\dimen119
+\Gin@req@width=\dimen120
+)
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count109
+\float@exts=\toks29
+\float@box=\box36
+\@float@everytoks=\toks30
+\@floatcapt=\box37
+)
+(/usr/share/texmf-texlive/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen121
+\WF@size=\dimen122
+\c@WF@wrappedlines=\count110
+\WF@box=\box38
+\WF@everypar=\toks31
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texmf-texlive/tex/generic/xypic/xy.sty
+(/usr/share/texmf-texlive/tex/generic/xypic/xy.tex Bootstrap'ing: catcodes,
+docmode, (/usr/share/texmf-texlive/tex/generic/xypic/xyrecat.tex)
+(/usr/share/texmf-texlive/tex/generic/xypic/xyidioms.tex)
+
+ Xy-pic version 3.7 <1999/02/16>
+ Copyright (c) 1991-1998 by Kristoffer H. Rose <krisrose@ens-lyon.fr>
+ Xy-pic is free software: see the User's Guide for details.
+
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen123
+\Y@c=\dimen124
+\U@c=\dimen125
+\D@c=\dimen126
+\L@c=\dimen127
+\R@c=\dimen128
+\Edge@c=\toks32
+\X@p=\dimen129
+\Y@p=\dimen130
+\U@p=\dimen131
+\D@p=\dimen132
+\L@p=\dimen133
+\R@p=\dimen134
+\Edge@p=\toks33
+\X@origin=\dimen135
+\Y@origin=\dimen136
+\X@xbase=\dimen137
+\Y@xbase=\dimen138
+\X@ybase=\dimen139
+\Y@ybase=\dimen140
+\X@min=\dimen141
+\Y@min=\dimen142
+\X@max=\dimen143
+\Y@max=\dimen144
+\lastobjectbox@=\box39
+\zerodotbox@=\box40
+\almostz@=\dimen145
+ direction,
+\d@X=\dimen146
+\d@Y=\dimen147
+\K@=\count111
+\KK@=\count112
+\Direction=\count113
+\K@dXdY=\dimen148
+\K@dYdX=\dimen149
+\xyread@=\read3
+\xywrite@=\write4
+\csp@=\count114
+\quotPTK@=\dimen150
+
+utility macros; pictures: \xy, positions,
+\swaptoks@@=\toks34
+\connectobjectbox@@=\box41
+ objects,
+\styletoks@=\toks35
+ decorations;
+kernel objects: directionals, circles, text; options; algorithms: directions,
+edges, connections;  Xy-pic loaded)
+Package: xy 1999/02/16 Xy-pic version 3.7
+
+(/usr/share/texmf-texlive/tex/generic/xypic/xyall.tex
+ Xy-pic option: All features v.3.3
+(/usr/share/texmf-texlive/tex/generic/xypic/xycurve.tex
+ Xy-pic option: Curve and Spline extension v.3.7 curve,
+\crv@cnt@=\count115
+\crvpts@=\toks36
+\splinebox@=\box42
+\splineval@=\dimen151
+\splinedepth@=\dimen152
+\splinetol@=\dimen153
+\splinelength@=\dimen154
+ circles,
+\L@=\dimen155
+ loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xyframe.tex
+ Xy-pic option: Frame and Bracket extension v.3.7 loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xycmtip.tex
+ Xy-pic option: Computer Modern tip extension v.3.3
+(/usr/share/texmf-texlive/tex/generic/xypic/xytips.tex
+ Xy-pic option: More Tips extension v.3.3 loaded) loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xyline.tex
+ Xy-pic option: Line styles extension v.3.6
+\xylinethick@=\dimen156
+ loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xyrotate.tex
+ Xy-pic option: Rotate and Scale extension v.3.3 loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xycolor.tex
+ Xy-pic option: Colour extension v.3.3 loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xymatrix.tex
+ Xy-pic option: Matrix feature v.3.4
+\Row=\count116
+\Col=\count117
+\queue@=\toks37
+\queue@@=\toks38
+\qcount@=\count118
+\qcount@@=\count119
+\matrixsize@=\count120
+ loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xyarrow.tex
+ Xy-pic option: Arrow and Path feature v.3.5 path, \ar, loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xygraph.tex
+ Xy-pic option: Graph feature v.3.7 loaded) loaded))
+(/usr/share/texmf-texlive/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2006/08/12 v0.4a Insert pages of external PDF documents (AM)
+
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: calc 2005/08/06 v4.2 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count121
+\calc@Bcount=\count122
+\calc@Adimen=\dimen157
+\calc@Bdimen=\dimen158
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count123
+\calc@Cskip=\skip56
+)
+(/usr/share/texmf-texlive/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2006/07/14 v1.1d eso-pic (RN)
+
+(/usr/share/texmf-texlive/tex/latex/everyshi/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texmf-texlive/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2006/08/12 v0.4a Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box43
+\AM@toc@title=\toks39
+\c@AM@survey=\count124
+)
+(/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks40
+\thm@bodyfont=\toks41
+\thm@headfont=\toks42
+\thm@notefont=\toks43
+\thm@headpunct=\toks44
+\thm@preskip=\skip57
+\thm@postskip=\skip58
+\thm@headsep=\skip59
+\dth@everypar=\toks45
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+\lst@mode=\count125
+\lst@gtempboxa=\box44
+\lst@token=\toks46
+\lst@length=\count126
+\lst@currlwidth=\dimen159
+\lst@column=\count127
+\lst@pos=\count128
+\lst@lostspace=\dimen160
+\lst@width=\dimen161
+\lst@newlines=\count129
+\lst@lineno=\count130
+\c@lstlisting=\count131
+\lst@maxwidth=\dimen162
+
+(/usr/share/texmf-texlive/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2004/10/17 1.3b (Carsten Heinz)
+)
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2004/09/07 1.3 (Carsten Heinz)
+\c@lstnumber=\count132
+\lst@skipnumbers=\count133
+\lst@framebox=\box45
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+File: listings.cfg 2004/09/05 1.3 listings configuration
+))
+Package: listings 2004/10/17 1.3b (Carsten Heinz)
+
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/relsize.sty
+Package: relsize 2003/07/04 ver 3.1
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+)
+(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip60
+\f@ncyO@elh=\skip61
+\f@ncyO@erh=\skip62
+\f@ncyO@olh=\skip63
+\f@ncyO@orh=\skip64
+\f@ncyO@elf=\skip65
+\f@ncyO@erf=\skip66
+\f@ncyO@olf=\skip67
+\f@ncyO@orf=\skip68
+)
+(/usr/share/texmf-texlive/tex/latex/lastpage/lastpage.sty
+Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number
+ (JPG)
+))
+(../../latex/styles/style_header_oneside.tex)
+(../../latex/styles/info_hypersetup.tex)
+(../../latex/styles/style_environments_normal.tex
+\c@fig=\count134
+\c@Definition=\count135
+)
+(../../latex/styles/style_cover_german.tex) (../../latex/styles/style_scala.tex
+) (/home/helex/proggen/scala/scala.aux)
+\openout1 = `scala.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 45.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+Package hyperref Info: Link coloring ON on input line 45.
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
+)
+\c@section@level=\count136
+)
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+
+(/home/helex/proggen/scala/scala.out) (/home/helex/proggen/scala/scala.out)
+\@outlinefile=\write5
+\openout5 = `scala.out'.
+
+
+(/usr/share/texmf-texlive/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2003/03/25 v2.04 ragged2e Package (MS)
+
+(/usr/share/texmf-texlive/tex/latex/everysel/everysel.sty
+Package: everysel 1999/06/08 v1.03 EverySelectfont Package (MS)
+LaTeX Info: Redefining \selectfont on input line 125.
+)
+\CenteringLeftskip=\skip69
+\RaggedLeftLeftskip=\skip70
+\RaggedRightLeftskip=\skip71
+\CenteringRightskip=\skip72
+\RaggedLeftRightskip=\skip73
+\RaggedRightRightskip=\skip74
+\CenteringParfillskip=\skip75
+\RaggedLeftParfillskip=\skip76
+\RaggedRightParfillskip=\skip77
+\JustifyingParfillskip=\skip78
+\CenteringParindent=\skip79
+\RaggedLeftParindent=\skip80
+\RaggedRightParindent=\skip81
+\JustifyingParindent=\skip82
+)
+Package caption Info: KOMA-Script class detected on input line 45.
+Package caption Info: float package v1.3 (or newer) detected on input line 45.
+Package caption Info: listings package v1.2 (or newer) detected on input line 4
+5.
+
+ABD: EveryShipout initializing macros
+\big@size=\dimen163
+
+(../../latex/styles/style_starting_document_without_cover.tex
+(/home/helex/proggen/scala/scala.toc
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 2.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 2.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 2.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 2.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+) [1
+
+
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2])
+\tf@toc=\write6
+\openout6 = `scala.toc'.
+
+ [3])
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 51.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 51.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 60.
+
+(/home/helex/proggen/scala/beispiele/hello_helex.scala)
+(/home/helex/proggen/scala/beispiele/numbers.scala
+LaTeX Font Info:    Try loading font information for OML+ppl on input line 1.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omlppl.fd
+File: omlppl.fd 
+)
+LaTeX Font Info:    Font shape `OML/ppl/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1.
+)
+(/home/helex/proggen/scala/beispiele/input_parsing.scala [4])
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10.95> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 73.
+ [5]
+Overfull \hbox (1.48341pt too wide) in paragraph at lines 119--122
+[]\OT1/ppl/m/n/10.95 skalierbare Un-terst[]utzung f[]ur Kom-po-nen-ten kann nur
+ er-reicht wer-den, wenn OOP
+ []
+
+[6] (/home/helex/proggen/scala/beispiele/call_by_name.scala) [7]
+Overfull \hbox (1.27477pt too wide) in paragraph at lines 225--227
+[]\OT1/ppl/b/it/10.95 funktionale Spra-che\OT1/ppl/m/n/10.95 : By sup-por-ting 
+higher-order func-ti-ons, cur-ry-ing, func-ti-on nes-
+ []
+
+[8] (/home/helex/proggen/scala/beispiele/abstract_types.scala [9])
+(/home/helex/proggen/scala/beispiele/generators.scala) [10] [11]
+Overfull \hbox (9.49919pt too wide) in paragraph at lines 371--373
+[]\OT1/ppl/m/n/10.95 jede Java-Klasse wird als gew[]ohn-li-che Scala-Klasse an-
+ge-se-hen u. je-des Java-Interface
+ []
+
+
+Overfull \hbox (7.3081pt too wide) in paragraph at lines 382--386
+\OT1/ppl/m/n/10.95 tan-ten der Pri-mi-ti-ven Da-ten-ty-pen der JVM \OT1/cmtt/m/
+n/10.95 Int, Long, Double, Float, Boolean,
+ []
+
+(/home/helex/proggen/scala/beispiele/import.scala) [12]
+(/home/helex/proggen/scala/beispiele/scala_mit_javaklassen.scala)
+(/home/helex/proggen/scala/beispiele/klassen_constructor.scala) [13]
+(/home/helex/proggen/scala/beispiele/unausgewertete_parameter_uebergabe.scala)
+(/home/helex/proggen/scala/beispiele/getter_setter.scala)
+(/home/helex/proggen/scala/beispiele/properties.scala)
+(/home/helex/proggen/scala/beispiele/array.scala [14])
+(/home/helex/proggen/scala/beispiele/refining_functions.scala) [15]
+(/home/helex/proggen/scala/beispiele/if_else.scala)
+(/home/helex/proggen/scala/beispiele/ternary.scala)
+(/home/helex/proggen/scala/beispiele/while.scala)
+(/home/helex/proggen/scala/beispiele/for_easy.scala)
+(/home/helex/proggen/scala/beispiele/for_middle.scala)
+(/home/helex/proggen/scala/beispiele/for_guards.scala)
+(/home/helex/proggen/scala/beispiele/for_collection_transformation.scala)
+[16] (/home/helex/proggen/scala/beispiele/throw_try_finally.scala)
+(/home/helex/proggen/scala/beispiele/try_finally.scala)
+(/home/helex/proggen/scala/beispiele/try_catch.scala)
+(/home/helex/proggen/scala/beispiele/comments.scala [17])
+(/home/helex/proggen/scala/beispiele/enumeration.scala) [18]
+(/home/helex/proggen/scala/beispiele/hello_world.scala)
+(/home/helex/proggen/scala/beispiele/class.scala [19])
+(/home/helex/proggen/scala/beispiele/callback.scala)
+(/home/helex/proggen/scala/beispiele/callback_anonymous.scala [20])
+Overfull \hbox (1.1003pt too wide) in paragraph at lines 722--723
+[]\OT1/ppl/m/n/10.95 Methoden mit |   [] Pa-ra-me-ter k[]onnen eben-falls oh-ne
+ Klam-mern auf-ge-ru-fen wer-
+ []
+
+(/home/helex/proggen/scala/beispiele/method_invocation.scala)
+(/home/helex/proggen/scala/beispiele/method_type_parameter.scala) [21]
+(/home/helex/proggen/scala/beispiele/class_udate.scala)
+(/home/helex/proggen/scala/beispiele/nested_functions.scala)
+(/home/helex/proggen/scala/beispiele/parameter_passing_nested_functions.scala)
+[22] (/home/helex/proggen/scala/beispiele/def.scala)
+(/home/helex/proggen/scala/beispiele/vergleich_call_by_value_call_by_name.scala
+)
+(/home/helex/proggen/scala/beispiele/vergleich_call_by_value_call_by_name_2.sca
+la) (/home/helex/proggen/scala/beispiele/gcd.scala) [23]
+(/home/helex/proggen/scala/beispiele/factorial.scala) [24]
+(/home/helex/proggen/scala/beispiele/first_class_functions.scala)
+(/home/helex/proggen/scala/beispiele/method_declaration_1.scala)
+(/home/helex/proggen/scala/beispiele/method_declaration_2.scala)
+(/home/helex/proggen/scala/beispiele/method_declaration_3.scala)
+(/home/helex/proggen/scala/beispiele/method_declaration_4.scala) [25]
+(/home/helex/proggen/scala/beispiele/method_declaration_5.scala)
+(/home/helex/proggen/scala/beispiele/method_declaration_6.scala)
+(/home/helex/proggen/scala/beispiele/anonyme_funktion_1.scala)
+(/home/helex/proggen/scala/beispiele/anonyme_funktion_2.scala)
+(/home/helex/proggen/scala/beispiele/currying.scala)
+(/home/helex/proggen/scala/beispiele/currying_1.scala) [26]
+(/home/helex/proggen/scala/beispiele/currying_2.scala)
+(/home/helex/proggen/scala/beispiele/currying_3.scala) [27]
+(/home/helex/proggen/scala/beispiele/rationale_zahlen.scala)
+(/home/helex/proggen/scala/beispiele/objekt_anlegen.scala)
+(/home/helex/proggen/scala/beispiele/vererbung.scala)
+(/home/helex/proggen/scala/beispiele/override.scala [28])
+(/home/helex/proggen/scala/beispiele/parameterlose_funktionen.scala)
+Overfull \hbox (0.26051pt too wide) in paragraph at lines 951--953
+[]\OT1/ppl/m/n/10.95 rechte Sei-te ei-nes \OT1/cmtt/m/n/10.95 values \OT1/ppl/m
+/n/10.95 wird aus-ge-wer-tet, so-bald das Ob-jekt an-ge-legt wur-
+ []
+
+
+Overfull \hbox (4.9796pt too wide) in paragraph at lines 953--955
+[]\OT1/ppl/m/n/10.95 rechte Sie-te ei-ner pa-ra-me-ter-lo-sen Funk-ti-on wird j
+e-des-mal aus-ge-wer-tet, wenn
+ []
+
+(/home/helex/proggen/scala/beispiele/abstrakte_klassen.scala)
+(/home/helex/proggen/scala/beispiele/implementierung_einer_abstrakten_klasse.sc
+ala) [29] (/home/helex/proggen/scala/beispiele/traits.scala)
+(/home/helex/proggen/scala/beispiele/object.scala)
+(/home/helex/proggen/scala/beispiele/constructors.scala) [30]
+(/home/helex/proggen/scala/beispiele/nested_classes.scala)
+(/home/helex/proggen/scala/beispiele/gencell.scala)
+(/home/helex/proggen/scala/beispiele/gencell_swap.scala)
+(/home/helex/proggen/scala/beispiele/gencell_swap_usage.scala) [31]
+(/home/helex/proggen/scala/beispiele/apply.scala) [32]
+(/home/helex/proggen/scala/beispiele/unapply.scala)
+(/home/helex/proggen/scala/beispiele/abstract_list_iterator.scala)
+(/home/helex/proggen/scala/beispiele/iterators_for_mixin_class_composition.scal
+a) [33] (/home/helex/proggen/scala/beispiele/mixin_class_composition.scala)
+Overfull \hbox (2.91792pt too wide) in paragraph at lines 1118--1120
+[]\OT1/ppl/m/n/10.95 Scalas Ab-strak-ti-on kann als Ba-sis f[]ur Dienst-orienti
+ertes Komponenten-Model
+ []
+
+(/home/helex/proggen/scala/beispiele/algebraic_calculator.scala) [34]
+(/home/helex/proggen/scala/beispiele/algebraic_calculator_case.scala)
+(/home/helex/proggen/scala/beispiele/algebraic_calculator_pattern_matching.scal
+a) [35] (/home/helex/proggen/scala/beispiele/case_class.scala)
+(/home/helex/proggen/scala/beispiele/case_class_one_more_example.scala [36])
+(/home/helex/proggen/scala/beispiele/match.scala [37]) [38]
+(/home/helex/proggen/scala/beispiele/trait_creation.scala [39])
+(/home/helex/proggen/scala/beispiele/stack_integer.scala)
+(/home/helex/proggen/scala/beispiele/stack_generisch.scala [40])
+(/home/helex/proggen/scala/beispiele/generische_funktionen.scala)
+(/home/helex/proggen/scala/beispiele/annotation_varianz.scala)
+(/home/helex/proggen/scala/beispiele/tuples.scala)
+(/home/helex/proggen/scala/beispiele/tupleator.scala) [41] [42]
+(/home/helex/proggen/scala/beispiele/listen.scala)
+(/home/helex/proggen/scala/beispiele/collections.scala)
+(/home/helex/proggen/scala/beispiele/range.scala) [43]
+(/home/helex/proggen/scala/beispiele/cons.scala)
+(/home/helex/proggen/scala/beispiele/listen_1.scala)
+(/home/helex/proggen/scala/beispiele/list_arbitrary.scala)
+(/home/helex/proggen/scala/beispiele/collection_append.scala)
+(/home/helex/proggen/scala/beispiele/collection_mergen.scala)
+(/home/helex/proggen/scala/beispiele/collection_ops.scala [44])
+(/home/helex/proggen/scala/beispiele/collection_universel.scala)
+Overfull \hbox (3.6404pt too wide) in paragraph at lines 1405--1409
+\OT1/ppl/m/n/10.95 ti-on. Soll-te die Funk-ti-on, wel-che an \OT1/cmtt/m/n/10.9
+5 map []\OT1/ppl/m/n/10.95 uber-ge-ben wird, einen an-de-ren Typ zur[]uck-
+ []
+
+(/home/helex/proggen/scala/beispiele/collection_transformation_map.scala)
+(/home/helex/proggen/scala/beispiele/collection_db_query.scala)
+(/home/helex/proggen/scala/beispiele/collection_sort.scala [45])
+(/home/helex/proggen/scala/beispiele/collection_sort_complex.scala)
+Overfull \hbox (1.43973pt too wide) in paragraph at lines 1426--1430
+[]\OT1/cmtt/m/n/10.95 reduceLeft\OT1/ppl/m/n/10.95 : Ope-ra-ti-on auf ad-ja-zen
+-ten Ele-men-te ei-ner Col-lec-ti-on durchf[]uhren, d.h.
+ []
+
+(/home/helex/proggen/scala/beispiele/collection_reduce_left.scala)
+(/home/helex/proggen/scala/beispiele/collection_foldLeft.scala)
+(/home/helex/proggen/scala/beispiele/collection_nested.scala [46])
+(/home/helex/proggen/scala/beispiele/for_comprehension.scala)
+(/home/helex/proggen/scala/beispiele/for_comprehension_generell.scala)
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1459.
+
+
+(/home/helex/proggen/scala/beispiele/collection_for_comprehesion.scala)
+(/home/helex/proggen/scala/beispiele/tupel_example.scala [47])
+(/home/helex/proggen/scala/beispiele/tupel_creation.scala)
+(/home/helex/proggen/scala/beispiele/map_examples.scala) [48]
+(/home/helex/proggen/scala/beispiele/functions.scala)
+(/home/helex/proggen/scala/beispiele/function_as_parameter.scala) [49]
+(/home/helex/proggen/scala/beispiele/partial_functions.scala)
+(/home/helex/proggen/scala/beispiele/partial_notation.scala)
+(/home/helex/proggen/scala/beispiele/partial_codeblocks.scala)
+Overfull \hbox (4.35252pt too wide) in paragraph at lines 1575--1577
+[]\OT1/ppl/m/n/10.95 Typparameter de-fi-nie-ren den Typ von Pa-ra-me-tern od. d
+en R[]uck-ga-be-wert der Funk-
+ []
+
+(/home/helex/proggen/scala/beispiele/typparameter_functions.scala) [50]
+(/home/helex/proggen/scala/beispiele/function_container.scala)
+(/home/helex/proggen/scala/beispiele/pattern_matching_fibonacci.scala)
+(/home/helex/proggen/scala/beispiele/matching_any_type.scala)
+(/home/helex/proggen/scala/beispiele/pattern_datatypes.scala [51])
+(/home/helex/proggen/scala/beispiele/pattern_matching_case_class.scala)
+(/home/helex/proggen/scala/beispiele/pattern_matching_lists.scala)
+(/home/helex/proggen/scala/beispiele/pattern_matching_nested.scala [52])
+Overfull \hbox (52.80544pt too wide) in paragraph at lines 1635--1638
+[]\OT1/ppl/m/n/10.95 in Sca-la ist \OT1/cmtt/m/n/10.95 Array[T] \OT1/ppl/b/it/1
+0.95 in-va-ri-ant\OT1/ppl/m/n/10.95 , d.h. man kann nur \OT1/cmtt/m/n/10.95 Arr
+ay[Strin] \OT1/ppl/m/n/10.95 an \OT1/cmtt/m/n/10.95 foo(a: Array[String])
+ []
+
+(/home/helex/proggen/scala/beispiele/covariant_parameter_types.scala)
+Overfull \hbox (19.52855pt too wide) in paragraph at lines 1656--1658
+[]\OT1/ppl/b/n/10.95 kovariant \OT1/ppl/m/n/10.95 hei^^Yt, dass der return-Wert
+ von Funk-tio-nen in ab-ge-lei-te-ten Klas-sen ge[]andert
+ []
+
+[53] [54] <bilder/typhierarchie.png, id=1761, 586.19pt x 576.1525pt>
+File: bilder/typhierarchie.png Graphic file (type png)
+
+<use bilder/typhierarchie.png> [55 </home/helex/proggen/scala/bilder/typhierarc
+hie.png>]
+(/home/helex/proggen/scala/beispiele/linearization_object_hierarchiy.scala)
+[56] [57] (/home/helex/proggen/scala/beispiele/fp_list_map.scala)
+(/home/helex/proggen/scala/beispiele/fp_list_map_value.scala) [58]
+(/home/helex/proggen/scala/beispiele/factorial_recursive_and_tail_call.scala)
+(/home/helex/proggen/scala/beispiele/lists_fp.scala)
+(/home/helex/proggen/scala/beispiele/foreach.scala [59])
+(/home/helex/proggen/scala/beispiele/map.scala)
+(/home/helex/proggen/scala/beispiele/filter.scala)
+(/home/helex/proggen/scala/beispiele/folding_reducing.scala) [60]
+(/home/helex/proggen/scala/beispiele/partial_functions_easy.scala)
+Overfull \hbox (0.42108pt too wide) in paragraph at lines 1838--1840
+[]\OT1/ppl/m/n/10.95 stammt vom Ma-the-ma-ti-ker Has-kell Cur-ry u. trans-for-m
+iert ei-ne Funk-ti-on, die meh-
+ []
+
+(/home/helex/proggen/scala/beispiele/curried_functions.scala)
+(/home/helex/proggen/scala/beispiele/implicit.scala [61])
+(/home/helex/proggen/scala/beispiele/lazy_vals.scala) [62] [63] [64]
+AED: lastpage setting LastPage (/home/helex/proggen/scala/scala.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 13114 strings out of 94101
+ 200208 string characters out of 1165811
+ 331843 words of memory out of 1500000
+ 14346 multiletter control sequences out of 10000+50000
+ 30108 words of font info for 84 fonts, out of 1200000 for 2000
+ 637 hyphenation exceptions out of 8191
+ 43i,12n,45p,946b,1973s stack positions out of 5000i,500n,6000p,200000b,5000s
+pdfTeX warning (dest): name{Hfootnote.22} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive
+/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/bluesk
+y/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmssbx10.pfb></
+usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf-tex
+live/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/bl
+uesky/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/public/mathpazo/fplmr.
+pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/t
+exmf-texlive/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texmf-texlive/fon
+ts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/pala
+tino/uplri8a.pfb>
+Output written on scala.pdf (64 pages, 607506 bytes).
+PDF statistics:
+ 2308 PDF objects out of 2487 (max. 8388607)
+ 1397 named destinations out of 1440 (max. 131072)
+ 702 words of extra memory for PDF output out of 10000 (max. 10000000)
+
