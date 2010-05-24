@@ -493,7 +493,7 @@ keine besondere Notation für die Elemente der Aufzählung nötig
 \pagebreak
 
 
-\section{Ausdrücke und einfache Funktionen}
+\section{Ausdrücke und Funktionen}
 \begin{itemize}
   \item Unterschied zwischen \texttt{def x = e} \und \texttt{val x = e}:
   \begin{itemize}
@@ -511,26 +511,11 @@ keine besondere Notation für die Elemente der Aufzählung nötig
 \end{itemize}
 
 
-\subsection{Methodenaufrufe}
-\begin{itemize}
-  \item anders als in Java kann man Methoden ohne Parameter auch ohne Klammern
-  aufrufen
-  \item Methoden mit \uline{einem} Parameter können ebenfalls ohne Klammern aufgerufen werden
-  
-  \lstinputlisting[label=src:method_invocation.scala]{beispiele/method_invocation.scala}
-  
-  \item in Scala können Methoden Symbole wie
-  $+, -, *, and, ?$ enthalten
-  \item Methoden können auch mit dem Typarameter aufgerufen werden:
-  
-  \lstinputlisting[label=src:method_type_parameter.scala]{beispiele/method_type_parameter.scala}
-  
-\end{itemize}
-
-
 \subsection{Funktionen}
 \begin{itemize}
-  \item alle Funktionen haben die \texttt{apply}-Methode, welche die Funktion ausführen
+  \item alle Funktionen haben die \texttt{apply}-Methode, welche die Funktion 
+  ausführen
+  \item Funktionen können in Scala Symbole wie $+, -, *, and, ?$ enthalten
   \item Funktionen können die folgende Form
   haben: \texttt{Function[A, B]}, wobei \texttt{A} der Parametertyp 
   \und \texttt{B} der Rückgabewert ist
