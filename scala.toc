@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {2.3}Varablendeklarationen}{13}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}if/else und while}{13}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}for-Schleife}{13}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}throw und try/catch/finally}{14}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.6}throw und try/catch/finally}{13}{subsection.2.6}
 \contentsline {subsection}{\numberline {2.7}Kommentare}{14}{subsection.2.7}
 \contentsline {subsection}{\numberline {2.8}Enumerations}{15}{subsection.2.8}
 \contentsline {section}{\numberline {3}Unsortiert}{16}{section.3}
