@@ -2,17 +2,13 @@
 \BOOKMARK [2][-]{subsection.1.1}{Einfache Programme}{section.1}
 \BOOKMARK [1][-]{section.2}{Eigenschaften zur Sprache}{}
 \BOOKMARK [2][-]{subsection.2.1}{Paradigmen}{section.2}
-\BOOKMARK [2][-]{subsection.2.2}{Klassen}{section.2}
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Klassenhierarchie}{subsection.2.2}
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Klassenimport}{subsection.2.2}
-\BOOKMARK [2][-]{subsection.2.3}{Scala hat uniformes Objektmodel}{section.2}
-\BOOKMARK [2][-]{subsection.2.4}{Operationen sind Objekte}{section.2}
-\BOOKMARK [2][-]{subsection.2.5}{Varablendeklarationen}{section.2}
-\BOOKMARK [2][-]{subsection.2.6}{if/else und while}{section.2}
-\BOOKMARK [2][-]{subsection.2.7}{for-Schleife}{section.2}
-\BOOKMARK [2][-]{subsection.2.8}{throw und try/catch/finally}{section.2}
-\BOOKMARK [2][-]{subsection.2.9}{Kommentare}{section.2}
-\BOOKMARK [2][-]{subsection.2.10}{Enumerations}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{Operationen sind Objekte}{section.2}
+\BOOKMARK [2][-]{subsection.2.3}{Varablendeklarationen}{section.2}
+\BOOKMARK [2][-]{subsection.2.4}{if/else und while}{section.2}
+\BOOKMARK [2][-]{subsection.2.5}{for-Schleife}{section.2}
+\BOOKMARK [2][-]{subsection.2.6}{throw und try/catch/finally}{section.2}
+\BOOKMARK [2][-]{subsection.2.7}{Kommentare}{section.2}
+\BOOKMARK [2][-]{subsection.2.8}{Enumerations}{section.2}
 \BOOKMARK [1][-]{section.3}{Unsortiert}{}
 \BOOKMARK [2][-]{subsection.3.1}{Alles ist ein Objekt}{section.3}
 \BOOKMARK [2][-]{subsection.3.2}{Anonyme Funktionen}{section.3}
@@ -28,17 +24,20 @@
 \BOOKMARK [2][-]{subsection.5.2}{Anonyme Funktionen}{section.5}
 \BOOKMARK [2][-]{subsection.5.3}{Currying}{section.5}
 \BOOKMARK [1][-]{section.6}{Klassen und Objekte}{}
-\BOOKMARK [2][-]{subsection.6.1}{Konstruktoren}{section.6}
-\BOOKMARK [2][-]{subsection.6.2}{verschachtelte Klassen}{section.6}
-\BOOKMARK [2][-]{subsection.6.3}{Abstraktion}{section.6}
-\BOOKMARK [2][-]{subsection.6.4}{Overriding}{section.6}
-\BOOKMARK [2][-]{subsection.6.5}{Companion Objekte}{section.6}
-\BOOKMARK [2][-]{subsection.6.6}{Komposition}{section.6}
-\BOOKMARK [2][-]{subsection.6.7}{Dekomposition}{section.6}
-\BOOKMARK [2][-]{subsection.6.8}{Gleichheit von Objekten}{section.6}
-\BOOKMARK [2][-]{subsection.6.9}{Case-Klassen}{section.6}
-\BOOKMARK [2][-]{subsection.6.10}{Pattern Matching}{section.6}
-\BOOKMARK [2][-]{subsection.6.11}{traits}{section.6}
+\BOOKMARK [2][-]{subsection.6.1}{Klassen}{section.6}
+\BOOKMARK [2][-]{subsection.6.2}{Klassenhierarchie}{section.6}
+\BOOKMARK [2][-]{subsection.6.3}{Klassenimport}{section.6}
+\BOOKMARK [2][-]{subsection.6.4}{Konstruktoren}{section.6}
+\BOOKMARK [2][-]{subsection.6.5}{verschachtelte Klassen}{section.6}
+\BOOKMARK [2][-]{subsection.6.6}{Abstraktion}{section.6}
+\BOOKMARK [2][-]{subsection.6.7}{Overriding}{section.6}
+\BOOKMARK [2][-]{subsection.6.8}{Companion Objekte}{section.6}
+\BOOKMARK [2][-]{subsection.6.9}{Komposition}{section.6}
+\BOOKMARK [2][-]{subsection.6.10}{Dekomposition}{section.6}
+\BOOKMARK [2][-]{subsection.6.11}{Gleichheit von Objekten}{section.6}
+\BOOKMARK [2][-]{subsection.6.12}{Case-Klassen}{section.6}
+\BOOKMARK [2][-]{subsection.6.13}{Pattern Matching}{section.6}
+\BOOKMARK [2][-]{subsection.6.14}{traits}{section.6}
 \BOOKMARK [1][-]{section.7}{Generische Typen und Methoden}{}
 \BOOKMARK [2][-]{subsection.7.1}{Annotationen Varianz}{section.7}
 \BOOKMARK [2][-]{subsection.7.2}{Tuples}{section.7}
