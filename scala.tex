@@ -694,7 +694,6 @@ Fkt. mit callback Fkt. haben folgende Syntax:
 \end{itemize}
 
 
-
 \subsection{Klassen}
 \begin{itemize}
   \item werden in Packeten definiert \und spielen eine ähnliche Rolle wie
@@ -704,6 +703,17 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   erben, denn per default kann nur von einer Klasse gererbt werden
   \item jede Java-Klasse wird als gewöhnliche Scala-Klasse angesehen \und 
   jedes Java-Interface kann als Scala-\textit{trait} angesehen werden
+\end{itemize}
+
+
+\subsection{Klassenimport}
+\begin{itemize}
+  \item Syntax:
+  
+  \lstinputlisting[label=src:import.scala]{beispiele/import.scala}
+  
+  \item mehrere Klassen \oder Objekte können vom selben Paket importiert werden, 
+  indem sie einfach in \textit{brackets} geschrieben werden
 \end{itemize}
 
 
@@ -738,25 +748,6 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   \end{itemize} 
   
   alle Unterklassen von der Klasse \texttt{AnyVal}
-\end{itemize}
-
-
-\subsection{Klassenimport}
-\begin{itemize}
-  \item Syntax:
-  
-  \lstinputlisting[label=src:import.scala]{beispiele/import.scala}
-  
-  \item mehrere Klassen \oder Objekte können vom selben Paket importiert werden, 
-  indem sie einfach in \textit{brackets} geschrieben werden
-\end{itemize}
-
-
-\subsection{Konstruktoren}
-\begin{itemize}
-  \item Scala unterscheidet zwischen \itbf{primary constructor} (ist der gesamte Klassenrumpf) \und null \oder mehr \itbf{auxiliary constructor} (ist das, was in Klammern hinter den Klassennamen steht)
-  
-  \lstinputlisting[label=src:constructors.scala]{beispiele/constructors.scala}
 \end{itemize}
 
 

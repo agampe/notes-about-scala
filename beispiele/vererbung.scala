@@ -1,3 +1,3 @@
-class Rational(n: Int, d: Int) extends AnyRef {
+class RationalNumber(a: Int, b: Int) extends AnyRef {
   ... // as before
 }
