@@ -614,12 +614,30 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   
   \lstinputlisting[label=src:nested_functions.scala]{beispiele/nested_functions.scala}
 \end{itemize}
-\pagebreak
 
 
-\section{Erste-Klassen Funktionen}
+\subsection{Currying}
 \begin{itemize}
-
+  \item betrachten \texttt{sum}, bei der man die Grenzen a \und b nicht mehr
+  angeben muss
+  
+  \lstinputlisting[label=src:currying.scala]{beispiele/currying.scala}
+  
+  \item wir werden nun Funktionen, die Funktionen zurückgegeben,
+  behandelt?
+  
+  \lstinputlisting[label=src:currying_1.scala]{beispiele/currying_1.scala}
+  
+  hier wird \texttt{sum} zuerst zur Quadratfunktion \texttt{(x $=>$ x * x)}
+  angewendet \und die reslutierende Funktion wird dann auf die Argumentenliste
+  \texttt{(1, 10)} angewendet
+  \item für Funktionen, die Funktionen zurückgeben, hat Scala eine besondere
+  Syntax \und die obige sum-Funktion kann auch wie folgt kürzer geschrieben
+  werden
+  
+  \lstinputlisting[label=src:currying_3.scala]{beispiele/currying_3.scala}
+  
+\end{itemize}
 
 \pagebreak
 
