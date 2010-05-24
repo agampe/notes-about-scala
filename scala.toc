@@ -28,7 +28,7 @@
 \contentsline {subsection}{\numberline {4.9}Case-Klassen}{26}{subsection.4.9}
 \contentsline {subsection}{\numberline {4.10}Pattern Matching}{27}{subsection.4.10}
 \contentsline {subsection}{\numberline {4.11}traits}{28}{subsection.4.11}
-\contentsline {section}{\numberline {5}Generische Typen und Methoden}{30}{section.5}
+\contentsline {section}{\numberline {5}Generische Typen und Methoden}{29}{section.5}
 \contentsline {subsection}{\numberline {5.1}Annotationen Varianz}{31}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Tuples}{31}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Wann man explizite Typannotationen braucht}{31}{subsection.5.3}
