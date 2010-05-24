@@ -333,55 +333,7 @@ Sachen gewährleistet:
 \end{itemize}
 
 
-\subsection{Klassen}
-\begin{itemize}
-  \item werden in Packeten definiert \und spielen eine ähnliche Rolle wie
-  in Java
-  \item jedes Java-Packet ist auch eine Scala-Packet (vice versa)
-  \item jede Klasse kann via \textit{mixin} von mehr als einer Klasse
-  erben, denn per default kann nur von einer Klasse gererbt werden
-  \item jede Java-Klasse wird als gewöhnliche Scala-Klasse angesehen \und 
-  jedes Java-Interface kann als Scala-\textit{trait} angesehen werden
-\end{itemize}
-
-
-\subsubsection{Klassenhierarchie}
-\begin{itemize}
-  \item in Scala ist alles, bis auf eine Methode eine Instanz von
-  einer Klasse $\Rightarrow$ alle Primitven aus Java (wie \uline{z.B.} int) 
-  werden als Instanzen behandelt \und dies wird bei Kompilierung gemacht
-  \item \texttt{Any} ist die Top-Klasse, es hat zwei Unterklassen:
-  \texttt{AnyVal} \und \texttt{AnyRef}
-  \item \texttt{AnyVal}  basiert auf \textit{value classes}, also
-  \textbf{boolean, byte, short, char, int, long, float, double}
-  \item wenn man sich an die Namenskonventionen hält, dann sind
-  die Scala-Repräsentanten der Primitiven Datentypen der JVM:
-  \begin{itemize}
-    \item \texttt{Int}
-    \item \texttt{Long}
-    \item \texttt{Double}
-    \item \texttt{Float}
-    \item \texttt{Boolean}
-    \item \texttt{Char}
-    \item \texttt{Byte}
-  \end{itemize} 
-  
-  alle Unterklassen von der Klasse \texttt{AnyVal}
-\end{itemize}
-
-
-\subsubsection{Klassenimport}
-\begin{itemize}
-  \item Syntax:
-  
-  \lstinputlisting[label=src:import.scala]{beispiele/import.scala}
-  
-  \item mehrere Klassen \oder Objekte können vom selben Paket importiert werden, 
-  indem sie einfach in \textit{brackets} geschrieben werden
-\end{itemize}
-
-
-\subsection{Scala hat uniformes Objektmodel}
+\subsection{Uniformes Objektmodel}
 $\Rightarrow$ d.h. jeder Wert ist ein Objekt \und jede Operation ist ein
 Methodenaufruf
 
@@ -941,6 +893,55 @@ keine besondere Notation für die Elemente der Aufzählung nötig
   $\Rightarrow$ Objekterzeugung erfolgt nach \textit{lazy evaluation}
   \item jede Deklaration ohne ein Sichtbarkeits/Scopewort ist per default
   public\footnote{für public gibt es kein Schlüsselwort}
+\end{itemize}
+
+
+
+\subsection{Klassen}
+\begin{itemize}
+  \item werden in Packeten definiert \und spielen eine ähnliche Rolle wie
+  in Java
+  \item jedes Java-Packet ist auch eine Scala-Packet (vice versa)
+  \item jede Klasse kann via \textit{mixin} von mehr als einer Klasse
+  erben, denn per default kann nur von einer Klasse gererbt werden
+  \item jede Java-Klasse wird als gewöhnliche Scala-Klasse angesehen \und 
+  jedes Java-Interface kann als Scala-\textit{trait} angesehen werden
+\end{itemize}
+
+
+\subsection{Klassenhierarchie}
+\begin{itemize}
+  \item in Scala ist alles, bis auf eine Methode eine Instanz von
+  einer Klasse $\Rightarrow$ alle Primitven aus Java (wie \uline{z.B.} int) 
+  werden als Instanzen behandelt \und dies wird bei Kompilierung gemacht
+  \item \texttt{Any} ist die Top-Klasse, es hat zwei Unterklassen:
+  \texttt{AnyVal} \und \texttt{AnyRef}
+  \item \texttt{AnyVal}  basiert auf \textit{value classes}, also
+  \textbf{boolean, byte, short, char, int, long, float, double}
+  \item wenn man sich an die Namenskonventionen hält, dann sind
+  die Scala-Repräsentanten der Primitiven Datentypen der JVM:
+  \begin{itemize}
+    \item \texttt{Int}
+    \item \texttt{Long}
+    \item \texttt{Double}
+    \item \texttt{Float}
+    \item \texttt{Boolean}
+    \item \texttt{Char}
+    \item \texttt{Byte}
+  \end{itemize} 
+  
+  alle Unterklassen von der Klasse \texttt{AnyVal}
+\end{itemize}
+
+
+\subsection{Klassenimport}
+\begin{itemize}
+  \item Syntax:
+  
+  \lstinputlisting[label=src:import.scala]{beispiele/import.scala}
+  
+  \item mehrere Klassen \oder Objekte können vom selben Paket importiert werden, 
+  indem sie einfach in \textit{brackets} geschrieben werden
 \end{itemize}
 
 
