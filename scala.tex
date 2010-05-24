@@ -649,9 +649,11 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   
   \item \textbf{private members}: durch spezielles Keyword gekennzeichnet
   \und können nicht außerhalb der Klasse angesprochen werden
-  \item \textbf{Objekterstellung}:
+  \item \textbf{Objekterstellung}\footnote{erfolgt nach 
+  \textit{lazy evaluation}}:
   
   \lstinputlisting[label=src:objekt_anlegen.scala]{beispiele/object_creation.scala}
+  
   
   $\Rightarrow$ mittels Punktnotation kann auf die Attribute zugegriffen
   werden
@@ -666,19 +668,7 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   \textbf{override} verwenden
   
   \lstinputlisting[label=src:override.scala]{beispiele/override.scala}
-  
-  \item \textbf{Parameterlose Funktionen} anders als in Java müssen hier keine
-  Parameter angegeben werden
-  
-  \lstinputlisting[label=src:parameterlose_funktionen.scala]{beispiele/parameterlose_funktionen.scala}
-  
-  \item \uline{Unterschied einer rechten Seite von value \und parameterlose Funktion}
-  \begin{margin}
-    \item rechte Seite eines \texttt{values} wird ausgewertet, sobald
-    das Objekt angelegt wurde \und der Wert wird danach nicht mehr $\Delta$
-    \item rechte Siete einer parameterlosen Funktion wird jedesmal ausgewertet,
-    wenn die Funktion aufgerufen wird
-  \end{margin}
+    
   \item \textbf{Abstrakte Klassen}: 
   
   \lstinputlisting[label=src:abstrakte_klassen.scala]{beispiele/abstrakte_klassen.scala}
@@ -694,19 +684,13 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   dafür geschaffen wurde, um an andere Klassen ergänzt zu werden
   
   \lstinputlisting[label=src:traits.scala]{beispiele/traits.scala}
-  \item \textbf{dynamische Bindung}: betrachte den Ausdruck 
-  \texttt{s contains 7} \und welche Methode nun ausgeführt wird, hängt, davon
-  ab, von welchen Typ \texttt{s} ist (\texttt{EmptySet} \oder 
-  \texttt{NonEmptySet})
   \item \textbf{objects}: statt class kann man auch objects davor schreiben
-  \und dadurch ist das Singleton-Pattern sichergestellt, d.h. dieses
-  Objekt gibt es nur einmal
+  \und dadurch ist das \textbf{Singleton-Pattern} sichergestellt:
   
   \lstinputlisting[label=src:object.scala]{beispiele/object.scala}
   
-  $\Rightarrow$ Objekterzeugung erfolgt nach \textit{lazy evaluation}
   \item jede Deklaration ohne ein Sichtbarkeits/Scopewort ist per default
-  public\footnote{für public gibt es kein Schlüsselwort}
+  \textit{public}\footnote{dafür gibts kein Schlüsselwort}
 \end{itemize}
 
 
