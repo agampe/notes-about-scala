@@ -525,8 +525,18 @@ keine besondere Notation für die Elemente der Aufzählung nötig
     \texttt{A $=>$ B}
   \end{center}
     
-  \item verschachtelte Funktionen:
+  \item Funktione, welche andere Funktionen als Parameter nehmen werden
+  \textit{high-order} Funktionen genannt
+    \item falls man eine Variable Liste an Parametern haben möchte, dann muss *
+  in die Parameterliste einer Funktionsdef setzen:
   
+\lstinputlisting[label=src:method_declaration_4.scala]{beispiele/method_declaration_4.scala}
+    
+  \item man kann auch Schranken für Typen definieren. Im folgenden Beispiel müssen alle Typen vom Typ \texttt{Number} \oder von einer Subklasse von
+  \texttt{Number} sein:
+  
+  \lstinputlisting[label=src:method_declaration_6.scala]{beispiele/method_declaration_6.scala}
+
 \end{itemize}
 
 
@@ -609,96 +619,8 @@ Fkt. mit callback Fkt. haben folgende Syntax:
 
 \section{Erste-Klassen Funktionen}
 \begin{itemize}
-  \item eine Funktion ist in Scala ein \enquote{first-class value}
-  \item wie jeder andere Wert in Scala können Funktionen als Parameter
-  übergeben werden \oder als das Ergebnis einer Operation
-  \item Funktione, welche andere Funktionen als Parameter nehmen werden
-  \textit{high-order} Funktionen genannt
-  
-  \lstinputlisting[label=src:first_class_functions.scala]{beispiele/first_class_functions.scala}
-  
-  der Typ \texttt{f: Int $=>$ Int} ist so ein Funktionstyp, der für jede
-  beliebige Funktion steht
-\end{itemize}
 
 
-\subsection{Deklaration von Funktionen}
-\begin{itemize}
-  \item bestehen aus dem Schlüsselwort \texttt{def}, einem Methodennamen,
-  Parametern, einen optionalen return-Typ\footnote{der Compiler zieht selber
-  Rückschlüsse\footnote{\textit{infere}} aus dem return-Type, aber dies nur wirklich machen, wenn man
-  sich sicher ist}, $=$ keyword \und den Methodenrumpf
-  \item folgende Methode nimmt keinen Parameter und gibt einen String zurück:
-  
-  \lstinputlisting[label=src:method_declaration_1.scala]{beispiele/method_declaration_1.scala}
-  
-  \item Parameter in Funktionen:
-  
-  \lstinputlisting[label=src:method_declaration_2.scala]{beispiele/method_declaration_2.scala}
-
-  \item Erstellung einer generischen Liste durch den Parameter T:
-
-\lstinputlisting[label=src:method_declaration_3.scala]{beispiele/method_declaration_3.scala}
-  
-  \item falls man eine Variable Liste an Parametern haben möchte, dann muss *
-  in die Parameterliste einer Funktionsdef setzen:
-  
-\lstinputlisting[label=src:method_declaration_4.scala]{beispiele/method_declaration_4.scala}
-  
-  \item man kann Typparameter mit variabler Länge bezüglich der Argumente
-  festlegen:
-  
-  \lstinputlisting[label=src:method_declaration_5.scala]{beispiele/method_declaration_5.scala}
-  
-  \item man kann auch Schranken für Typen definieren. Im folgenden Beispiel müssen alle Typen vom Typ \texttt{Number} \oder von einer Subklasse von
-  \texttt{Number} sein:
-  
-  \lstinputlisting[label=src:method_declaration_6.scala]{beispiele/method_declaration_6.scala}
-\end{itemize}
-
-
-\subsection{Anonyme Funktionen}
-\begin{itemize}
-  \item eine anonyme Funktion ist ein Ausdruck, der wie eine Funktion
-  auswertet, ohne dass man für diese Funktion explizit einen Namen angeben
-  muss
-  \item der Teil vor $=>$ sind die Parameter und der Teil danach ist der Rumpf
-  
-  \lstinputlisting[label=src:anonyme_funktion_1.scala]{beispiele/anonyme_funktion_1.scala}
-  
-  \lstinputlisting[label=src:anonyme_funktion_2.scala]{beispiele/anonyme_funktion_2.scala}
-  \item 
-\end{itemize}
-
-
-\subsection{Currying}
-\begin{itemize}
-  \item im vorherigen Abschnitt taucht bei der Funktionen-Def. auf, obwohl
-  sie da eigentlich gar nicht benötigt werden
-  \item wir schreiben \texttt{sum} nun so um, dass man die Grenzen a \und 
-  b nicht mehr angeben muss
-  
-  \lstinputlisting[label=src:currying.scala]{beispiele/currying.scala}
-  
-  \item wir werden nun nun Funktionen, die Funktionen zurückgegeben,
-  behandelt?
-  
-  \lstinputlisting[label=src:currying_1.scala]{beispiele/currying_1.scala}
-  
-  hier wird \texttt{sum} zuerst zur Quadratfunktion \texttt{(x $=>$ x * x)}
-  angewendet \und die reslutierende Funktion wird dann auf die Argumentenliste
-  \texttt{(1, 10)} angewendet
-  \item der obige Ausdruck ist äquivalent zu 
-  
-  \lstinputlisting[label=src:currying_2.scala]{beispiele/currying_2.scala}
-  
-  \item für Funktionen, die Funktionen zurückgeben, hat Scala eine besondere
-  Syntax \und die obige sum-Funktion kann auch wie folgt kürzer geschrieben
-  werden
-  
-  \lstinputlisting[label=src:currying_3.scala]{beispiele/currying_3.scala}
-  
-\end{itemize}
 \pagebreak
 
 

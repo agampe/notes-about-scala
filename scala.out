@@ -16,9 +16,7 @@
 \BOOKMARK [3][-]{subsubsection.3.1.4}{Anonyme Funktionen}{subsection.3.1}
 \BOOKMARK [2][-]{subsection.3.2}{Schwanzrekursion}{section.3}
 \BOOKMARK [1][-]{section.4}{Erste-Klassen Funktionen}{}
-\BOOKMARK [2][-]{subsection.4.1}{Deklaration von Funktionen}{section.4}
-\BOOKMARK [2][-]{subsection.4.2}{Anonyme Funktionen}{section.4}
-\BOOKMARK [2][-]{subsection.4.3}{Currying}{section.4}
+\BOOKMARK [2][-]{subsection.4.1}{Currying}{section.4}
 \BOOKMARK [1][-]{section.5}{Klassen und Objekte}{}
 \BOOKMARK [2][-]{subsection.5.1}{Klassen}{section.5}
 \BOOKMARK [2][-]{subsection.5.2}{Klassenhierarchie}{section.5}
