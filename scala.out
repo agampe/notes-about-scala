@@ -18,19 +18,16 @@
 \BOOKMARK [2][-]{subsection.3.3}{Currying}{section.3}
 \BOOKMARK [1][-]{section.4}{Klassen und Objekte}{}
 \BOOKMARK [2][-]{subsection.4.1}{Klassen}{section.4}
-\BOOKMARK [2][-]{subsection.4.2}{Klassenhierarchie}{section.4}
-\BOOKMARK [2][-]{subsection.4.3}{Klassenimport}{section.4}
-\BOOKMARK [2][-]{subsection.4.4}{Konstruktoren}{section.4}
-\BOOKMARK [2][-]{subsection.4.5}{verschachtelte Klassen}{section.4}
-\BOOKMARK [2][-]{subsection.4.6}{Abstraktion}{section.4}
-\BOOKMARK [2][-]{subsection.4.7}{Overriding}{section.4}
-\BOOKMARK [2][-]{subsection.4.8}{Companion Objekte}{section.4}
-\BOOKMARK [2][-]{subsection.4.9}{Komposition}{section.4}
-\BOOKMARK [2][-]{subsection.4.10}{Dekomposition}{section.4}
-\BOOKMARK [2][-]{subsection.4.11}{Gleichheit von Objekten}{section.4}
-\BOOKMARK [2][-]{subsection.4.12}{Case-Klassen}{section.4}
-\BOOKMARK [2][-]{subsection.4.13}{Pattern Matching}{section.4}
-\BOOKMARK [2][-]{subsection.4.14}{traits}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{Klassenimport}{section.4}
+\BOOKMARK [2][-]{subsection.4.3}{Klassenhierarchie}{section.4}
+\BOOKMARK [2][-]{subsection.4.4}{Overriding}{section.4}
+\BOOKMARK [2][-]{subsection.4.5}{Abstraktion}{section.4}
+\BOOKMARK [2][-]{subsection.4.6}{Companion Objekte}{section.4}
+\BOOKMARK [2][-]{subsection.4.7}{Komposition}{section.4}
+\BOOKMARK [2][-]{subsection.4.8}{Dekomposition}{section.4}
+\BOOKMARK [2][-]{subsection.4.9}{Case-Klassen}{section.4}
+\BOOKMARK [2][-]{subsection.4.10}{Pattern Matching}{section.4}
+\BOOKMARK [2][-]{subsection.4.11}{traits}{section.4}
 \BOOKMARK [1][-]{section.5}{Generische Typen und Methoden}{}
 \BOOKMARK [2][-]{subsection.5.1}{Annotationen Varianz}{section.5}
 \BOOKMARK [2][-]{subsection.5.2}{Tuples}{section.5}
@@ -75,3 +72,4 @@
 \BOOKMARK [2][-]{subsection.13.1}{Tempror\344res f\374r DA}{section.13}
 \BOOKMARK [3][-]{subsubsection.13.1.1}{Statische versus Dynamsich typisierte Sprachen}{subsection.13.1}
 \BOOKMARK [3][-]{subsubsection.13.1.2}{Typinferenz}{subsection.13.1}
+\BOOKMARK [1][-]{section.14}{Sachen f\374r MT}{}
