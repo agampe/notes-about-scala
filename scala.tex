@@ -755,6 +755,18 @@ Fkt. mit callback Fkt. haben folgende Syntax:
 \end{itemize}
 
 
+\subsection{Overriding}
+\begin{itemize}
+  \item muss man dann hinschreiben, wenn abgeleitete Klassen Methoden, Felderm
+  Variablen usw. von ihren Elternklassen überschreiben wollen
+  \item überschreibt man etwas, ohne keyword \itbf{override} zu verwenden
+  gibts einen Fehler $\Rightarrow$ potentielle Fehler werden dadurch
+  abgefangen
+  \item Sachen, die als final deklariert sind, kann man nicht 
+  \itbf{overriden}
+\end{itemize}
+
+
 \subsection{Abstraktion}
 \begin{itemize}
   \item eine wichtige Aufgabe von Komponentensystemen ist, wie man von den
@@ -764,13 +776,7 @@ Fkt. mit callback Fkt. haben folgende Syntax:
     \item \textit{Parametrisierung} (typisch Funktional)
     \item \textit{abstract members} (typisch objekt-orientiert)
   \end{enumerate}
-\end{itemize}
 
-
-\ulbf{funktionale Abstraktion}
-
-
-\begin{itemize}
   \item die folgende Klasse \texttt{GenCell} ist generisch
   
   \lstinputlisting[label=src:gencell.scala]{beispiele/gencell.scala}
@@ -798,18 +804,6 @@ Fkt. mit callback Fkt. haben folgende Syntax:
     \item - $\ldots$ vor einem Parameter sagt aus, dass der Konstruktor
     \itbf{contravariant} ist
   \end{itemize}
-\end{itemize}
-
-
-\subsection{Overriding}
-\begin{itemize}
-  \item muss man dann hinschreiben, wenn abgeleitete Klassen Methoden, Felderm
-  Variablen usw. von ihren Elternklassen überschreiben wollen
-  \item überschreibt man etwas, ohne keyword \itbf{override} zu verwenden
-  gibts einen Fehler $\Rightarrow$ potentielle Fehler werden dadurch
-  abgefangen
-  \item Sachen, die als final deklariert sind, kann man nicht 
-  \itbf{overriden}
 \end{itemize}
 
 
