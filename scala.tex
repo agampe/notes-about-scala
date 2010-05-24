@@ -158,6 +158,9 @@ Günther veröffentlich.)}
   es wird anders definiert
   \item \textbf{Klassen mit Argumenten}: Argumente dienen als
   Konstruktoren für die Klasse
+  
+    \lstinputlisting[label=src:klassen_constructor.scala]{beispiele/klassen_constructor.scala}
+
   \item Scala-Objekt ist Instanz einer Klasse \und kann deswegen als
   Parameter von Methoden agieren kann
   \item Klassen, Objekte \und \itbf{traits}\footnote{um es in Java-Sprache
@@ -209,6 +212,8 @@ Günther veröffentlich.)}
   \item gewöhnlicher Java-Code ist kein valider Scala-Code, aber wenn der
   Java-Code einmal kompiliert wurde, dann kann er vom Scala-Code verwendet
   werden
+  \item Scala behandelt das auftauchen von Bezeichnern zwischen zwei
+  Ausdrücken als Methodenaufruf
   \item Scala läuft wie Java auf derselben JVM \und sie teilen sich deshalb
   den gleichen Garbage-Collector
   \begin{itemize}
@@ -236,6 +241,8 @@ Günther veröffentlich.)}
     \item via \itbf{Typparameter} (Nonvariant, Covariant, Contravariant)
     \item obere \und untere Schranken
   \end{itemize}
+  \item Scala erlaubt die Definition von parameterlosen Methoden \und jedesmal
+  wird so eine Funktion aufgerufen, wenn dessen Name verwendet wird
   \item FP Eigenschaften: \textit{Higher-order functions}; 
   \textit{Function closure support}; Rekursion als \textit{flow control}; 
   \textit{pure Funktionen} $\Rightarrow$ keine 
@@ -272,6 +279,28 @@ Günther veröffentlich.)}
   
   der \textit{left-arrow} Operator wird eben Generator genannt, der er die
   einzelnen Elemente aus der Collection generiert
+  \item der $=>$ Operator gibt an, dass aktuelle Argumente für diesen Parameter
+  unausgewertet übergeben werden.
+    
+  die Argumente einer solchen Funktion werden jedesmal ausgewertet, wenn der
+  formale Parameter erwähnt wird
+  
+    \lstinputlisting[label=src:unausgewertete_parameter_uebergabe.scala]{beispiele/unausgewertete_parameter_uebergabe.scala}
+  \item die Behandlung von Variablenzugriffen als Methodenaufrufen ermögicht
+  es in Scala \textbf{properties} zu definieren. Im folgenden Beispiel wird
+  die Eigenschaft \textit{degree} definiert, welche nur einen Wert entspricht,
+  der größer \oder gleich -273 ist
+  
+  \lstinputlisting[label=src:properties.scala]{beispiele/properties.scala}
+  \item für jede Variable \textbf{var} \textit{x: T} definiert Scala
+  die folgenden \textit{setter} und \textit{getter} Methoden:
+  
+  \lstinputlisting[label=src:getter_setter.scala]{beispiele/getter_setter.scala}
+  
+  diese Methoden referenzieren und updaten die entsprechende Speicherzelle für
+  die Variable, welche nicht direkt durch Scala-Programme beeinflussbar ist
+
+
 \end{itemize}
 
 
@@ -330,62 +359,6 @@ Sachen gewährleistet:
 \begin{itemize}
   \item da Scala ja auf der JVM läuft, unterstützt auch die ganzen dafür
   entwickelten Optimierungsmethoden (Profilers, verteilter Cache, Clustering)
-\end{itemize}
-
-
-\subsection{Uniformes Objektmodel}
-$\Rightarrow$ d.h. jeder Wert ist ein Objekt \und jede Operation ist ein
-Methodenaufruf
-
-
-\begin{itemize}
-  \item Mutterklasse aller Scala-Klassen ist \texttt{Scala.Any}
-  \item am untersten Ende der Scala-Typen steht \texttt{scala.Null}
-  \und \texttt{scala-Nothing}
-  \item \texttt{scala.Null} ist ein \textit{subtype} von allen Referenztypen
-  
-  $\Rightarrow$ einzige Instanz ist die \textbf{null} Referenz
-  \item \texttt{scala.Nothing} ist \textit{subtypen} von jeden anderen Typen
-  
-  $\Rightarrow$ von diesen Typen existieren keine Instanzen
-  \item Scala behandelt das auftauchen von Bezeichnern zwischen zwei
-  ausdrücken als Methodenaufruf
-  \item Scala erlaubt die Definition von parameterlosen Methoden \und jedesmal
-  wird so eine Funktion aufgerufen, wenn dessen Name verwendet wird
-  \item man kann auch abstrakte Klassenvariablen anlegen, ohne dass man den
-  \textit{modifier} \textbf{abstract} davor schreiben muss
-  \item In Scala folgen Konstruktor-Parameter den Klassennamen
-  \lstinputlisting[label=src:klassen_constructor.scala]{beispiele/klassen_constructor.scala}
-  \item Scala braucht den \textbf{override} \textit{modifier}, wenn konkrete
-  Methoden einer geerbten Methode überschrieben werden sollen (sollte man eine
-  Methode in einer Subklasse ohne den \textit{override} überschreiben, so meckert
-  der Compiler, sollte man in einer Oberklasse die Parameteranzahl einer Funktion
-  ändern, welche in einer geerbten Klasse noch mit der vorherigen Parameterzahl
-  besteht, so macht der Compiler aus dieser eventuell gewollt überschriebenden
-  Methode einfach ein überladen)
-  \item der $=>$ Operator gibt an, dass aktuelle Argumente für diesen Parameter
-  unausgewertet übergeben werden.
-    
-  die Argumente einer solchen Funktion werden jedesmal ausgewertet, wenn der
-  formale Parameter erwähnt wird
-  
-    \lstinputlisting[label=src:unausgewertete_parameter_uebergabe.scala]{beispiele/unausgewertete_parameter_uebergabe.scala}
-
-  \item für jede Variable \textbf{var} \textit{x: T} definiert Scala
-  die folgenden \textit{setter} und \textit{getter} Methoden:
-  
-  \lstinputlisting[label=src:getter_setter.scala]{beispiele/getter_setter.scala}
-  
-  diese Methoden referenzieren und updaten die entsprechende Speicherzelle für
-  die Variable, welche nicht direkt durch Scala-Programme beeinflussbar ist
-  
-  \item die Behandlung von Variablenzugriffen als Methodenaufrufen ermögicht
-  es in Scala \textbf{properties} zu definieren. Im folgenden Beispiel wird
-  die Eigenschaft \textit{degree} definiert, welche nur einen Wert entspricht,
-  der größer \oder gleich -273 ist
-  
-  \lstinputlisting[label=src:properties.scala]{beispiele/properties.scala}
-  
 \end{itemize}
 
 
@@ -918,6 +891,15 @@ keine besondere Notation für die Elemente der Aufzählung nötig
   \texttt{AnyVal} \und \texttt{AnyRef}
   \item \texttt{AnyVal}  basiert auf \textit{value classes}, also
   \textbf{boolean, byte, short, char, int, long, float, double}
+  \item Mutterklasse aller Scala-Klassen ist \texttt{Scala.Any}
+  \item am untersten Ende der Scala-Typen steht \texttt{scala.Null}
+  \und \texttt{scala-Nothing}
+  \item \texttt{scala.Null} ist ein \textit{subtype} von allen Referenztypen
+  
+  $\Rightarrow$ einzige Instanz ist die \textbf{null} Referenz
+  \item \texttt{scala.Nothing} ist \textit{subtypen} von jeden anderen Typen
+  
+  $\Rightarrow$ von diesen Typen existieren keine Instanzen
   \item wenn man sich an die Namenskonventionen hält, dann sind
   die Scala-Repräsentanten der Primitiven Datentypen der JVM:
   \begin{itemize}
