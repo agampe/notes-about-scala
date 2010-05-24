@@ -6,9 +6,8 @@
 \BOOKMARK [2][-]{subsection.2.3}{Varablendeklarationen}{section.2}
 \BOOKMARK [2][-]{subsection.2.4}{if/else und while}{section.2}
 \BOOKMARK [2][-]{subsection.2.5}{for-Schleife}{section.2}
-\BOOKMARK [2][-]{subsection.2.6}{throw und try/catch/finally}{section.2}
-\BOOKMARK [2][-]{subsection.2.7}{Kommentare}{section.2}
-\BOOKMARK [2][-]{subsection.2.8}{Enumerations}{section.2}
+\BOOKMARK [2][-]{subsection.2.6}{try-catch, throw und finally}{section.2}
+\BOOKMARK [2][-]{subsection.2.7}{Enumerations}{section.2}
 \BOOKMARK [1][-]{section.3}{Unsortiert}{}
 \BOOKMARK [2][-]{subsection.3.1}{Alles ist ein Objekt}{section.3}
 \BOOKMARK [2][-]{subsection.3.2}{Anonyme Funktionen}{section.3}

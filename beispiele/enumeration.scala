@@ -1,14 +1,14 @@
 object Breed extends Enumeration {
-  val doberman = Value("Doberman Pinscher")
-  val yorkie = Value("Yorkshire Terrier")
-  val scottie = Value("Scottish Terrier")
-  val dane = Value("Great Dane")
-  val portie = Value("Portuguese Water Dog")
+  val moulder = Value("Master Moulders")
+  val pestilens = Value("Biological Weapon")
+  val eshin = Value("Assassins")
+  val skyre = Value("Gatling Gun and Warpstone")
+  val khazad = Value("Great race in Warhammer")
 }
-// print a list of breeds and their IDs
-println("ID\tBreed")
+
 for (breed <- Breed) println(breed.id + "\t" + breed)
-// print a list of Terrier breeds
-println("\nJust Terriers:")
-Breed.filter(_.toString.endsWith("Terrier")).foreach(println)
+  
+// print just the molders :)
+println("\nJust Moulders:")
+Breed.filter(_.toString.endsWith("Moulders")).foreach(println)
 
