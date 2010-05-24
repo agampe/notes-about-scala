@@ -413,13 +413,15 @@ Sachen gewährleistet:
 \subsection{Varablendeklarationen}
 \begin{itemize}
   \item werde wie Methoden definiert beginne aber mit einen der folgenden
-  \textit{keywords}: \texttt{val, var} \oder \texttt{lazy val}
-  \item mit \texttt{var} deklarierte Variablen können im Programmablauf
-  ihren Wert ändern ähnlich wie es auch die Variablen in Java können
-  \item mit \texttt{val} deklarierte Variablen werden erst dann ausgewertet,
-  wenn der Block betreten wurde, in der diese Variable definiert wurde
-  \item \texttt{lazy val} wird erst dann zugewiesen, wenn die Variable auch
-  benutzt wird
+  \textit{keywords}:
+  
+  \begin{Beschreibungfett}[lazy val]
+    \item [var] können ihren Wert $\Delta$ (genauso wie Variablen in Java)
+    \item [val] werden erst dann ausgewertet, wenn wenn der Block betreten
+    wurde, in der die Variable definiert wurde
+    \item [lazy val] wird erst dann zugewiesen, wenn die Variable
+    verwendet wird 
+  \end{Beschreibungfett}  
 \end{itemize}
 
 
