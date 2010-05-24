@@ -1032,8 +1032,9 @@ von Objekten via Pattern-Matching
 \begin{itemize}
   \item List[T] stellen eine verkettete Liste vom Typ T dar, d.h. ist eine
   sequentielle Liste welche Javas primitve Datentypen beinhaltet 
-  (\texttt{Int, Float, Double}), da sich um \textbf{boxing} (also die
-  Umwandlung von primitiven Datentypen in Objekten) kümmert
+  (\texttt{Int, Float, Double}), da sich um 
+  \textbf{boxing}\footnote{also Umwandlung von primitiven Datentypen in
+  Objekten} kümmert
   \item \textbf{Listen-Konstruktoren}: \texttt{Nil} ist Repräsentant für
   eine leere Liste, \texttt{::} (cons genannt) \uline{z.B.} 
   \texttt{x :: xs}, d.h. ist eine Liste, bei der das erste Element \texttt{x}
@@ -1043,25 +1044,19 @@ von Objekten via Pattern-Matching
   
   $\Rightarrow$ das letzte Element einer \enquote{cons} muss immer einer
   Liste sein (mit \texttt{Nil} drücken wir die leere Liste aus)
-  \item Listen sind \textit{homogen}, d.h. innerhalb einer Liste müssen
-  alle Elemente vom selben Typ sein
+  \item \textbf{Listen sind homogen}\footnote{d.h. innerhalb einer Liste müssen
+  alle Elemente vom selben Typ sein}
   
   \lstinputlisting[label=src:listen_1.scala]{beispiele/listen_1.scala}
-
-  \item Liste mit verschiedenen Typen erstellen: Da nehmen wir eine
-  \texttt{List} mit der \texttt{apply}-Methode (welche wie folgt definiert
-  ist: \texttt{def apply[T](param: T*): List[T]})
   
-  \lstinputlisting[label=src:list_arbitrary.scala]{beispiele/list_arbitrary.scala}
-  
-  \item angenommen wir wollen an eine beliebige Liste ein Item dranhängen:
+  \item \textbf{Item an Liste dranhängen}:
   
   \lstinputlisting[label=src:collection_append.scala]{beispiele/collection_append.scala}
   
   die alte Variable x bleibt unverändert und an die neue Liste mit den Wert
   99 als head wird einfach die alte Liste x drangehangen $\Rightarrow$ 
   diese Operation läuft in O(1)
-  \item Listen mergen geht mit den \texttt{:::}-Operator:
+  \item \textbf{Listen mergen}:\texttt{:::}-Operator:
   
   \lstinputlisting[label=src:collection_mergen.scala]{beispiele/collection_mergen.scala}
   

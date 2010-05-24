@@ -31,12 +31,11 @@
 \BOOKMARK [1][-]{section.5}{Generische Typen und Methoden}{}
 \BOOKMARK [2][-]{subsection.5.1}{Tuples}{section.5}
 \BOOKMARK [1][-]{section.6}{Listen}{}
-\BOOKMARK [2][-]{subsection.6.1}{Scala Listen, Tupel and Map-Klassen}{section.6}
-\BOOKMARK [2][-]{subsection.6.2}{List[T]}{section.6}
-\BOOKMARK [2][-]{subsection.6.3}{Transformation}{section.6}
-\BOOKMARK [2][-]{subsection.6.4}{Tupel}{section.6}
-\BOOKMARK [2][-]{subsection.6.5}{Map[K,V]}{section.6}
-\BOOKMARK [2][-]{subsection.6.6}{Option[T]}{section.6}
+\BOOKMARK [2][-]{subsection.6.1}{List[T]}{section.6}
+\BOOKMARK [2][-]{subsection.6.2}{Transformation}{section.6}
+\BOOKMARK [2][-]{subsection.6.3}{Tupel}{section.6}
+\BOOKMARK [2][-]{subsection.6.4}{Map[K,V]}{section.6}
+\BOOKMARK [2][-]{subsection.6.5}{Option[T]}{section.6}
 \BOOKMARK [1][-]{section.7}{Spa\337 mit Funktionen}{}
 \BOOKMARK [2][-]{subsection.7.1}{Partielle Anwendungen und Funktionen}{section.7}
 \BOOKMARK [2][-]{subsection.7.2}{Funktionen und Typparameter}{section.7}
