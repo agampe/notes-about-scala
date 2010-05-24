@@ -48,8 +48,13 @@ Günther veröffentlich.)}
 
 \section{Einführung}
 \begin{itemize}
-  \item \textbf{Kompilierung}: \texttt{scalac}\footnote{Resultat sind JVM Klassen-Datein, welche man in JARs packen kann, hierbei wird jedoch class, trait \oder object-Definition verlangt} bzw. \texttt{fsc}\footnote{schnellere Kompilierung}
-  \item \textbf{Ausführung}:\footnote{Programm wird kompiliert \und danach gleich ausgeführt} \texttt{scala}
+  \item \textbf{Kompilierung}: \texttt{scalac}\footnote{Resultat sind JVM
+  Klassen-Datein, welche man in JARs packen kann, hierbei wird jedoch class,
+  trait \oder object-Definition verlangt} bzw. 
+  \texttt{fsc}\footnote{schnellere Kompilierung}
+  \item \textbf{Ausführung}:\footnote{Programm wird kompiliert \und danach
+  gleich ausgeführt} \texttt{scala}
+  \item \textbf{Interpreter}: nur \texttt{scala} in Konsole eingeben
 \end{itemize}
 
 
@@ -65,7 +70,8 @@ Günther veröffentlich.)}
   
   \lstinputlisting[label=src:numbers.scala]{beispiele/numbers.scala}
   
-  \item ein Programm, dass ein String in Int parsed und dabei alle Zahlen der Eingabe aufsummiert:
+  \item ein Programm, dass ein String in Int parsed und dabei alle Zahlen 
+  der Eingabe aufsummiert:
   
   \lstinputlisting[label=src:input_parsing.scala]{beispiele/input_parsing.scala}
   
@@ -301,6 +307,12 @@ Günther veröffentlich.)}
   die Variable, welche nicht direkt durch Scala-Programme beeinflussbar ist
   \item Kommentare:
 \lstinputlisting[label=src:comments.scala]{beispiele/comments.scala}
+  \item \textbf{def} wird zur Festlegung von Funktionen verwendet
+  \item \textbf{Array Typen} werden Array[T] geschrieben \und 
+  \textbf{Array-Zugriffe} werden mit a(i) statt a[i] geschrieben
+  \item Scala unterscheidet nicht zwischen Identifier \und Operatorennamen,
+  d.h. \texttt{xs filter (pivot $>$)} ist äquivalent zu 
+  \texttt{xs.filter(pivot $>$)}
 
 
 \end{itemize}
@@ -419,11 +431,11 @@ Sachen gewährleistet:
   
   \begin{Beschreibungfett}[lazy val]
     \item [var] können ihren Wert $\Delta$ (genauso wie Variablen in Java)
-    \item [val] werden erst dann ausgewertet, wenn wenn der Block betreten
-    wurde, in der die Variable definiert wurde
+    \item [val] definiert nur Werte $\Rightarrow$ \textit{read only}
     \item [lazy val] wird erst dann zugewiesen, wenn die Variable
     verwendet wird 
   \end{Beschreibungfett}  
+
 \end{itemize}
 
 
@@ -479,81 +491,6 @@ keine besondere Notation für die Elemente der Aufzählung nötig
 
 \lstinputlisting[label=src:enumeration.scala]{beispiele/enumeration.scala}
 \pagebreak
-
-
-\section{Unsortiert}
-\lstinputlisting[label=src:hello_world.scala]{beispiele/hello_world.scala}
-
-
-\begin{itemize}
-  \item besteht aus eine main-Methode \und mit args werden jeweils 
-  Kommandozeilenparameter als ein Array von Strings entgegengenommen
-  \item main-Methode ist hier eine Prozedur
-  \item \textbf{object}-Deklaration enthält eine Main-Methode $\Rightarrow$ 
-  \textit{Singleton object}
-  \item statische Member existieren in Scala nicht
-  \item Scala interagiert mit Java \und es werden alle Klassen von
-  \item Typ Any: ist der Super-Typ von allen anderen Typen \und ist etwas
-  genereller als Javas Objekttyp
-  \item \textbf{def} wird zur Festlegung von Funktionen verwendet
-  \item \textbf{var} wird zur Festlegung von Variablen verwendet
-  \item \textbf{val} definiert nur Werte (\textit{read only})
-  \item \textbf{Array Typen} werden Array[T] geschrieben \und \textbf{Array-Zugriffe} werden
-  mit a(i) statt a[i] geschrieben
-  \item Scala unterscheidet nicht zwischen Identifier \und Operatorennamen,
-  d.h. \texttt{xs filter (pivot $>$)} ist äquivalent zu 
-  \texttt{xs.filter(pivot $>$)}
-  \item alle Funktionen geben in Scala irgendwas zurück, aber der Wert
-  \texttt{value ()} wird auf als \textbf{unit} bezeichnet
-  \item der Rückgabewert einer Funktion ist per Def. die letzte Anweisung
-  $\Rightarrow$ es muss kein \textbf{return} angegeben werden
-  \item per \texttt{scala} kann man in der Konsole einen Interpreter starten
-  \item Klassen sind ähnlich wie Java, nur können Klassen in Scala Argumente 
-  haben
-  \item die Argumente einer Klasse kann man sich einfach wie ein Konstruktor
-  vorstellen, welche bei Anlegung einer Instanz immer mit Werten angegeben 
-  werden muss
-  
-  \lstinputlisting[label=src:class.scala]{beispiele/class.scala}
-  
-  \item in diesem Beispiel ist kein return-Wert angegeben \und dies macht
-  für gewöhnlich der Compiler, aber manchmal schimpft er auch herum, sobald
-  der Typ mal nicht zu bestimmen ist
-  
-\end{itemize}
-
-
-\subsection{Alles ist ein Objekt}
-\begin{itemize}
-  \item alles ist ein Objekt, d.h. sowohl Zahlen als auch Funktionen
-\end{itemize}
-
-
-\ulbf{Funktionen}
-
-
-\begin{itemize}
-  \item Funktionen sind ebenfalls Objekte \und dies ermöglicht funktionales
-  Programmierung, d.h. Funktionen als Argumente übergeben, Funktionen in
-  Variablen speichern \und Funktion als Rückgabewerte von anderen Funktionen
-  \item Funktionen mit call-back Funktion haben folgende Syntax: 
-  \textsc{() =$>$ Unit} und ist eine Funktion, die keine Parameter hat \und 
-  kein return-Wert
-  
-  \lstinputlisting[label=src:callback.scala]{beispiele/callback.scala}
-\end{itemize}
-
-
-\subsection{Anonyme Funktionen}
-\begin{itemize}
-  \item ist blöd, wenn man Funktionen einen Namen geben muss, wenn man sie
-  nur einmal verwenden
-  \item ausweg sind anonyme Funktionen
-  \item die Anwesenheit von anonymen Funktion wird durch die Syntax:
-  \textsc{=$>$} gemacht
-  
-  \lstinputlisting[label=src:callback_anonymous.scala]{beispiele/callback_anonymous.scala}
-\end{itemize}
 
 
 \section{Ausdrücke und einfache Funktionen}
@@ -622,7 +559,7 @@ keine besondere Notation für die Elemente der Aufzählung nötig
 \end{itemize}
 
 
-\subsection{Parameter}
+\subsubsection{Parameter}
 \begin{itemize}
   \item mit \textbf{def} kann man auch Funktionen definieren
   
@@ -645,6 +582,26 @@ keine besondere Notation für die Elemente der Aufzählung nötig
   
   \lstinputlisting[label=src:vergleich_call_by_value_call_by_name_2.scala]{beispiele/vergleich_call_by_value_call_by_name_2.scala}
   
+\end{itemize}
+
+
+\subsubsection{Callback}
+Funktionen mit call-back Funktion haben folgende Syntax: 
+  \textsc{() =$>$ Unit} und ist eine Funktion, die keine Parameter hat \und 
+  kein return-Wert
+  
+  \lstinputlisting[label=src:callback.scala]{beispiele/callback.scala}
+
+
+\subsubsection{Anonyme Funktionen}
+\begin{itemize}
+  \item ist blöd, wenn man Funktionen einen Namen geben muss, wenn man sie
+  nur einmal verwenden
+  \item ausweg sind anonyme Funktionen
+  \item die Anwesenheit von anonymen Funktion wird durch die Syntax:
+  \textsc{=$>$} gemacht
+  
+  \lstinputlisting[label=src:callback_anonymous.scala]{beispiele/callback_anonymous.scala}
 \end{itemize}
 
 

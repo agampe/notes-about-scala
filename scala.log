@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.2.9)  24 MAY 2010 09:42
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.2.9)  24 MAY 2010 10:51
 entering extended mode
  %&-line parsing enabled.
 **\nonstopmode \input{"/home/helex/proggen/scala/scala.tex"}
@@ -800,11 +800,11 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write6
 \openout6 = `scala.toc'.
 
- [3])
+ [2] [3])
 LaTeX Font Info:    Try loading font information for OMS+ppl on input line 51.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omsppl.fd
@@ -815,7 +815,7 @@ LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 51.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 60.
+nput line 65.
 
 (/home/helex/proggen/scala/beispiele/hello_helex.scala)
 (/home/helex/proggen/scala/beispiele/numbers.scala
@@ -829,9 +829,9 @@ LaTeX Font Info:    Font shape `OML/ppl/m/n' in size <10.95> not available
 )
 (/home/helex/proggen/scala/beispiele/input_parsing.scala [4])
 LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 73.
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 79.
  [5]
-Overfull \hbox (1.48341pt too wide) in paragraph at lines 129--132
+Overfull \hbox (1.48341pt too wide) in paragraph at lines 135--138
 []\OT1/ppl/m/n/10.95 skalierbare Un-terst[]utzung f[]ur Kom-po-nen-ten kann nur
  er-reicht wer-den, wenn OOP
  []
@@ -839,9 +839,9 @@ Overfull \hbox (1.48341pt too wide) in paragraph at lines 129--132
 (/home/helex/proggen/scala/beispiele/klassen_constructor.scala) [6]
 (/home/helex/proggen/scala/beispiele/call_by_name.scala [7]) [8]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 238.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 244.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <9> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 238.
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 244.
  [9]
 (/home/helex/proggen/scala/beispiele/generators.scala)
 (/home/helex/proggen/scala/beispiele/unausgewertete_parameter_uebergabe.scala)
@@ -850,213 +850,319 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <9> not available
 (/home/helex/proggen/scala/beispiele/comments.scala [10]) [11]
 (/home/helex/proggen/scala/beispiele/array.scala) [12]
 (/home/helex/proggen/scala/beispiele/refining_functions.scala)
-Overfull \hbox (2.29343pt too wide) in paragraph at lines 432--436
+Overfull \hbox (2.29343pt too wide) in paragraph at lines 444--448
 []\OT1/ppl/m/n/10.95 if/else wird eher sel-ten ver-wen-det u. ver-hal-ten sich 
 eher wie der Ternary-Operator;
  []
 
-(/home/helex/proggen/scala/beispiele/if_else_ternary_while.scala)
-(/home/helex/proggen/scala/beispiele/for_easy.scala) [13]
+(/home/helex/proggen/scala/beispiele/if_else_ternary_while.scala) [13]
+(/home/helex/proggen/scala/beispiele/for_easy.scala)
 (/home/helex/proggen/scala/beispiele/for_middle.scala)
 (/home/helex/proggen/scala/beispiele/for_guards.scala)
 (/home/helex/proggen/scala/beispiele/throw_try_finally.scala)
 (/home/helex/proggen/scala/beispiele/try_finally.scala)
 (/home/helex/proggen/scala/beispiele/enumeration.scala [14]) [15]
-(/home/helex/proggen/scala/beispiele/hello_world.scala)
-(/home/helex/proggen/scala/beispiele/class.scala [16])
-(/home/helex/proggen/scala/beispiele/callback.scala)
-(/home/helex/proggen/scala/beispiele/callback_anonymous.scala [17])
-Overfull \hbox (1.1003pt too wide) in paragraph at lines 581--582
+Overfull \hbox (1.1003pt too wide) in paragraph at lines 518--519
 []\OT1/ppl/m/n/10.95 Methoden mit |   [] Pa-ra-me-ter k[]onnen eben-falls oh-ne
  Klam-mern auf-ge-ru-fen wer-
  []
 
 (/home/helex/proggen/scala/beispiele/method_invocation.scala)
-(/home/helex/proggen/scala/beispiele/method_type_parameter.scala) [18]
-(/home/helex/proggen/scala/beispiele/class_udate.scala)
+(/home/helex/proggen/scala/beispiele/method_type_parameter.scala)
+(/home/helex/proggen/scala/beispiele/class_udate.scala [16])
 (/home/helex/proggen/scala/beispiele/nested_functions.scala)
 (/home/helex/proggen/scala/beispiele/parameter_passing_nested_functions.scala)
-[19] (/home/helex/proggen/scala/beispiele/def.scala)
+(/home/helex/proggen/scala/beispiele/def.scala) [17]
 (/home/helex/proggen/scala/beispiele/vergleich_call_by_value_call_by_name.scala
 )
 (/home/helex/proggen/scala/beispiele/vergleich_call_by_value_call_by_name_2.sca
-la) (/home/helex/proggen/scala/beispiele/gcd.scala) [20]
-(/home/helex/proggen/scala/beispiele/factorial.scala) [21]
+la) (/home/helex/proggen/scala/beispiele/callback.scala)
+(/home/helex/proggen/scala/beispiele/callback_anonymous.scala [18])
+(/home/helex/proggen/scala/beispiele/gcd.scala)
+(/home/helex/proggen/scala/beispiele/factorial.scala) [19]
 (/home/helex/proggen/scala/beispiele/first_class_functions.scala)
 (/home/helex/proggen/scala/beispiele/method_declaration_1.scala)
 (/home/helex/proggen/scala/beispiele/method_declaration_2.scala)
 (/home/helex/proggen/scala/beispiele/method_declaration_3.scala)
-(/home/helex/proggen/scala/beispiele/method_declaration_4.scala) [22]
+(/home/helex/proggen/scala/beispiele/method_declaration_4.scala) [20]
 (/home/helex/proggen/scala/beispiele/method_declaration_5.scala)
 (/home/helex/proggen/scala/beispiele/method_declaration_6.scala)
 (/home/helex/proggen/scala/beispiele/anonyme_funktion_1.scala)
 (/home/helex/proggen/scala/beispiele/anonyme_funktion_2.scala)
 (/home/helex/proggen/scala/beispiele/currying.scala)
-(/home/helex/proggen/scala/beispiele/currying_1.scala) [23]
+(/home/helex/proggen/scala/beispiele/currying_1.scala) [21]
 (/home/helex/proggen/scala/beispiele/currying_2.scala)
-(/home/helex/proggen/scala/beispiele/currying_3.scala) [24]
+(/home/helex/proggen/scala/beispiele/currying_3.scala) [22]
 (/home/helex/proggen/scala/beispiele/rationale_zahlen.scala)
 (/home/helex/proggen/scala/beispiele/objekt_anlegen.scala)
 (/home/helex/proggen/scala/beispiele/vererbung.scala)
-(/home/helex/proggen/scala/beispiele/override.scala [25])
+(/home/helex/proggen/scala/beispiele/override.scala [23])
 (/home/helex/proggen/scala/beispiele/parameterlose_funktionen.scala)
-Overfull \hbox (0.26051pt too wide) in paragraph at lines 810--812
+Overfull \hbox (0.26051pt too wide) in paragraph at lines 767--769
 []\OT1/ppl/m/n/10.95 rechte Sei-te ei-nes \OT1/cmtt/m/n/10.95 values \OT1/ppl/m
 /n/10.95 wird aus-ge-wer-tet, so-bald das Ob-jekt an-ge-legt wur-
  []
 
 
-Overfull \hbox (4.9796pt too wide) in paragraph at lines 812--814
+Overfull \hbox (4.9796pt too wide) in paragraph at lines 769--771
 []\OT1/ppl/m/n/10.95 rechte Sie-te ei-ner pa-ra-me-ter-lo-sen Funk-ti-on wird j
 e-des-mal aus-ge-wer-tet, wenn
  []
 
 (/home/helex/proggen/scala/beispiele/abstrakte_klassen.scala)
 (/home/helex/proggen/scala/beispiele/implementierung_einer_abstrakten_klasse.sc
-ala) [26] (/home/helex/proggen/scala/beispiele/traits.scala)
+ala) [24] (/home/helex/proggen/scala/beispiele/traits.scala)
 (/home/helex/proggen/scala/beispiele/object.scala)
-Overfull \hbox (9.49919pt too wide) in paragraph at lines 854--856
+Overfull \hbox (9.49919pt too wide) in paragraph at lines 811--813
 []\OT1/ppl/m/n/10.95 jede Java-Klasse wird als gew[]ohn-li-che Scala-Klasse an-
 ge-se-hen u. je-des Java-Interface
  []
 
-[27] (/home/helex/proggen/scala/beispiele/import.scala)
-(/home/helex/proggen/scala/beispiele/constructors.scala) [28]
+[25] (/home/helex/proggen/scala/beispiele/import.scala)
+(/home/helex/proggen/scala/beispiele/constructors.scala) [26]
 (/home/helex/proggen/scala/beispiele/nested_classes.scala)
 (/home/helex/proggen/scala/beispiele/gencell.scala)
 (/home/helex/proggen/scala/beispiele/gencell_swap.scala)
-(/home/helex/proggen/scala/beispiele/gencell_swap_usage.scala) [29]
-(/home/helex/proggen/scala/beispiele/apply.scala) [30]
+(/home/helex/proggen/scala/beispiele/gencell_swap_usage.scala) [27]
+(/home/helex/proggen/scala/beispiele/apply.scala) [28]
 (/home/helex/proggen/scala/beispiele/unapply.scala)
 (/home/helex/proggen/scala/beispiele/abstract_list_iterator.scala)
 (/home/helex/proggen/scala/beispiele/iterators_for_mixin_class_composition.scal
-a) [31] (/home/helex/proggen/scala/beispiele/mixin_class_composition.scala)
-Overfull \hbox (2.91792pt too wide) in paragraph at lines 1035--1037
+a) [29] (/home/helex/proggen/scala/beispiele/mixin_class_composition.scala)
+Overfull \hbox (2.91792pt too wide) in paragraph at lines 992--994
 []\OT1/ppl/m/n/10.95 Scalas Ab-strak-ti-on kann als Ba-sis f[]ur Dienst-orienti
 ertes Komponenten-Model
  []
 
-(/home/helex/proggen/scala/beispiele/algebraic_calculator.scala) [32]
+(/home/helex/proggen/scala/beispiele/algebraic_calculator.scala) [30]
 (/home/helex/proggen/scala/beispiele/algebraic_calculator_case.scala)
 (/home/helex/proggen/scala/beispiele/algebraic_calculator_pattern_matching.scal
-a) [33] (/home/helex/proggen/scala/beispiele/case_class.scala)
-(/home/helex/proggen/scala/beispiele/case_class_one_more_example.scala [34])
-(/home/helex/proggen/scala/beispiele/match.scala [35]) [36]
-(/home/helex/proggen/scala/beispiele/trait_creation.scala [37])
+a) [31] (/home/helex/proggen/scala/beispiele/case_class.scala)
+(/home/helex/proggen/scala/beispiele/case_class_one_more_example.scala [32])
+(/home/helex/proggen/scala/beispiele/match.scala [33]) [34]
+(/home/helex/proggen/scala/beispiele/trait_creation.scala [35])
 (/home/helex/proggen/scala/beispiele/stack_integer.scala)
-(/home/helex/proggen/scala/beispiele/stack_generisch.scala [38])
+(/home/helex/proggen/scala/beispiele/stack_generisch.scala [36])
 (/home/helex/proggen/scala/beispiele/generische_funktionen.scala)
 (/home/helex/proggen/scala/beispiele/annotation_varianz.scala)
 (/home/helex/proggen/scala/beispiele/tuples.scala)
-(/home/helex/proggen/scala/beispiele/tupleator.scala) [39] [40]
+(/home/helex/proggen/scala/beispiele/tupleator.scala) [37] [38]
 (/home/helex/proggen/scala/beispiele/listen.scala)
 (/home/helex/proggen/scala/beispiele/collections.scala)
-(/home/helex/proggen/scala/beispiele/range.scala) [41]
+(/home/helex/proggen/scala/beispiele/range.scala) [39]
 (/home/helex/proggen/scala/beispiele/cons.scala)
 (/home/helex/proggen/scala/beispiele/listen_1.scala)
 (/home/helex/proggen/scala/beispiele/list_arbitrary.scala)
 (/home/helex/proggen/scala/beispiele/collection_append.scala)
 (/home/helex/proggen/scala/beispiele/collection_mergen.scala)
-(/home/helex/proggen/scala/beispiele/collection_ops.scala [42])
+(/home/helex/proggen/scala/beispiele/collection_ops.scala [40])
 (/home/helex/proggen/scala/beispiele/collection_universel.scala)
-Overfull \hbox (3.6404pt too wide) in paragraph at lines 1322--1326
+Overfull \hbox (3.6404pt too wide) in paragraph at lines 1279--1283
 \OT1/ppl/m/n/10.95 ti-on. Soll-te die Funk-ti-on, wel-che an \OT1/cmtt/m/n/10.9
 5 map []\OT1/ppl/m/n/10.95 uber-ge-ben wird, einen an-de-ren Typ zur[]uck-
  []
 
 (/home/helex/proggen/scala/beispiele/collection_transformation_map.scala)
 (/home/helex/proggen/scala/beispiele/collection_db_query.scala)
-(/home/helex/proggen/scala/beispiele/collection_sort.scala [43])
+(/home/helex/proggen/scala/beispiele/collection_sort.scala [41])
 (/home/helex/proggen/scala/beispiele/collection_sort_complex.scala)
-Overfull \hbox (1.43973pt too wide) in paragraph at lines 1343--1347
+Overfull \hbox (1.43973pt too wide) in paragraph at lines 1300--1304
 []\OT1/cmtt/m/n/10.95 reduceLeft\OT1/ppl/m/n/10.95 : Ope-ra-ti-on auf ad-ja-zen
 -ten Ele-men-te ei-ner Col-lec-ti-on durchf[]uhren, d.h.
  []
 
 (/home/helex/proggen/scala/beispiele/collection_reduce_left.scala)
 (/home/helex/proggen/scala/beispiele/collection_foldLeft.scala)
-(/home/helex/proggen/scala/beispiele/collection_nested.scala [44])
+(/home/helex/proggen/scala/beispiele/collection_nested.scala [42])
 (/home/helex/proggen/scala/beispiele/for_comprehension.scala)
 (/home/helex/proggen/scala/beispiele/for_comprehension_generell.scala)
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1376.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1333.
 
 
 (/home/helex/proggen/scala/beispiele/collection_for_comprehesion.scala)
-(/home/helex/proggen/scala/beispiele/tupel_example.scala [45])
+(/home/helex/proggen/scala/beispiele/tupel_example.scala [43])
 (/home/helex/proggen/scala/beispiele/tupel_creation.scala)
-(/home/helex/proggen/scala/beispiele/map_examples.scala) [46]
+(/home/helex/proggen/scala/beispiele/map_examples.scala) [44]
 (/home/helex/proggen/scala/beispiele/functions.scala)
-(/home/helex/proggen/scala/beispiele/function_as_parameter.scala) [47]
+(/home/helex/proggen/scala/beispiele/function_as_parameter.scala) [45]
 (/home/helex/proggen/scala/beispiele/partial_functions.scala)
 (/home/helex/proggen/scala/beispiele/partial_notation.scala)
 (/home/helex/proggen/scala/beispiele/partial_codeblocks.scala)
-Overfull \hbox (4.35252pt too wide) in paragraph at lines 1492--1494
+Overfull \hbox (4.35252pt too wide) in paragraph at lines 1449--1451
 []\OT1/ppl/m/n/10.95 Typparameter de-fi-nie-ren den Typ von Pa-ra-me-tern od. d
 en R[]uck-ga-be-wert der Funk-
  []
 
-(/home/helex/proggen/scala/beispiele/typparameter_functions.scala) [48]
+(/home/helex/proggen/scala/beispiele/typparameter_functions.scala) [46]
 (/home/helex/proggen/scala/beispiele/function_container.scala)
 (/home/helex/proggen/scala/beispiele/pattern_matching_fibonacci.scala)
 (/home/helex/proggen/scala/beispiele/matching_any_type.scala)
-(/home/helex/proggen/scala/beispiele/pattern_datatypes.scala [49])
+(/home/helex/proggen/scala/beispiele/pattern_datatypes.scala [47])
 (/home/helex/proggen/scala/beispiele/pattern_matching_case_class.scala)
 (/home/helex/proggen/scala/beispiele/pattern_matching_lists.scala)
-(/home/helex/proggen/scala/beispiele/pattern_matching_nested.scala [50])
-Overfull \hbox (52.80544pt too wide) in paragraph at lines 1552--1555
+(/home/helex/proggen/scala/beispiele/pattern_matching_nested.scala [48])
+Overfull \hbox (52.80544pt too wide) in paragraph at lines 1509--1512
 []\OT1/ppl/m/n/10.95 in Sca-la ist \OT1/cmtt/m/n/10.95 Array[T] \OT1/ppl/b/it/1
 0.95 in-va-ri-ant\OT1/ppl/m/n/10.95 , d.h. man kann nur \OT1/cmtt/m/n/10.95 Arr
 ay[Strin] \OT1/ppl/m/n/10.95 an \OT1/cmtt/m/n/10.95 foo(a: Array[String])
  []
 
 (/home/helex/proggen/scala/beispiele/covariant_parameter_types.scala)
-Overfull \hbox (19.52855pt too wide) in paragraph at lines 1573--1575
+Overfull \hbox (19.52855pt too wide) in paragraph at lines 1530--1532
 []\OT1/ppl/b/n/10.95 kovariant \OT1/ppl/m/n/10.95 hei^^Yt, dass der return-Wert
  von Funk-tio-nen in ab-ge-lei-te-ten Klas-sen ge[]andert
  []
 
-[51] [52] <bilder/typhierarchie.png, id=1714, 586.19pt x 576.1525pt>
+[49] [50] <bilder/typhierarchie.png, id=1707, 586.19pt x 576.1525pt>
 File: bilder/typhierarchie.png Graphic file (type png)
 
-<use bilder/typhierarchie.png> [53 </home/helex/proggen/scala/bilder/typhierarc
+<use bilder/typhierarchie.png> [51 </home/helex/proggen/scala/bilder/typhierarc
 hie.png>]
 (/home/helex/proggen/scala/beispiele/linearization_object_hierarchiy.scala)
-[54] [55] (/home/helex/proggen/scala/beispiele/fp_list_map.scala)
-(/home/helex/proggen/scala/beispiele/fp_list_map_value.scala) [56]
+[52] [53] (/home/helex/proggen/scala/beispiele/fp_list_map.scala)
+(/home/helex/proggen/scala/beispiele/fp_list_map_value.scala) [54]
 (/home/helex/proggen/scala/beispiele/factorial_recursive_and_tail_call.scala)
 (/home/helex/proggen/scala/beispiele/lists_fp.scala)
-(/home/helex/proggen/scala/beispiele/foreach.scala [57])
+(/home/helex/proggen/scala/beispiele/foreach.scala [55])
 (/home/helex/proggen/scala/beispiele/map.scala)
 (/home/helex/proggen/scala/beispiele/filter.scala)
-(/home/helex/proggen/scala/beispiele/folding_reducing.scala) [58]
+(/home/helex/proggen/scala/beispiele/folding_reducing.scala) [56]
 (/home/helex/proggen/scala/beispiele/partial_functions_easy.scala)
-Overfull \hbox (0.42108pt too wide) in paragraph at lines 1755--1757
+Overfull \hbox (0.42108pt too wide) in paragraph at lines 1712--1714
 []\OT1/ppl/m/n/10.95 stammt vom Ma-the-ma-ti-ker Has-kell Cur-ry u. trans-for-m
 iert ei-ne Funk-ti-on, die meh-
  []
 
 (/home/helex/proggen/scala/beispiele/curried_functions.scala)
-(/home/helex/proggen/scala/beispiele/implicit.scala [59])
-(/home/helex/proggen/scala/beispiele/lazy_vals.scala) [60] [61] [62]
+(/home/helex/proggen/scala/beispiele/implicit.scala [57])
+(/home/helex/proggen/scala/beispiele/lazy_vals.scala) [58] [59] [60]
 AED: lastpage setting LastPage (/home/helex/proggen/scala/scala.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 13015 strings out of 94101
- 197942 string characters out of 1165811
- 331450 words of memory out of 1500000
- 14307 multiletter control sequences out of 10000+50000
+ 13008 strings out of 94101
+ 197715 string characters out of 1165811
+ 331380 words of memory out of 1500000
+ 14292 multiletter control sequences out of 10000+50000
  32498 words of font info for 90 fonts, out of 1200000 for 2000
  637 hyphenation exceptions out of 8191
  43i,12n,45p,946b,1980s stack positions out of 5000i,500n,6000p,200000b,5000s
 pdfTeX warning (dest): name{Hfootnote.29} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.2.8} has been referenced but does not ex
+pdfTeX warning (dest): name{subsubsection.15.1.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.15.1.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.15.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.15} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.14.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.14.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.13.11} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.13.10} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.13.9} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.13.8} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.13.7} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.13.6} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.13.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.13.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.11.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.11.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.9.3} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.9.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.9.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.8.6} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.8.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.8.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.14} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.13} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.12} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.11} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.10} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.9} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.8} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.7} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.6} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.2.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.2.1} has been referenced but does n
+ot exist, replaced by a fixed one
 
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive
 /fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/bluesk
@@ -1069,9 +1175,9 @@ r/share/texmf-texlive/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-tex
 live/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texmf-texlive/fonts/type1
 /urw/palatino/uplr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/upl
 ri8a.pfb>
-Output written on scala.pdf (62 pages, 598349 bytes).
+Output written on scala.pdf (60 pages, 595311 bytes).
 PDF statistics:
- 2256 PDF objects out of 2487 (max. 8388607)
- 1352 named destinations out of 1440 (max. 131072)
- 694 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2261 PDF objects out of 2487 (max. 8388607)
+ 1366 named destinations out of 1440 (max. 131072)
+ 686 words of extra memory for PDF output out of 10000 (max. 10000000)
 
