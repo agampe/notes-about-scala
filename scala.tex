@@ -372,27 +372,12 @@ Sachen gewährleistet:
 
 \subsubsection{Klassenimport}
 \begin{itemize}
-  \item Scala-Bibos werden auf die folgende Art \und Weise
-  importiert:
+  \item Syntax:
   
   \lstinputlisting[label=src:import.scala]{beispiele/import.scala}
   
-  \item \textit{java.lang.package} importiert! (andere Pakete müssen dann explizit)
-  mit in das System eingebunden werden  
-  \item mehrere Klassen \oder Objekte können vom selben Paket importiert werden, indem
-  sie einfach in \textit{brackets} geschrieben werden
-  
-  \lstinputlisting[label=src:scala_mit_javaklassen.scala]
-  {beispiele/scala_mit_javaklassen.scala}
-  
-  \begin{itemize}
-    \item wegen Zeile 3 kann man die \textsc{getDateInstance} \und \textsc{LONG}
-    direkt nutzen
-    \item \textsc{now} erstellt eine Instanz von Javas Datumklasse
-    \item Zeile 9: Methoden mit einen Argument können in der infix-Syntax
-    geschrieben werden \und so ist obiger Ausdruck äquivalent zu
-    \textsc{df.format(now)}
-  \end{itemize}
+  \item mehrere Klassen \oder Objekte können vom selben Paket importiert werden, 
+  indem sie einfach in \textit{brackets} geschrieben werden
 \end{itemize}
 
 
