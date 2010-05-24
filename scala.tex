@@ -859,10 +859,7 @@ Klassen-Komposition
 
 
 \subsection{Dekomposition}
-$\Rightarrow$ erlaubt Dekomposition von Objekten durch Pattern-Matching
-
-
-\ulbf{Objekt-orientierte Dekomposition}
+von Objekten via Pattern-Matching
 
 
 \begin{itemize}
@@ -876,10 +873,8 @@ $\Rightarrow$ erlaubt Dekomposition von Objekten durch Pattern-Matching
   
   \begin{itemize}
     \item intern definierte Methoden müssen deswegen ebenfalls ungewollt
-    durch die ganze Struktur gelegt werden
-    \item durch diese Durchreichung wird es schwierig zu verstehen, was
-    die Methode überhaupt macht \und $\Delta$ sind ebenfalls schwierig
-    umusetzen
+    durch die ganze Struktur gelegt werden $\Rightarrow$ DRY wird
+    verletzt
   \end{itemize}
 \end{itemize}
 
@@ -888,15 +883,14 @@ $\Rightarrow$ erlaubt Dekomposition von Objekten durch Pattern-Matching
 
 
 \begin{itemize}
-  \item in einer funktionalen Sprache sind Datenstrukturen von ihren Operationen
-  getrennt  
+  \item in FP sind Datenstrukturen von ihren Operationen getrennt  
   \item während Datenstrukturen gewöhnlich durch algebraische Datenstrukturen
   definiert sind, benutzen Operationen auf solchen Datentypen 
   \itbf{pattern matching} als Grundprinzip der Dekomposition
   \item durch \itbf{pattern matching} kann man eine einzelne 
   \texttt{eval}-Funktion implementieren, ohne das künstliche Zusatzfunktion
-  aufzusetzen\footnote{without exposing artificial auxiliary functions} 
-  \item Klassen werden mit \textbf{case} getagt:
+  aufzusetzen
+  \item Klassen werden mit \textbf{case} \enquote{getagt}:
   
   \lstinputlisting[label=src:algebraic_calculator_case.scala]{beispiele/algebraic_calculator_case.scala}
   \item nun folgt die Implementierung der \texttt{eval}-Funktion nach dem
