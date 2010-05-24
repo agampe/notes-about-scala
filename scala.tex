@@ -530,15 +530,14 @@ keine besondere Notation für die Elemente der Aufzählung nötig
 \end{itemize}
 
 
-\subsubsection{Verschachtelte Parameter}
+\subsubsection{Verschachtelte Funktionen und Parameter}
 \begin{itemize}
   \item   \lstinputlisting[label=src:nested_functions.scala]{beispiele/nested_functions.scala}
   
   fact kann man nur innerhalb des Scopes von factorial aufrufen, sonst kommt
   es zu einem Compilerfehler.
   
-  Analog verhält es sich mit Parametern von v
-  \item weitergabe von Parametern von verschachtelten Funktionen:
+  \item weitergabe von Parametern innerhalb verschachtelten Funktionen:
   
   \lstinputlisting[label=src:parameter_passing_nested_functions.scala]{beispiele/parameter_passing_nested_functions.scala}  
 
@@ -547,26 +546,22 @@ keine besondere Notation für die Elemente der Aufzählung nötig
 
 \subsubsection{Parameter}
 \begin{itemize}
-  \item mit \textbf{def} kann man auch Funktionen definieren
-  
-  \lstinputlisting[label=src:def.scala]{beispiele/def.scala}
-  
   \item Funktionsparameter werden immer von Klammern eingeschlossen
-  \item \textbf{call-by-value} hat den Vorteil, dass es die wiederholte
-  Auswertung bon Argumenten verhindert
-  \item \textbf{call-by-name} hat den Vorteil, dass es die Parameter
-  nicht auswertet, sofern sie nicht in der Funktion verwendet werden
-  \item call-by-value ist effizienter als call-by-name, aber call-by-value
+  
+  \begin{Beschreibungfett}[call-by-value]
+    \item [call-by-value] Vorteil ist Vermeidung der wiederholten Auswertung 
+    von Argumenten
+    \item [call-by-name] hat den Vorteil, dass es die Parameter nicht 
+    auswertet, sofern sie nicht in der Funktion verwendet werden
+  \end{Beschreibungfett}
+  
+  call-by-value ist effizienter als call-by-name, aber call-by-value
   kann in $\infty$-loops geraten
-  
-  \lstinputlisting[label=src:vergleich_call_by_value_call_by_name.scala]{beispiele/vergleich_call_by_value_call_by_name.scala}
-  
-  \texttt{first(1, loop)} wird bei call-by-name auf 1 gemacht \und wirds
-  hingegen per call-by-value ausgwertet, so erhalten wir $\infty$-loop
+    
   \item Scala benutzt per Def. call-by-value, aber kann auf call-by-name
-  wechseln, sofern ein $=>$ vorangestellt wird
+  wechseln durch Voranstellung von $=>$:
   
-  \lstinputlisting[label=src:vergleich_call_by_value_call_by_name_2.scala]{beispiele/vergleich_call_by_value_call_by_name_2.scala}
+  \lstinputlisting[label=src:vergleich_call_by_value_call_by_name_2.scala]{beispiele/comparison_call_by_value_call_by_name.scala}
   
 \end{itemize}
 

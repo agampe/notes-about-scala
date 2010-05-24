@@ -1,21 +1,21 @@
-\contentsline {section}{\numberline {1}Einf\IeC {\"u}hrung}{2}{section.1}
-\contentsline {subsection}{\numberline {1.1}Einfache Programme}{2}{subsection.1.1}
-\contentsline {section}{\numberline {2}Eigenschaften zur Sprache}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}Paradigmen}{9}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Operationen sind Objekte}{10}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Varablendeklarationen}{11}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}if/else und while}{11}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}for-Schleife}{12}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}try-catch, throw und finally}{12}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Enumerations}{12}{subsection.2.7}
-\contentsline {section}{\numberline {3}Ausdr\IeC {\"u}cke und Funktionen}{14}{section.3}
-\contentsline {subsection}{\numberline {3.1}Funktionen}{14}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Verschachtelte Parameter}{14}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Parameter}{15}{subsubsection.3.1.2}
+\contentsline {section}{\numberline {1}Einf\IeC {\"u}hrung}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Einfache Programme}{3}{subsection.1.1}
+\contentsline {section}{\numberline {2}Eigenschaften zur Sprache}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Paradigmen}{10}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Operationen sind Objekte}{11}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Varablendeklarationen}{12}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}if/else und while}{12}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}for-Schleife}{13}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}try-catch, throw und finally}{13}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Enumerations}{13}{subsection.2.7}
+\contentsline {section}{\numberline {3}Ausdr\IeC {\"u}cke und Funktionen}{15}{section.3}
+\contentsline {subsection}{\numberline {3.1}Funktionen}{15}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Verschachtelte Funktionen und Parameter}{15}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Parameter}{16}{subsubsection.3.1.2}
 \contentsline {subsubsection}{\numberline {3.1.3}Callback}{16}{subsubsection.3.1.3}
 \contentsline {subsubsection}{\numberline {3.1.4}Anonyme Funktionen}{16}{subsubsection.3.1.4}
-\contentsline {subsection}{\numberline {3.2}Bedingte Ausdr\IeC {\"u}cke}{16}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Verschachtelte Funktionen}{16}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.2}Bedingte Ausdr\IeC {\"u}cke}{17}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Verschachtelte Funktionen}{17}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Schwanzrekursion}{17}{subsection.3.4}
 \contentsline {section}{\numberline {4}Erste-Klassen Funktionen}{18}{section.4}
 \contentsline {subsection}{\numberline {4.1}Deklaration von Funktionen}{18}{subsection.4.1}
