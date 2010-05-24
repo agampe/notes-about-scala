@@ -20,14 +20,14 @@ object CallByName extends Application{
   /*
     Delayed method
     Getting nano
-    Param:12
+    Count: 12
   */
   
   notDelayed(nano)
   /*
    Getting nano
    not delayed method
-   Param:5575172058663
+   Count: 12
   */
 
 }

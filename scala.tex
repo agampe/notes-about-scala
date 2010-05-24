@@ -113,6 +113,9 @@ Günther veröffentlich.)}
 
 \section{Eigenschaften zur Sprache}
 \begin{itemize}
+  \item Wofü Scala geeingnet ist:\textit{language ideal for today’s scalable,
+  distributed, component-based applications that support concurrency and
+  distribution}
   \item Programmiersprachen für Softwarekomponenten müssen \textbf{skalierbar}
   sein $\Rightarrow$ Konzentration bei Scala auf Abstraktion, Komposition
   und Dekomposition
@@ -189,6 +192,13 @@ Günther veröffentlich.)}
   \end{itemize}
   \item Scala kompiliert in normalen Java Bytecode
   \item Scala arbeitet gut mit Java \und .NET an
+  \item jede Java Klasse kann als eine normale Scala-Klasse verwendet werden
+  $\Rightarrow$ deswegen sind alle Java-Bibos auch direkt in Scala verwendbar
+  \item gewöhnlicher Java-Code ist kein valider Scala-Code, aber wenn der
+  Java-Code einmal kompiliert wurde, dann kann er vom Scala-Code verwendet
+  werden
+  \item Scala läuft wie Java auf derselben JVM \und sie teilen sich deshalb
+  den gleichen Garbage-Collector
   \begin{itemize}
     \item auf Java Bytecode kann Scala:
     \begin{itemize}
@@ -207,7 +217,8 @@ Günther veröffentlich.)}
   Alias) \und imports können allen Stellen des Programms gemacht werden
   \item wenn Typen offensichtlich sind, dann muss man diese nicht angeben, kann
   aber zu bösen Fehlern führen
-  \item Generics:
+  \item Generics\footnote{statt Generics sagt man in Scala zu 
+  dynamischen Datentypen von Funktionen \itbf{parameterized types}}:
   \begin{itemize}
     \item Klassen \und traits können generisch gemacht werden
     \item via \itbf{Typparameter} (Nonvariant, Covariant, Contravariant)
@@ -219,24 +230,12 @@ Günther veröffentlich.)}
   Seiteneffekte\footnote{viele Datenstrukturen sind immutable, mit 
   \texttt{val} sind immutable \und mit \texttt{var} sind mutable};
   \textit{Pattern Matching}
-  \item \itbf{pure object-oriented language} in the sense that every value is an
-object and its mixin-based composition mechanism provides a clean alternative to the multiple-
-inheritance models of other languages
-  \item \itbf{funktionale Sprache}: By supporting higher-order functions, currying, function
-nesting, pattern matching, and anonymous functions
-  \item Scala wird entwede in Java Bytecode \oder \textit{.net assemblies}
-  kompiliert. \textit{The integration with these
-platforms is very tight. For example Java classes can be used from Scala code and vice versa. This
-allows Scala programs to reuse the existing Java libraries and keeps the price for switching from
-Java to Scala low.
-}
+  \item immutable \texttt{val} müssen initialisiert werden!  
   \item Klassen können überall in einem Programm auftauchen: top-level,
   innerhalb von anderen Klassen (\textit{inner classes}), innerhalb von
   Codeblöcken (\textit{local classes}) \und innerhalb von Ausdrücken 
   (\textit{anonymous classes}) $\Rightarrow$ analog gilt das für Funktionen
   in Scala, nur das Funktionen nicht als Top-Level deklariert werden können
-  \item Klassen können von nur einer Klasse erben, aber es können von eine
-  bis zu mehrere Klassen \textit{mixin} gemacht werden.
   \item Scala ist eine stark typisierte Sprache: \textit{class types},
   \textit{variant class type parameters}, \textit{virtual types}, 
   \textit{qualified class types},  \textit{compound types}\footnote{kann
@@ -244,33 +243,11 @@ Java to Scala low.
   ist}, \textit{singleton types}\footnote{für Typen gibt es genau einen
   Wert}, \textit{explicit self types}\footnote{sind Annotationen, die den Typ 
   einer aktuellen Instanz einer Klasse festlegen}
-  \item Scala wurde mit dem Ziel designt, für alle Java-Sachen verträglich 
-  zu sein. Deswegen läufts auch der JVM \und arbeitet reibungslos mit
-  mit existierenden Javacode zusammen
-  \item jede Java Klasse kann als eine normale Scala-Klasse verwendet werden
-  $\Rightarrow$ deswegen sind alle Java-Bibos auch direkt in Scala verwendbar
-  \item gewöhnlicher Java-Code ist kein valider Scala-Code, aber wenn der
-  Java-Code einmal kompiliert wurde, dann kann er vom Scala-Code verwendet
-  werden
-  \item Scala läuft wie Java auf derselben JVM \und sie teilen sich deshalb
-  den gleichen Garbage-Collector
-  \item Wofü Scala geeingnet ist:\textit{language ideal for today’s scalable,
-  dis-tributed, component-based applications that support concurrency and
-  distribution}
-  \item immutable \texttt{val} müssen initialisiert werden!
-  \item Scala unterstützt auch Symbole aus Ruby
-  \item \texttt{null} gibts auch in Scala, soll man aber vermeiden, es ist
-  besser $\Rightarrow$ besser \texttt{Option} verwenden, aus dem man die
-  Null Information herausziehen kann
-  \item statt Generics sagt man in Scala zu dynamischen Datentypen von
-  Funktionen \itbf{parameterized types}
-  \item \itbf{abstrakte Typen}:
-  
-  \lstinputlisting[label=src:abstract_types.scala]{beispiele/abstract_types.scala}
-  
-  die Klasse \texttt{BulkReader} hat drei abstrakte Members
-  
-  \item wenn man \textbf{final} vor Klassen \oder traits schreibt, dann verhindert man, dass davon Klassen abgeleitet werden können
+  \item Scala unterstützt \itbf{Symbole} aus Ruby
+  \item \texttt{null} gibts in Scala, aber ab in die Tonne damit \und 
+  besser \texttt{Option} verwenden
+  \item wenn man \textbf{final} vor Klassen \oder traits schreibt, dann
+  verhindert man, dass davon Klassen abgeleitet werden können
   \item \textbf{super} ist analog zu this, aber es bindet an die Elternklasse
   \item \textbf{this} wie ein Objekt auf sich alleine zeigt
   \item das \$ verwendet Scala intern für irgendwas, also ebenso wie
@@ -283,7 +260,6 @@ Java to Scala low.
   
   der \textit{left-arrow} Operator wird eben Generator genannt, der er die
   einzelnen Elemente aus der Collection generiert
-  \item n
 \end{itemize}
 
 
