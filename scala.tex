@@ -157,7 +157,9 @@ Günther veröffentlich.)}
   Konstruktoren für die Klasse
   \item Scala-Objekt ist Instanz einer Klasse \und kann deswegen als
   Parameter von Methoden agieren kann
-  \item Klassen, Objekte \und traits können innere Klassen, Objekte
+  \item Klassen, Objekte \und \itbf{traits}\footnote{um es in Java-Sprache
+  auszudrücken sind \textit{traits} Interfaces mit einer Superklasse, die
+  nicht-abstrakte Methoden beinhalten dürfen} können innere Klassen, Objekte
   \und traits haben, welche Zugriff auf \textit{private} Methoden,
   Variablen und so weiter haben
   \item die Import-Methode kann innerhalb von Blöcken verwendet werden
@@ -333,16 +335,10 @@ Sachen gewährleistet:
   \item werden in Packeten definiert \und spielen eine ähnliche Rolle wie
   in Java
   \item jedes Java-Packet ist auch eine Scala-Pracket (vice versa)
-  \item jede Klasse, ausser der Top-Klasse erbt von genau einer Klass
   \item jede Klasse kann via \textit{mixin} von mehr als einer Klasse
-  erben
-  \item Scala hat keine Interfaces sondern \textit{traits}, welche 
-  zustandslose abstrakte Klassen sind $\Rightarrow$ um es in Java-Sprache
-  auszudrücken sind \textit{traits} Interfaces mit einer Superklasse, die
-  knicht-abstrakte Methoden beinhalten dürfen
+  erben, denn per default kann nur von einer Klasse gererbt werden
   \item jede Java-Klasse wird als gewöhnliche Scala-Klasse angesehen \und 
   jedes Java-Interface kann als Scala-\textit{trait} angesehen werden
-  \item n
 \end{itemize}
 
 
