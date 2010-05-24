@@ -842,7 +842,7 @@ Klassen-Komposition
     \item nur traits können als mixins verwendet werden
   \end{itemize}
   
-  \item \textbf{Mixin-class composition}: betrachten folgende Interatoren
+  \item \textbf{mixin-class composition}: betrachten folgende Interatoren
   
   \lstinputlisting[label=src:iterators_for_mixin_class_composition.scala]{beispiele/iterators_for_mixin_class_composition.scala}
   
@@ -854,23 +854,6 @@ Klassen-Komposition
     
     \lstinputlisting[label=src:mixin_class_composition.scala]{beispiele/mixin_class_composition.scala}
     
-    \item \textit{Mixin-class composition} ist eine Form der Mehrfachvererbung
-  \end{itemize}
-  \item \textbf{Dienst-orientiertes Komponenten-Model}
-  \begin{itemize}
-    \item Scalas Abstraktion kann als Basis für Dienst-orientiertes 
-    Komponenten-Model gesehen werden
-    \item Software-Komponenten sind Berechnungseinheiten, die eine wohlgeformte
-    Menge von Diensten definieren
-    \item in Scala gehören Software-Komponenten zu Klassen \und \textit{traits}
-    \item konkrete \textit{Members} einer Klasse \oder \textit{traits} stellen
-    die angebotenen Dienste dar, während \textit{derefered Members} als
-    benötigte Dienste angesehen werden können
-    \item die Komposition von Komponenten basiert auf \textit{mixins}, welche
-    es Proggern erlauben, größere Komponenten aus kleineren zu bauen
-    \item größte Vorteil gegenüber traditionelle black-box Komponenten ist,
-    dass die Komponenten erweiterbare Entitäten sind $\Rightarrow$ wegen
-    \textit{subclassing} \und \textit{overriding}
   \end{itemize}
 \end{itemize}
 
@@ -1705,6 +1688,27 @@ way (e.g., trying to add an integer to a string), breaking abstractions, etc.
   \item darunter versteht man, dass man den Typ einer Variable schon anhand
   des Kontextest bestimmen kann (\uline{z.B.} \texttt{x = 1+ 3} $\Rightarrow$ 
   Compiler denkt sich also, dass \texttt{x} Integer ist)
+\end{itemize}
+
+
+\section{Sachen für MT}
+\begin{itemize}
+  \item \textbf{Dienst-orientiertes Komponenten-Model}
+  \begin{itemize}
+    \item Scalas Abstraktion kann als Basis für Dienst-orientiertes 
+    Komponenten-Model gesehen werden
+    \item Software-Komponenten sind Berechnungseinheiten, die eine wohlgeformte
+    Menge von Diensten definieren
+    \item in Scala gehören Software-Komponenten zu Klassen \und \textit{traits}
+    \item konkrete \textit{Members} einer Klasse \oder \textit{traits} stellen
+    die angebotenen Dienste dar, während \textit{derefered Members} als
+    benötigte Dienste angesehen werden können
+    \item die Komposition von Komponenten basiert auf \textit{mixins}, welche
+    es Proggern erlauben, größere Komponenten aus kleineren zu bauen
+    \item größte Vorteil gegenüber traditionelle black-box Komponenten ist,
+    dass die Komponenten erweiterbare Entitäten sind $\Rightarrow$ wegen
+    \textit{subclassing} \und \textit{overriding}
+  \end{itemize}
 \end{itemize}
 
 
