@@ -313,7 +313,8 @@ Günther veröffentlich.)}
   \item Scala unterscheidet nicht zwischen Identifier \und Operatorennamen,
   d.h. \texttt{xs filter (pivot $>$)} ist äquivalent zu 
   \texttt{xs.filter(pivot $>$)}
-
+  \item alle Funktionen haben die \texttt{apply}-Methode, welche die Funktion 
+  ausführen
 
 \end{itemize}
 
@@ -513,26 +514,25 @@ keine besondere Notation für die Elemente der Aufzählung nötig
 
 \subsection{Funktionen}
 \begin{itemize}
-  \item alle Funktionen haben die \texttt{apply}-Methode, welche die Funktion 
-  ausführen
   \item Funktionen können in Scala Symbole wie $+, -, *, and, ?$ enthalten
   \item Funktionen können die folgende Form
   haben: \texttt{Function[A, B]}, wobei \texttt{A} der Parametertyp 
   \und \texttt{B} der Rückgabewert ist
   
+  $\Rightarrow$ andere Schreibweise für \texttt{Function[A, B]}:
   
-  \item andere Schreibweise für \texttt{Function[A, B]} ist:
-  
-  \texttt{A $=>$ B}
-  
-  \item falls eine Klasse eine \texttt{update} Methode. Eine \texttt{update}
-  Methode, die zwei  Argumente nimmt wird aufgerufen, wenn der Compiler die
-  eine Zuweisung parst
-  
-  \lstinputlisting[label=src:class_udate.scala]{beispiele/class_udate.scala}
+  \begin{center}
+    \texttt{A $=>$ B}
+  \end{center}
+    
   \item verschachtelte Funktionen:
   
-  \lstinputlisting[label=src:nested_functions.scala]{beispiele/nested_functions.scala}
+\end{itemize}
+
+
+\subsubsection{Verschachtelte Parameter}
+\begin{itemize}
+  \item   \lstinputlisting[label=src:nested_functions.scala]{beispiele/nested_functions.scala}
   
   fact kann man nur innerhalb des Scopes von factorial aufrufen, sonst kommt
   es zu einem Compilerfehler.
@@ -541,6 +541,7 @@ keine besondere Notation für die Elemente der Aufzählung nötig
   \item weitergabe von Parametern von verschachtelten Funktionen:
   
   \lstinputlisting[label=src:parameter_passing_nested_functions.scala]{beispiele/parameter_passing_nested_functions.scala}  
+
 \end{itemize}
 
 
