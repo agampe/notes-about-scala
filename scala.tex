@@ -638,7 +638,6 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   \lstinputlisting[label=src:currying_3.scala]{beispiele/currying_3.scala}
   
 \end{itemize}
-
 \pagebreak
 
 
@@ -646,13 +645,16 @@ Fkt. mit callback Fkt. haben folgende Syntax:
 \begin{itemize}
   \item Klasse für rationale Zahlen:
   
-  \lstinputlisting[label=src:rationale_zahlen.scala]{beispiele/rationale_zahlen.scala}
+  \lstinputlisting[label=src:rationale_zahlen.scala]{beispiele/rational_numbers.scala}
   
-  \item \textbf{private members}: solche gekennzeichneten Teile können nicht
-  außerhalb der Klasse angesprochen werden
-  \item \textbf{Erstellen \und Zugriff auf Objekte}
+  \item \textbf{private members}: durch spezielles Keyword gekennzeichnet
+  \und können nicht außerhalb der Klasse angesprochen werden
+  \item \textbf{Objekterstellung}:
   
-  \lstinputlisting[label=src:objekt_anlegen.scala]{beispiele/objekt_anlegen.scala}
+  \lstinputlisting[label=src:objekt_anlegen.scala]{beispiele/object_creation.scala}
+  
+  $\Rightarrow$ mittels Punktnotation kann auf die Attribute zugegriffen
+  werden
   \item \textbf{Vererbung}: jede Klasse erweitert eine Superklasse. Ist
   keine Klasse angegeben, so erbt es per \textit{default} von
   \texttt{scala.AnyRef}
