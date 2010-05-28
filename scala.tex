@@ -1162,24 +1162,22 @@ von Objekten via Pattern-Matching
 
 \subsection{Map[K,V]}
 \begin{itemize}
-  \item die \texttt{Map} Klasse in Scala ist unveränderlich  \item ein \texttt{Map} ist eine Sammlung von key/value Paaren
+  \item \texttt{Map} ist Sammlung von key/value Paaren
+  \item \texttt{Map} Klasse ist unver-$\Delta$
   \item jeder beliebige value kann von einen eindeutigen Schlüssel
   beschrieben werden
-  
-  \lstinputlisting[label=src:map_examples.scala]{beispiele/map_examples.scala}
-  
+    
   \item wenn wir auf einen Schlüsselzugreifen wollen, den es nicht
   gibt wird eine Exception geworfen (was auch Sinn macht, denn man
   kann ja nicht auf was zugreifen, was es gar nicht gibt):
  
-  
+  \lstinputlisting[label=src:map_examples.scala]{beispiele/map_examples.scala}
+
   macht man den \texttt{Map}-Zugriff mit get, so wird die 
   \texttt{Option} (\texttt{Some} \oder \texttt{None}) zurückgegeben
-  \item mit der \texttt{-= key} kann man Elemente aus einer Map entfernen
+  \item mit \texttt{-= key} kann man Elemente aus einer Map entfernen
   \item mit \texttt{.contains} kann man testen, ob ein Schlüssel in der
   der Map enthalten ist
-  
-  \texttt{java.util.NoSuchElementException: key not found: ...}
 \end{itemize}
 
 

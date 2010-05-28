@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.2.9)  28 MAY 2010 08:03
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.2.9)  28 MAY 2010 08:16
 entering extended mode
  %&-line parsing enabled.
 **\nonstopmode \input{"/home/helex/proggen/scala/scala.tex"}
@@ -949,7 +949,7 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 (/home/helex/proggen/scala/beispiele/partial_functions.scala) [37]
 (/home/helex/proggen/scala/beispiele/partial_notation.scala)
 (/home/helex/proggen/scala/beispiele/partial_codeblocks.scala)
-Overfull \hbox (4.35252pt too wide) in paragraph at lines 1243--1245
+Overfull \hbox (4.35252pt too wide) in paragraph at lines 1242--1244
 []\OT1/ppl/m/n/10.95 Typparameter de-fi-nie-ren den Typ von Pa-ra-me-tern od. d
 en R[]uck-ga-be-wert der Funk-
  []
@@ -962,19 +962,19 @@ en R[]uck-ga-be-wert der Funk-
 (/home/helex/proggen/scala/beispiele/pattern_matching_case_class.scala)
 (/home/helex/proggen/scala/beispiele/pattern_matching_lists.scala)
 (/home/helex/proggen/scala/beispiele/pattern_matching_nested.scala) [40]
-Overfull \hbox (52.80544pt too wide) in paragraph at lines 1303--1306
+Overfull \hbox (52.80544pt too wide) in paragraph at lines 1302--1305
 []\OT1/ppl/m/n/10.95 in Sca-la ist \OT1/cmtt/m/n/10.95 Array[T] \OT1/ppl/b/it/1
 0.95 in-va-ri-ant\OT1/ppl/m/n/10.95 , d.h. man kann nur \OT1/cmtt/m/n/10.95 Arr
 ay[Strin] \OT1/ppl/m/n/10.95 an \OT1/cmtt/m/n/10.95 foo(a: Array[String])
  []
 
 (/home/helex/proggen/scala/beispiele/covariant_parameter_types.scala)
-Overfull \hbox (19.52855pt too wide) in paragraph at lines 1324--1326
+Overfull \hbox (19.52855pt too wide) in paragraph at lines 1323--1325
 []\OT1/ppl/b/n/10.95 kovariant \OT1/ppl/m/n/10.95 hei^^Yt, dass der return-Wert
  von Funk-tio-nen in ab-ge-lei-te-ten Klas-sen ge[]andert
  []
 
-[41] <bilder/typhierarchie.png, id=1500, 586.19pt x 576.1525pt>
+[41] <bilder/typhierarchie.png, id=1499, 586.19pt x 576.1525pt>
 File: bilder/typhierarchie.png Graphic file (type png)
 
 <use bilder/typhierarchie.png> [42 </home/helex/proggen/scala/bilder/typhierarc
@@ -989,7 +989,7 @@ hie.png>]
 (/home/helex/proggen/scala/beispiele/filter.scala)
 (/home/helex/proggen/scala/beispiele/folding_reducing.scala) [47]
 (/home/helex/proggen/scala/beispiele/partial_functions_easy.scala)
-Overfull \hbox (0.42108pt too wide) in paragraph at lines 1506--1508
+Overfull \hbox (0.42108pt too wide) in paragraph at lines 1505--1507
 []\OT1/ppl/m/n/10.95 stammt vom Ma-the-ma-ti-ker Has-kell Cur-ry u. trans-for-m
 iert ei-ne Funk-ti-on, die meh-
  []
@@ -997,7 +997,7 @@ iert ei-ne Funk-ti-on, die meh-
 (/home/helex/proggen/scala/beispiele/curried_functions.scala)
 (/home/helex/proggen/scala/beispiele/implicit.scala [48])
 (/home/helex/proggen/scala/beispiele/lazy_vals.scala) [49] [50]
-Overfull \hbox (2.91792pt too wide) in paragraph at lines 1640--1642
+Overfull \hbox (2.91792pt too wide) in paragraph at lines 1639--1641
 []\OT1/ppl/m/n/10.95 Scalas Ab-strak-ti-on kann als Ba-sis f[]ur Dienst-orienti
 ertes Komponenten-Model
  []
@@ -1008,9 +1008,9 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12691 strings out of 94101
- 189916 string characters out of 1165811
- 328336 words of memory out of 1500000
+ 12690 strings out of 94101
+ 189900 string characters out of 1165811
+ 329336 words of memory out of 1500000
  14182 multiletter control sequences out of 10000+50000
  32498 words of font info for 90 fonts, out of 1200000 for 2000
  637 hyphenation exceptions out of 8191
@@ -1026,9 +1026,9 @@ usr/share/texmf-texlive/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-t
 exlive/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texmf-texlive/fonts/typ
 e1/urw/palatino/uplr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/u
 plri8a.pfb>
-Output written on scala.pdf (51 pages, 556311 bytes).
+Output written on scala.pdf (51 pages, 555961 bytes).
 PDF statistics:
- 2012 PDF objects out of 2073 (max. 8388607)
- 1216 named destinations out of 1440 (max. 131072)
+ 2011 PDF objects out of 2073 (max. 8388607)
+ 1215 named destinations out of 1440 (max. 131072)
  598 words of extra memory for PDF output out of 10000 (max. 10000000)
 
