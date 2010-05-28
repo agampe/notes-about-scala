@@ -333,6 +333,24 @@ Günther veröffentlich.)}
     instanziiert
     \item Typahierachieübersicht siehe Odersky-Paper
   \end{itemize}
+  
+  \item \ulbf{Typem Bounds}
+
+  \begin{itemize}
+    \item \texttt{A $<:$ AnyRef} means any type \texttt{A} that is a 
+    subtype of \texttt{AnyRef}
+    \item bla, wurde an anderer Stelle besser erklärt
+  \end{itemize}
+
+
+  \item \ulbf{Nothing und Null}
+
+  \begin{itemize}
+    \item \texttt{Null} ist \texttt{final trait} \und kann nur eine 
+    Instanz haben
+    \item \texttt{Nothing} ist \texttt{final trait} \und hat keine Instanz
+  \end{itemize}
+
 \end{itemize}
   
 
@@ -1456,34 +1474,6 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
 
 \lstinputlisting[label=src:lazy_vals.scala]{beispiele/lazy_vals.scala} 
 \pagebreak
-
-
-\section{Scala Typsystem}
-\begin{itemize}
-  \item Scala ist eine statisch typisierte Sprache \und das Typsystem ist 
-  hier am fortschrittlichsten von allen Progsprachen, da es FP \und 
-  OOP Benefits vereint
-\end{itemize}
-
-
-\subsection{Parametriesierte Typen}
-\begin{itemize}
-  \item bla
-\end{itemize}
-
-
-\subsection{Typen Bounds}
-\begin{itemize}
-  \item \texttt{A $<:$ AnyRef} means any type \texttt{A} that is a subtype of \texttt{AnyRef}
-  \item bla, wurde an anderer Stelle besser erklärt
-\end{itemize}
-
-
-\subsection{Nothing und Null}
-\begin{itemize}
-  \item \texttt{Null} ist \texttt{final trait} \und kann nur eine Instanz haben
-  \item \texttt{Nothing} ist \texttt{final trait} \und hat keine Instanz
-\end{itemize}
 
 
 \section{Fragen}
