@@ -52,14 +52,8 @@
 \BOOKMARK [2][-]{subsection.10.4}{Funktionale Datenstrukturen}{section.10}
 \BOOKMARK [2][-]{subsection.10.5}{Traversieren, Filtering, Folding und Reducing}{section.10}
 \BOOKMARK [2][-]{subsection.10.6}{Currying}{section.10}
-\BOOKMARK [2][-]{subsection.10.7}{Implicits}{section.10}
-\BOOKMARK [2][-]{subsection.10.8}{Lazy Vals}{section.10}
-\BOOKMARK [1][-]{section.11}{Scala Typsystem}{}
-\BOOKMARK [2][-]{subsection.11.1}{Parametriesierte Typen}{section.11}
-\BOOKMARK [2][-]{subsection.11.2}{Typen Bounds}{section.11}
-\BOOKMARK [2][-]{subsection.11.3}{Nothing und Null}{section.11}
-\BOOKMARK [1][-]{section.12}{Fragen}{}
-\BOOKMARK [2][-]{subsection.12.1}{Tempror\344res f\374r DA}{section.12}
-\BOOKMARK [3][-]{subsubsection.12.1.1}{Statische versus Dynamsich typisierte Sprachen}{subsection.12.1}
-\BOOKMARK [3][-]{subsubsection.12.1.2}{Typinferenz}{subsection.12.1}
-\BOOKMARK [1][-]{section.13}{Sachen f\374r MT}{}
+\BOOKMARK [2][-]{subsection.10.7}{Lazy Vals}{section.10}
+\BOOKMARK [2][-]{subsection.10.8}{Tempror\344res f\374r DA}{section.10}
+\BOOKMARK [3][-]{subsubsection.10.8.1}{Statische versus Dynamsich typisierte Sprachen}{subsection.10.8}
+\BOOKMARK [3][-]{subsubsection.10.8.2}{Typinferenz}{subsection.10.8}
+\BOOKMARK [1][-]{section.11}{Sachen f\374r MT}{}

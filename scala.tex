@@ -351,12 +351,29 @@ Günther veröffentlich.)}
     \item \texttt{Nothing} ist \texttt{final trait} \und hat keine Instanz
   \end{itemize}
 
+  \item \itbf{Views}\footnote{\textit{implicit conversions between
+  types}; sie werden typischerweise angelegt, um neue Funktionalitäten
+  für einen davorexistierenden Typ zu ergänzen}? Was ist im selben 
+  Zusammehang der 
+  \item \textbf{implizit} Parameter\footnote{Argumente hierfür können 
+  bei einem Methodenaufruf weggelassen werden}?
+  \item Unterschied zwischen val \und var?
+  \begin{itemize}
+    \item Variablen können in Scala jeweils den Wert 
+    \textit{assign-once} \oder \textit{asign-many} haben
+    \item \textit{assign-once}: mit \texttt{val} (ähnlich final
+    in Java)
+    \item \textit{assign-many}: mit \texttt{var}
+    
+    $\Rightarrow$ am besten immer val verwenden, denn je weniger
+    sich Dinge $\Delta$ können, desto weniger Fehler können sich
+    in den Code schleichen
+  \end{itemize}
 \end{itemize}
   
 
 \subsection{Paradigmen}
 \ulbf{\kreis{1. } OOP-Paradigma}
-
 
 
 \begin{itemize}
@@ -970,8 +987,10 @@ von Objekten via Pattern-Matching
 \begin{itemize}
   \item es wird einfach das Schlüsselwort \textbf{case} vor Klassen bzw. 
   Objekten geschrieben
-  \item Case-Klassen haben implizit eine Konstruktor-Funktion, welche denselben
-  Namen wie die Klasse trägt
+  \item \textbf{case-Klassen} generieren automatisch 
+  \textit{factory method} mit denselben Argumenten als Primärkonstruktor
+  \item Case-Klassen haben implizit eine Konstruktor-Funktion, 
+  welche denselben Namen wie die Klasse trägt
   \item Case-Klassen \und Case-Objekte haben implizit die Methoden
   \texttt{toString, equals} \und \texttt{hashCode} implementiert \und 
   überschreiben die Methoden von \texttt{AnyRef}; sie haben implizite 
@@ -1480,35 +1499,6 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
 
 \lstinputlisting[label=src:lazy_vals.scala]{beispiele/lazy_vals.scala} 
 \pagebreak
-
-
-\section{Fragen}
-\begin{enumerate}
-  \item Was ist der Unterschied zwischen val \und var?
-  \begin{itemize}
-    \item Variablen können in Scala jeweils den Wert 
-    \textit{assign-once} \oder \textit{asign-many} haben
-    \item \textit{assign-once}: mit \texttt{val} (ähnlich final
-    in Java)
-    \item \textit{assign-many}: mit \texttt{var}
-    
-    $\Rightarrow$ am besten immer val verwenden, denn je weniger
-    sich Dinge $\Delta$ können, desto weniger Fehler können sich
-    in den Code schleichen
-  \end{itemize}
-  \item Was drückt der folgende Ausdruck aus: $type S <: Subject$? Also was
-  macht das $<:$?
-  \item \textit{subclassing} bei mixins?
-  \item \textbf{case-Klassen} generieren automatisch \textit{factory method} 
-  mit denselben Argumenten als Primärkonstruktor
-  \item Was sind \itbf{Views}\footnote{\textit{implicit conversions between
-  types}; sie werden typischerweise angelegt, um neue Funktionalitäten
-  für einen davorexistierenden Typ zu ergänzen}? Was ist im selben Zusammehang der 
-  \textbf{implizit} Parameter\footnote{Argumente hierfür können bei einem
-  Methodenaufruf weggelassen werden}?
-  \item Was versteht man unter kontravariante Parametertypen?
-\end{enumerate}
-
 
 
 \subsection{Temproräres für DA}
