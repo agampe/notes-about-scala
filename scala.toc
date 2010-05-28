@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {2.4}if/else und while}{12}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}for-Schleife}{13}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}try-catch, throw und finally}{13}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Enumerations}{13}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.7}Enumerations}{14}{subsection.2.7}
 \contentsline {section}{\numberline {3}Ausdr\IeC {\"u}cke und Funktionen}{15}{section.3}
 \contentsline {subsection}{\numberline {3.1}Funktionen}{15}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Verschachtelte Funktionen und Parameter}{15}{subsubsection.3.1.1}
@@ -35,13 +35,12 @@
 \contentsline {subsection}{\numberline {6.2}Transformation}{33}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Tupel}{35}{subsection.6.3}
 \contentsline {subsection}{\numberline {6.4}Map[K,V]}{36}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Option[T]}{36}{subsection.6.5}
-\contentsline {section}{\numberline {7}Spa\IeC {\ss } mit Funktionen}{36}{section.7}
-\contentsline {subsection}{\numberline {7.1}Partielle Anwendungen und Funktionen}{37}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Funktionen und Typparameter}{38}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Funktionen in Container packen}{38}{subsection.7.3}
+\contentsline {section}{\numberline {7}Funktionen}{37}{section.7}
+\contentsline {subsection}{\numberline {7.1}Partielle Anwendungen}{37}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Typparameter}{38}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Funktionen in Container}{38}{subsection.7.3}
 \contentsline {section}{\numberline {8}Pattern-Matching}{39}{section.8}
-\contentsline {section}{\numberline {9}Varianz}{41}{section.9}
+\contentsline {section}{\numberline {9}Varianz}{40}{section.9}
 \contentsline {subsection}{\numberline {9.1}Invariante Parametertypen}{41}{subsection.9.1}
 \contentsline {subsection}{\numberline {9.2}Kovariante Parametertypen}{41}{subsection.9.2}
 \contentsline {subsection}{\numberline {9.3}Kovariante Methoden}{41}{subsection.9.3}

@@ -6,7 +6,3 @@ val f: Int => String = x => "Dude: "+x
 f.toString
 // java.lang.String = <function>
 
-// nun vergleichen wir Methoden
-f == f
-
-f(24)

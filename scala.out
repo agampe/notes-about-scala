@@ -35,11 +35,10 @@
 \BOOKMARK [2][-]{subsection.6.2}{Transformation}{section.6}
 \BOOKMARK [2][-]{subsection.6.3}{Tupel}{section.6}
 \BOOKMARK [2][-]{subsection.6.4}{Map[K,V]}{section.6}
-\BOOKMARK [2][-]{subsection.6.5}{Option[T]}{section.6}
-\BOOKMARK [1][-]{section.7}{Spa\337 mit Funktionen}{}
-\BOOKMARK [2][-]{subsection.7.1}{Partielle Anwendungen und Funktionen}{section.7}
-\BOOKMARK [2][-]{subsection.7.2}{Funktionen und Typparameter}{section.7}
-\BOOKMARK [2][-]{subsection.7.3}{Funktionen in Container packen}{section.7}
+\BOOKMARK [1][-]{section.7}{Funktionen}{}
+\BOOKMARK [2][-]{subsection.7.1}{Partielle Anwendungen}{section.7}
+\BOOKMARK [2][-]{subsection.7.2}{Typparameter}{section.7}
+\BOOKMARK [2][-]{subsection.7.3}{Funktionen in Container}{section.7}
 \BOOKMARK [1][-]{section.8}{Pattern-Matching}{}
 \BOOKMARK [1][-]{section.9}{Varianz}{}
 \BOOKMARK [2][-]{subsection.9.1}{Invariante Parametertypen}{section.9}
