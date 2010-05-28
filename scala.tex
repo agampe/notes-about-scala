@@ -1001,10 +1001,13 @@ von Objekten via Pattern-Matching
 
 \subsection{traits}
 \begin{itemize}
-  \item in Scala kann man traits in Objekte erst bei Instanziierung einbinden
-  \item traits können auch als abstrakt deklariert haben
-  \item traits haben ansonsten den gleiche Aufbau wie eine normale
-  Klasse
+  \item ist eine besondere Variante eines 
+  \itbf{mixins}\footnote{zusammengehöriges, mehrfach verwendbares Bündel
+  von Funktionalität bezeichnet, das zu einer Klasse hinzugefügt werden
+  kann}. Ein Trait besitzt eine gemeinsame Basisklasse mit der Klasse, 
+  auf die das Trait angewendet wird
+  \item in Scala können traits in Objekten erst bei Instanziierung
+  einbinden
   \item traits unterstützen nicht beliebige Konstruktoren \und nehmen auch
   keine Argumente für ihre Konstruktoren auf
   
@@ -1015,10 +1018,13 @@ von Objekten via Pattern-Matching
   $\Rightarrow$ Reihenfolge der Abarbeitung der trais ist von links nach
   rechts
 
-  \item \textbf{Klassen \oder traits?} falls ein traits mehr als einmal als 
-  Elternteil von anderen Klassen dient, so als Klasse machen; vermeide 
+  \item traits können auch als abstrakt deklariert haben
+
+  \item \textbf{Klassen \oder traits?} falls ein traits mehr als einmal 
+  als Elternteil von anderen Klassen dient, so als Klasse machen; vermeide
   konkrete Felder in traits, welche nicht mit geeigneten default-Werten
-  initialisiert werden können $\Rightarrow$ verwende lieber abstrakte Felder
+  initialisiert werden können $\Rightarrow$ verwende lieber abstrakte
+  Felder
 \end{itemize}
 \pagebreak
 
@@ -1478,12 +1484,6 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
 
 \section{Fragen}
 \begin{enumerate}
-  \item Was sind \textbf{traits}?
-  \begin{itemize}
-    \item Ist eine besondere Variante eines \itbf{mixins}\footnote{zusammengehöriges, mehrfach verwendbares Bündel von Funktionalität bezeichnet, das zu einer Klasse hinzugefügt werden kann}. Ein Trait besitzt 
-    eine gemeinsame Basisklasse mit der Klasse, auf die das Trait 
-    angewendet wird.
-  \end{itemize}
   \item Was ist der Unterschied zwischen val \und var?
   \begin{itemize}
     \item Variablen können in Scala jeweils den Wert 
