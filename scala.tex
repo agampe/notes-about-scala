@@ -1143,14 +1143,15 @@ von Objekten via Pattern-Matching
 
 \subsection{Tupel}
 \begin{itemize}
-  \item wollen eine Funktion schreiben, die 3 return-Werte hat: einen Zähler, die Summe \und die Quadrate:
+  \item wollen Fkt. schreiben, die 3 return-Werte hat:
   
   \lstinputlisting[label=src:tupel_example.scala]{beispiele/tupel_example.scala}
   
   \begin{itemize}
     \item der Compiler übersetzt \texttt{(Int, Double, Double)} in
     \texttt{Tuple3[Int, Double, Double]}
-    \item foldLeft hat zwei Parameter: t $\ldots$ steht für Tuple3[Int, Double, Double]
+    \item \texttt{foldLeft} hat zwei Parameter: t $\ldots$ steht für 
+    Tuple3[Int, Double, Double]
     \item der Rückgabewert der Funktion ist ein neues Tupel
   \end{itemize}
   \item man kann Tupel auf viele verschiedene Arten anlegen:
