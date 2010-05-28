@@ -37,25 +37,23 @@
 \contentsline {subsection}{\numberline {6.3}Tupel}{36}{subsection.6.3}
 \contentsline {subsection}{\numberline {6.4}Map[K,V]}{37}{subsection.6.4}
 \contentsline {section}{\numberline {7}Funktionen}{38}{section.7}
-\contentsline {subsection}{\numberline {7.1}Partielle Anwendungen}{38}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.1}Partielle Methoden und Funktionen}{38}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Typparameter}{39}{subsection.7.2}
 \contentsline {subsection}{\numberline {7.3}Funktionen in Container}{39}{subsection.7.3}
-\contentsline {section}{\numberline {8}Pattern-Matching}{40}{section.8}
-\contentsline {section}{\numberline {9}Varianz}{42}{section.9}
-\contentsline {subsection}{\numberline {9.1}Varianzregeln}{42}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Invariante Parametertypen}{42}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Kovariante Parametertypen}{42}{subsection.9.3}
-\contentsline {section}{\numberline {10}FP in Scala}{43}{section.10}
-\contentsline {subsection}{\numberline {10.1}Was FP ist}{43}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}FP in Scala}{43}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}Tail Calls}{43}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}Funktionale Datenstrukturen}{44}{subsection.10.4}
-\contentsline {subsection}{\numberline {10.5}Traversieren, Mapping, Filtering, Folding und Reducing}{44}{subsection.10.5}
-\contentsline {subsection}{\numberline {10.6}Pattern Matching}{45}{subsection.10.6}
-\contentsline {subsection}{\numberline {10.7}Partielle Funktionen}{45}{subsection.10.7}
-\contentsline {subsection}{\numberline {10.8}Currying}{46}{subsection.10.8}
-\contentsline {subsection}{\numberline {10.9}Implicits}{46}{subsection.10.9}
-\contentsline {subsection}{\numberline {10.10}Lazy Vals}{47}{subsection.10.10}
+\contentsline {section}{\numberline {8}Pattern-Matching}{41}{section.8}
+\contentsline {section}{\numberline {9}Varianz}{43}{section.9}
+\contentsline {subsection}{\numberline {9.1}Varianzregeln}{43}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Invariante Parametertypen}{43}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Kovariante Parametertypen}{43}{subsection.9.3}
+\contentsline {section}{\numberline {10}FP in Scala}{44}{section.10}
+\contentsline {subsection}{\numberline {10.1}Was FP ist}{44}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}FP in Scala}{44}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Tail Calls}{44}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}Funktionale Datenstrukturen}{45}{subsection.10.4}
+\contentsline {subsection}{\numberline {10.5}Traversieren, Filtering, Folding und Reducing}{45}{subsection.10.5}
+\contentsline {subsection}{\numberline {10.6}Currying}{46}{subsection.10.6}
+\contentsline {subsection}{\numberline {10.7}Implicits}{46}{subsection.10.7}
+\contentsline {subsection}{\numberline {10.8}Lazy Vals}{47}{subsection.10.8}
 \contentsline {section}{\numberline {11}Scala Typsystem}{48}{section.11}
 \contentsline {subsection}{\numberline {11.1}Parametriesierte Typen}{48}{subsection.11.1}
 \contentsline {subsection}{\numberline {11.2}Typen Bounds}{48}{subsection.11.2}

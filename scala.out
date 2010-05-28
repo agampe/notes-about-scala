@@ -37,7 +37,7 @@
 \BOOKMARK [2][-]{subsection.6.3}{Tupel}{section.6}
 \BOOKMARK [2][-]{subsection.6.4}{Map[K,V]}{section.6}
 \BOOKMARK [1][-]{section.7}{Funktionen}{}
-\BOOKMARK [2][-]{subsection.7.1}{Partielle Anwendungen}{section.7}
+\BOOKMARK [2][-]{subsection.7.1}{Partielle Methoden und Funktionen}{section.7}
 \BOOKMARK [2][-]{subsection.7.2}{Typparameter}{section.7}
 \BOOKMARK [2][-]{subsection.7.3}{Funktionen in Container}{section.7}
 \BOOKMARK [1][-]{section.8}{Pattern-Matching}{}
@@ -50,12 +50,10 @@
 \BOOKMARK [2][-]{subsection.10.2}{FP in Scala}{section.10}
 \BOOKMARK [2][-]{subsection.10.3}{Tail Calls}{section.10}
 \BOOKMARK [2][-]{subsection.10.4}{Funktionale Datenstrukturen}{section.10}
-\BOOKMARK [2][-]{subsection.10.5}{Traversieren, Mapping, Filtering, Folding und Reducing}{section.10}
-\BOOKMARK [2][-]{subsection.10.6}{Pattern Matching}{section.10}
-\BOOKMARK [2][-]{subsection.10.7}{Partielle Funktionen}{section.10}
-\BOOKMARK [2][-]{subsection.10.8}{Currying}{section.10}
-\BOOKMARK [2][-]{subsection.10.9}{Implicits}{section.10}
-\BOOKMARK [2][-]{subsection.10.10}{Lazy Vals}{section.10}
+\BOOKMARK [2][-]{subsection.10.5}{Traversieren, Filtering, Folding und Reducing}{section.10}
+\BOOKMARK [2][-]{subsection.10.6}{Currying}{section.10}
+\BOOKMARK [2][-]{subsection.10.7}{Implicits}{section.10}
+\BOOKMARK [2][-]{subsection.10.8}{Lazy Vals}{section.10}
 \BOOKMARK [1][-]{section.11}{Scala Typsystem}{}
 \BOOKMARK [2][-]{subsection.11.1}{Parametriesierte Typen}{section.11}
 \BOOKMARK [2][-]{subsection.11.2}{Typen Bounds}{section.11}
