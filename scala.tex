@@ -1233,7 +1233,7 @@ von Objekten via Pattern-Matching
 \end{itemize}
 
 
-\subsection{Partielle Anwendungen}
+\subsection{Partielle Methoden und Funktionen}
 \begin{itemize}
   \item \textbf{in Scala ist alles bis auf Methoden eine 
   Instanz}\footnote{Methoden sind keine Funktionen in Scala}
@@ -1256,6 +1256,14 @@ von Objekten via Pattern-Matching
   durch diese Notation kann man Codeblöcke als Parameter übergeben:
   
   \lstinputlisting[label=src:partial_codeblocks.scala]{beispiele/partial_codeblocks.scala}
+  
+    \item wenn an eine Funktion ein Unterstrich übergeben wird, dann handelt
+  es sich um eine partielle Funktionen
+  \item partielle Funktionen sind Aurücke, in denen nicht alle Argumente 
+  einer Funktion auch von der Funktion übernommen werden
+  
+  \lstinputlisting[label=src:partial_functions_easy.scala]{beispiele/partial_functions_easy.scala}  
+
 \end{itemize}
 
 
@@ -1424,17 +1432,6 @@ Gefahr eines Stackoverflows:
   \textit{seed} beginnt:
   
   \lstinputlisting[label=src:folding_reducing.scala]{beispiele/folding_reducing.scala}  
-\end{itemize}
-
-
-\subsection{Partielle Funktionen}
-\begin{itemize}
-  \item wenn an eine Funktion ein Unterstrich übergeben wird, dann handelt
-  es sich um eine partielle Funktionen
-  \item partielle Funktionen sind Aurücke, in denen nicht alle Argumente 
-  einer Funktion auch von der Funktion übernommen werden
-  
-  \lstinputlisting[label=src:partial_functions_easy.scala]{beispiele/partial_functions_easy.scala}  
 \end{itemize}
 
 
