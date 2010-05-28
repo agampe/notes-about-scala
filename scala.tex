@@ -788,9 +788,296 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   
   \lstinputlisting[label=src:generische_funktionen.scala]{beispiele/generische_funktionen.scala}
 \end{itemize}
-
-
 \pagebreak
+
+
+\section{FP in Scala}
+
+
+\subsection{Was FP ist}
+\begin{itemize}
+  \item haben keine Seiteneffekte, d.h. Analyse, Testen \und debuggen
+  werden leichter
+  \item Variablen sind in FP immutable
+  \item \textit{referential transparency}\footnote{d.h. man kann eine
+  Funktion in jeden beliebigen Kontext aufrufen \und muss keine Sorgen 
+  um den Kontext machen in dem die Funktion aufgerufen wird}
+\end{itemize}
+
+
+\subsection{FP in Scala}
+\begin{itemize}
+  \item \ulab{Merke}: eine Funktion, die \texttt{Unit} zurückgibt,
+  hat pure Seiteneffekte, denn ansonsten ist die Funktion sinnlos,
+  da sie ja nichts zurückgibt
+  
+  \lstinputlisting[label=src:fp_list_map.scala]{beispiele/fp_list_map.scala}
+  
+  \item anonyme Fkt. auch auf ein val drücken:
+  
+  \lstinputlisting[label=src:fp_list_map_value.scala]{beispiele/fp_list_map_value.scala}
+  
+  $\Rightarrow$ \texttt{factor} ist kein formaler Parameter sondern eine
+  Referenz zu einer Variable in einen bestimmten \textit{scope}, d.h. 
+  der Compiler kreiert ein \textit{closure}
+  \item \textbf{Rekursion}:
+  
+  \begin{itemize}
+    \item verhindert mutable Variablen
+    \item aber Performanz-Overheadn \und Risiko des Stackoverflows
+    \item Performaz-Prosb können mit \textit{memorization} \und 
+    Stackoverflows können durch Umwandlung in eine spezielle 
+    Schleife (Tail Calls \und Tail-Call Optimierung) verbessert
+    werden
+  \end{itemize}
+\end{itemize}
+
+
+\subsection{Tail Calls}
+Tail Call, d.h. wenn eine Funktion sich erst bei ihren
+finalen Durchlauf selbst aufruft $\Rightarrow$ Schleifen verhindern die
+Gefahr eines Stackoverflows:
+
+  \lstinputlisting[label=src:factorial_recursive_and_tail_call.scala]{beispiele/factorial_recursive_and_tail_call.scala}
+
+
+\subsection{Funktionale Datenstrukturen}
+\begin{itemize}
+  \item \textbf{Listen}: tauchen ganz oft in FP auf
+  
+  \lstinputlisting[label=src:lists_fp.scala]{beispiele/lists_fp.scala}
+  
+  \item \textbf{hash/dictionary/map}
+    
+  \item \textbf{Mengen}: sind wie Listen, aber ihnen kann jedes
+  Element nur einmal vorkommen; Element Iteration geht in O(n)
+\end{itemize}
+
+
+\subsection{Traversieren, Filtering, Folding und Reducing}
+\begin{itemize}
+  \item traveriseren via \texttt{foreach}:
+  
+  \lstinputlisting[label=src:foreach.scala]{beispiele/foreach.scala}
+    
+  \item \texttt{filter} wird verwendet, um beim Traversieren durch eine
+  Collection bestimmte Elemente herauszufiltern:
+  
+  \lstinputlisting[label=src:filter.scala]{beispiele/filter.scala}
+  
+  \item \texttt{folding} \und \texttt{reducing} werden beide verwendet, um
+  eine collection zu schrumpfen, wobei folding immer mit einem 
+  \textit{seed} beginnt:
+  
+  \lstinputlisting[label=src:folding_reducing.scala]{beispiele/folding_reducing.scala}  
+\end{itemize}
+
+
+\subsection{Currying}
+\begin{itemize}
+  \item stammt vom Mathematiker \textbf{Haskell Curry} \und transformiert
+  eine Fkt., die mehrere Parameter, nimmt in eine Kettenfunktion, die 
+  nur einen Parameter nimmt
+  \item in Scala werdem curried Funktion mit mehreren Parameterlisten
+  definiert:
+  
+  \lstinputlisting[label=src:curried_functions.scala]{beispiele/curried_functions.scala}
+  
+  \item \uline{Verwendung}: spezialisierte Fkt. hat, die nur für 
+  bestimmte Daten geignet ist
+\end{itemize}
+
+
+\subsection{Lazy Vals}
+wenn man eine Variable als \texttt{lazy} deklariert, dann sollte
+man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen 
+
+\lstinputlisting[label=src:lazy_vals.scala]{beispiele/lazy_vals.scala} 
+\pagebreak
+
+
+\section{Listen}
+\begin{itemize}
+  \item Listen in Scala unterscheiden sich folgendermaßen von
+  anderen Sprachen: \begin{enumerate}
+    \item sind unver-$\Delta$
+    \item haben rek. Struktur
+    \item haben viel mehr Ops. als Arrays
+  \end{enumerate}
+  
+  \lstinputlisting[label=src:listen.scala]{beispiele/listen.scala}
+  
+  \item Vorteile Unver-$\Delta$:
+  \begin{itemize}
+    \item weniger globale Zustände $\Rightarrow$ weniger Dinge können 
+    sich $\Delta$
+    \item Fkt. werden weniger anfällig für globale Zustände von Variablen 
+    \und Funktionen werden mehr transformativ $\Rightarrow$ Methoden
+    referenzieren viel weniger auf den externen Zustand von Variablen
+    \item solche Methoden sind leichter mit automatischen 
+    Tests\footnote{\texttt{ScalaCheck}} durchzuführen
+  \end{itemize}
+\end{itemize}
+
+
+\subsection{List[T]}
+\begin{itemize}
+  \item List[T] ist eine verkettete Liste vom 
+  Typ T\footnote{ist also verkettet} $\Rightarrow$ ist sequentielle Liste,
+  welche Javas primitve Datentypen beinhaltet (\texttt{Int, Float,
+  Double}), da sich um 
+  \textbf{boxing}\footnote{also Umwandlung von primitiven Datentypen in
+  Objekten} kümmert
+  \item \textbf{Listen-Konstruktoren}: \texttt{Nil} ist Repräsentant für
+  eine leere Liste, \texttt{::} (cons genannt) \uline{z.B.} 
+  \texttt{x :: xs} $\Rightarrow$ Liste mit ersten Element \texttt{x}
+  und zweiten Element/Liste \texttt{xs}
+  
+  \lstinputlisting[label=src:cons.scala]{beispiele/cons.scala}
+  
+  $\Rightarrow$ mit \texttt{Nil} drücken wir die leere Liste aus
+  \item \textbf{Listen sind homogen}\footnote{d.h. innerhalb einer Liste
+  müssen alle Elemente vom selben Typ sein}:
+  
+  \lstinputlisting[label=src:listen_1.scala]{beispiele/listen_1.scala}
+  
+  \item \textbf{Item an Liste dranhängen}:
+  
+  \lstinputlisting[label=src:collection_append.scala]{beispiele/collection_append.scala}
+  
+  die alte Variable x bleibt unverändert und an die neue Liste mit den Wert
+  99 als head wird alte Liste x drangehangen\footnote{läuft in O(1)}
+  \item \textbf{Listen mergen}: via \texttt{:::}
+  
+  \lstinputlisting[label=src:collection_mergen.scala]{beispiele/collection_mergen.scala}
+  
+  \item \textbf{typische Listen-Ops}:
+  
+  \lstinputlisting[label=src:collection_ops.scala]{beispiele/collection_ops.scala}
+  
+  \item \texttt{filter} funzt bei jeder Collection, welche einen
+  bestimmten Typ enthält:
+  
+  \lstinputlisting[label=src:collection_universel.scala]{beispiele/collection_universel.scala}
+  
+  $\Rightarrow$ konvertieren einen String in \texttt{List[Char]} \und 
+  filtern via Methode aus Java aus dieser Char-Liste die Zahlen heraus
+\end{itemize}
+
+
+\subsection{Transformation}
+\begin{itemize}
+  \item \texttt{map} transformiert alle Elemente einer Collection
+  basierend auf eine Funktion:
+  
+  \lstinputlisting[label=src:collection_transformation_map.scala]{beispiele/collection_transformation_map.scala}
+  
+  
+  mit Listen kann man komplexe DB-Queries machen
+  \und Elemente in Liste ausgeben:
+  
+  \lstinputlisting[label=src:collection_db_query.scala]{beispiele/collection_db_query.scala}
+  
+  \item \texttt{List} hat \texttt{sort}-Methode:
+  
+  \lstinputlisting[label=src:collection_sort.scala]{beispiele/collection_sort.scala}
+  
+  \item \texttt{reduceLeft}: Operation auf adjazenten Elemente einer
+  Collection rekursiv durchführen bis alles abgegrast ist:
+  
+  \lstinputlisting[label=src:collection_reduce_left.scala]{beispiele/collection_reduce_left.scala}
+  
+  \item \texttt{foldLeft} arbeitet wie \texttt{reduceLeft}, nur dass es 
+  einen \textit{Seed} als Startpunkt nimmt, wobei der Seed-Typ den Rückgabewert von \texttt{foldLeft} ist:
+  
+  \lstinputlisting[label=src:collection_foldLeft.scala]{beispiele/collection_foldLeft.scala}
+  
+  \item geschachtelten Collection erstellen:
+  
+  \lstinputlisting[label=src:collection_nested.scala]{beispiele/collection_nested.scala}
+  
+  wollen wir die Ergebnisse einer geschachtelten Schleife 
+  \enquote{platten}, so \texttt{flatMap}-Methode verwenden
+  
+  \item \textbf{for-Comprehension}\footnote{for-Comprehension ist 
+  kein Schleifenkonstrukt sondern syntaktische Vereinfachung}
+  \begin{itemize}
+    \item angenommen haben Liste von Personen mit \texttt{namen} \und 
+    \texttt{age} \und wir wollem die Namen aller Personen ausgeben, die
+    alle über 20 sind
+    
+    \lstinputlisting[label=src:for_comprehension.scala]{beispiele/for_comprehension.scala}
+    
+    \item genereller Aufbau von for-comprehension:
+    
+    \begin{shadowminipage}
+    \lstinputlisting[label=src:for_comprehension_generell.scala]{beispiele/for_comprehension_generell.scala}
+    \end{shadowminipage}
+    
+    
+    s $\ldots$ ist eine Sequenz von \textit{Generatoren, Definitionen}
+    \und \textit{Filtern}
+    \item ein \textit{Generator} hat die Form 
+    \texttt{\textbf{val} x $<-$ e}, wobei
+    \texttt{e} eine Liste mit Werten ist \und an \texttt{x} 
+    werden sukzessiv die Elemente aus \texttt{e} gehangen
+    \texttt{x} ist ein Name für die Werte von \texttt{e}
+    \item ein \textit{Filter} ist ein Ausdruck \texttt{f} vom 
+    booleschen Typ
+    \item angenommen wir wollen das Produkt der Zahlen von 1 bis 10
+    zwischen den geraden \und ungeraden Zahlen bilden:
+    
+    \lstinputlisting[label=src:collection_for_comprehesion.scala]{beispiele/collection_for_comprehesion.scala}
+ 
+  \end{itemize}
+\end{itemize}
+
+
+\subsection{Tupel}
+\begin{itemize}
+  \item wollen Fkt. schreiben, die 3 return-Werte hat:
+  
+  \lstinputlisting[label=src:tupel_example.scala]{beispiele/tupel_example.scala}
+  
+  \begin{itemize}
+    \item der Compiler übersetzt \texttt{(Int, Double, Double)} in
+    \texttt{Tuple3[Int, Double, Double]}
+    \item \texttt{foldLeft} hat zwei Parameter: t $\ldots$ steht für 
+    Tuple3[Int, Double, Double]
+    \item der Rückgabewert der Funktion ist ein neues Tupel
+  \end{itemize}
+  \item man kann Tupel auf viele verschiedene Arten anlegen:
+  
+  \lstinputlisting[label=src:tupel_creation.scala]{beispiele/tupel_creation.scala}
+  
+  \item um auf Elemente von Tuppeln zuzugreifen verwendet man
+  \texttt{t.\_N}, wobei N für das gewünschte Element steht
+  \item ein anderes Beispiel mit der \texttt{tupleator} Methode, die aus den
+  Argumenten ein Tupel entsprechend der Anzahl der Argumente generiert
+  
+  \lstinputlisting[label=src:tupleator.scala]{beispiele/tupleator.scala}
+\end{itemize}
+
+
+\subsection{Map[K,V]}
+\begin{itemize}
+  \item \texttt{Map} ist Sammlung von key/value Paaren
+  \item \texttt{Map} Klasse ist unver-$\Delta$
+  \item jeder beliebige value kann von einen eindeutigen Schlüssel
+  beschrieben werden
+    
+  \item wenn wir auf einen Schlüsselzugreifen wollen, den es nicht
+  gibt wird eine Exception geworfen (was auch Sinn macht, denn man
+  kann ja nicht auf was zugreifen, was es gar nicht gibt):
+ 
+  \lstinputlisting[label=src:map_examples.scala]{beispiele/map_examples.scala}
+
+  macht man den \texttt{Map}-Zugriff mit get, so wird die 
+  \texttt{Option} (\texttt{Some} \oder \texttt{None}) zurückgegeben
+  \item mit \texttt{-= key} kann man Elemente aus einer Map entfernen
+  \item mit \texttt{.contains} kann man testen, ob ein Schlüssel in der
+  der Map enthalten ist
+\end{itemize}
 
 
 \section{Klassen und Objekte}
@@ -1155,191 +1442,6 @@ von Objekten via Pattern-Matching
 \pagebreak
 
 
-\section{Listen}
-\begin{itemize}
-  \item Listen in Scala unterscheiden sich folgendermaßen von
-  anderen Sprachen: \begin{enumerate}
-    \item sind unver-$\Delta$
-    \item haben rek. Struktur
-    \item haben viel mehr Ops. als Arrays
-  \end{enumerate}
-  
-  \lstinputlisting[label=src:listen.scala]{beispiele/listen.scala}
-  
-  \item Vorteile Unver-$\Delta$:
-  \begin{itemize}
-    \item weniger globale Zustände $\Rightarrow$ weniger Dinge können 
-    sich $\Delta$
-    \item Fkt. werden weniger anfällig für globale Zustände von Variablen 
-    \und Funktionen werden mehr transformativ $\Rightarrow$ Methoden
-    referenzieren viel weniger auf den externen Zustand von Variablen
-    \item solche Methoden sind leichter mit automatischen 
-    Tests\footnote{\texttt{ScalaCheck}} durchzuführen
-  \end{itemize}
-\end{itemize}
-
-
-\subsection{List[T]}
-\begin{itemize}
-  \item List[T] ist eine verkettete Liste vom 
-  Typ T\footnote{ist also verkettet} $\Rightarrow$ ist sequentielle Liste,
-  welche Javas primitve Datentypen beinhaltet (\texttt{Int, Float,
-  Double}), da sich um 
-  \textbf{boxing}\footnote{also Umwandlung von primitiven Datentypen in
-  Objekten} kümmert
-  \item \textbf{Listen-Konstruktoren}: \texttt{Nil} ist Repräsentant für
-  eine leere Liste, \texttt{::} (cons genannt) \uline{z.B.} 
-  \texttt{x :: xs} $\Rightarrow$ Liste mit ersten Element \texttt{x}
-  und zweiten Element/Liste \texttt{xs}
-  
-  \lstinputlisting[label=src:cons.scala]{beispiele/cons.scala}
-  
-  $\Rightarrow$ mit \texttt{Nil} drücken wir die leere Liste aus
-  \item \textbf{Listen sind homogen}\footnote{d.h. innerhalb einer Liste
-  müssen alle Elemente vom selben Typ sein}:
-  
-  \lstinputlisting[label=src:listen_1.scala]{beispiele/listen_1.scala}
-  
-  \item \textbf{Item an Liste dranhängen}:
-  
-  \lstinputlisting[label=src:collection_append.scala]{beispiele/collection_append.scala}
-  
-  die alte Variable x bleibt unverändert und an die neue Liste mit den Wert
-  99 als head wird alte Liste x drangehangen\footnote{läuft in O(1)}
-  \item \textbf{Listen mergen}: via \texttt{:::}
-  
-  \lstinputlisting[label=src:collection_mergen.scala]{beispiele/collection_mergen.scala}
-  
-  \item \textbf{typische Listen-Ops}:
-  
-  \lstinputlisting[label=src:collection_ops.scala]{beispiele/collection_ops.scala}
-  
-  \item \texttt{filter} funzt bei jeder Collection, welche einen
-  bestimmten Typ enthält:
-  
-  \lstinputlisting[label=src:collection_universel.scala]{beispiele/collection_universel.scala}
-  
-  $\Rightarrow$ konvertieren einen String in \texttt{List[Char]} \und 
-  filtern via Methode aus Java aus dieser Char-Liste die Zahlen heraus
-\end{itemize}
-
-
-\subsection{Transformation}
-\begin{itemize}
-  \item \texttt{map} transformiert alle Elemente einer Collection
-  basierend auf eine Funktion:
-  
-  \lstinputlisting[label=src:collection_transformation_map.scala]{beispiele/collection_transformation_map.scala}
-  
-  
-  mit Listen kann man komplexe DB-Queries machen
-  \und Elemente in Liste ausgeben:
-  
-  \lstinputlisting[label=src:collection_db_query.scala]{beispiele/collection_db_query.scala}
-  
-  \item \texttt{List} hat \texttt{sort}-Methode:
-  
-  \lstinputlisting[label=src:collection_sort.scala]{beispiele/collection_sort.scala}
-  
-  \item \texttt{reduceLeft}: Operation auf adjazenten Elemente einer
-  Collection rekursiv durchführen bis alles abgegrast ist:
-  
-  \lstinputlisting[label=src:collection_reduce_left.scala]{beispiele/collection_reduce_left.scala}
-  
-  \item \texttt{foldLeft} arbeitet wie \texttt{reduceLeft}, nur dass es 
-  einen \textit{Seed} als Startpunkt nimmt, wobei der Seed-Typ den Rückgabewert von \texttt{foldLeft} ist:
-  
-  \lstinputlisting[label=src:collection_foldLeft.scala]{beispiele/collection_foldLeft.scala}
-  
-  \item geschachtelten Collection erstellen:
-  
-  \lstinputlisting[label=src:collection_nested.scala]{beispiele/collection_nested.scala}
-  
-  wollen wir die Ergebnisse einer geschachtelten Schleife 
-  \enquote{platten}, so \texttt{flatMap}-Methode verwenden
-  
-  \item \textbf{for-Comprehension}\footnote{for-Comprehension ist 
-  kein Schleifenkonstrukt sondern syntaktische Vereinfachung}
-  \begin{itemize}
-    \item angenommen haben Liste von Personen mit \texttt{namen} \und 
-    \texttt{age} \und wir wollem die Namen aller Personen ausgeben, die
-    alle über 20 sind
-    
-    \lstinputlisting[label=src:for_comprehension.scala]{beispiele/for_comprehension.scala}
-    
-    \item genereller Aufbau von for-comprehension:
-    
-    \begin{shadowminipage}
-    \lstinputlisting[label=src:for_comprehension_generell.scala]{beispiele/for_comprehension_generell.scala}
-    \end{shadowminipage}
-    
-    
-    s $\ldots$ ist eine Sequenz von \textit{Generatoren, Definitionen}
-    \und \textit{Filtern}
-    \item ein \textit{Generator} hat die Form 
-    \texttt{\textbf{val} x $<-$ e}, wobei
-    \texttt{e} eine Liste mit Werten ist \und an \texttt{x} 
-    werden sukzessiv die Elemente aus \texttt{e} gehangen
-    \texttt{x} ist ein Name für die Werte von \texttt{e}
-    \item ein \textit{Filter} ist ein Ausdruck \texttt{f} vom 
-    booleschen Typ
-    \item angenommen wir wollen das Produkt der Zahlen von 1 bis 10
-    zwischen den geraden \und ungeraden Zahlen bilden:
-    
-    \lstinputlisting[label=src:collection_for_comprehesion.scala]{beispiele/collection_for_comprehesion.scala}
- 
-  \end{itemize}
-\end{itemize}
-
-
-\subsection{Tupel}
-\begin{itemize}
-  \item wollen Fkt. schreiben, die 3 return-Werte hat:
-  
-  \lstinputlisting[label=src:tupel_example.scala]{beispiele/tupel_example.scala}
-  
-  \begin{itemize}
-    \item der Compiler übersetzt \texttt{(Int, Double, Double)} in
-    \texttt{Tuple3[Int, Double, Double]}
-    \item \texttt{foldLeft} hat zwei Parameter: t $\ldots$ steht für 
-    Tuple3[Int, Double, Double]
-    \item der Rückgabewert der Funktion ist ein neues Tupel
-  \end{itemize}
-  \item man kann Tupel auf viele verschiedene Arten anlegen:
-  
-  \lstinputlisting[label=src:tupel_creation.scala]{beispiele/tupel_creation.scala}
-  
-  \item um auf Elemente von Tuppeln zuzugreifen verwendet man
-  \texttt{t.\_N}, wobei N für das gewünschte Element steht
-  \item ein anderes Beispiel mit der \texttt{tupleator} Methode, die aus den
-  Argumenten ein Tupel entsprechend der Anzahl der Argumente generiert
-  
-  \lstinputlisting[label=src:tupleator.scala]{beispiele/tupleator.scala}
-\end{itemize}
-
-
-\subsection{Map[K,V]}
-\begin{itemize}
-  \item \texttt{Map} ist Sammlung von key/value Paaren
-  \item \texttt{Map} Klasse ist unver-$\Delta$
-  \item jeder beliebige value kann von einen eindeutigen Schlüssel
-  beschrieben werden
-    
-  \item wenn wir auf einen Schlüsselzugreifen wollen, den es nicht
-  gibt wird eine Exception geworfen (was auch Sinn macht, denn man
-  kann ja nicht auf was zugreifen, was es gar nicht gibt):
- 
-  \lstinputlisting[label=src:map_examples.scala]{beispiele/map_examples.scala}
-
-  macht man den \texttt{Map}-Zugriff mit get, so wird die 
-  \texttt{Option} (\texttt{Some} \oder \texttt{None}) zurückgegeben
-  \item mit \texttt{-= key} kann man Elemente aus einer Map entfernen
-  \item mit \texttt{.contains} kann man testen, ob ein Schlüssel in der
-  der Map enthalten ist
-\end{itemize}
-\pagebreak
-
-
 \section{Varianz}
 Regeln festlegen, nach denen parametrisierte Typen als Parameter übergeben
 werden können
@@ -1372,111 +1474,8 @@ werden können
   
   \lstinputlisting[label=src:covariant_parameter_types.scala]{beispiele/covariant_parameter_types.scala}
 \end{itemize}
-\pagebreak
 
 
-\section{FP in Scala}
-
-
-\subsection{Was FP ist}
-\begin{itemize}
-  \item haben keine Seiteneffekte, d.h. Analyse, Testen \und debuggen
-  werden leichter
-  \item Variablen sind in FP immutable
-  \item \textit{referential transparency}\footnote{d.h. man kann eine
-  Funktion in jeden beliebigen Kontext aufrufen \und muss keine Sorgen 
-  um den Kontext machen in dem die Funktion aufgerufen wird}
-\end{itemize}
-
-
-\subsection{FP in Scala}
-\begin{itemize}
-  \item \ulab{Merke}: eine Funktion, die \texttt{Unit} zurückgibt,
-  hat pure Seiteneffekte, denn ansonsten ist die Funktion sinnlos,
-  da sie ja nichts zurückgibt
-  
-  \lstinputlisting[label=src:fp_list_map.scala]{beispiele/fp_list_map.scala}
-  
-  \item anonyme Fkt. auch auf ein val drücken:
-  
-  \lstinputlisting[label=src:fp_list_map_value.scala]{beispiele/fp_list_map_value.scala}
-  
-  $\Rightarrow$ \texttt{factor} ist kein formaler Parameter sondern eine
-  Referenz zu einer Variable in einen bestimmten \textit{scope}, d.h. 
-  der Compiler kreiert ein \textit{closure}
-  \item \textbf{Rekursion}:
-  
-  \begin{itemize}
-    \item verhindert mutable Variablen
-    \item aber Performanz-Overheadn \und Risiko des Stackoverflows
-    \item Performaz-Prosb können mit \textit{memorization} \und 
-    Stackoverflows können durch Umwandlung in eine spezielle 
-    Schleife (Tail Calls \und Tail-Call Optimierung) verbessert
-    werden
-  \end{itemize}
-\end{itemize}
-
-
-\subsection{Tail Calls}
-Tail Call, d.h. wenn eine Funktion sich erst bei ihren
-finalen Durchlauf selbst aufruft $\Rightarrow$ Schleifen verhindern die
-Gefahr eines Stackoverflows:
-
-  \lstinputlisting[label=src:factorial_recursive_and_tail_call.scala]{beispiele/factorial_recursive_and_tail_call.scala}
-
-
-\subsection{Funktionale Datenstrukturen}
-\begin{itemize}
-  \item \textbf{Listen}: tauchen ganz oft in FP auf
-  
-  \lstinputlisting[label=src:lists_fp.scala]{beispiele/lists_fp.scala}
-  
-  \item \textbf{hash/dictionary/map}
-    
-  \item \textbf{Mengen}: sind wie Listen, aber ihnen kann jedes
-  Element nur einmal vorkommen; Element Iteration geht in O(n)
-\end{itemize}
-
-
-\subsection{Traversieren, Filtering, Folding und Reducing}
-\begin{itemize}
-  \item traveriseren via \texttt{foreach}:
-  
-  \lstinputlisting[label=src:foreach.scala]{beispiele/foreach.scala}
-    
-  \item \texttt{filter} wird verwendet, um beim Traversieren durch eine
-  Collection bestimmte Elemente herauszufiltern:
-  
-  \lstinputlisting[label=src:filter.scala]{beispiele/filter.scala}
-  
-  \item \texttt{folding} \und \texttt{reducing} werden beide verwendet, um
-  eine collection zu schrumpfen, wobei folding immer mit einem 
-  \textit{seed} beginnt:
-  
-  \lstinputlisting[label=src:folding_reducing.scala]{beispiele/folding_reducing.scala}  
-\end{itemize}
-
-
-\subsection{Currying}
-\begin{itemize}
-  \item stammt vom Mathematiker \textbf{Haskell Curry} \und transformiert
-  eine Fkt., die mehrere Parameter, nimmt in eine Kettenfunktion, die 
-  nur einen Parameter nimmt
-  \item in Scala werdem curried Funktion mit mehreren Parameterlisten
-  definiert:
-  
-  \lstinputlisting[label=src:curried_functions.scala]{beispiele/curried_functions.scala}
-  
-  \item \uline{Verwendung}: spezialisierte Fkt. hat, die nur für 
-  bestimmte Daten geignet ist
-\end{itemize}
-
-
-\subsection{Lazy Vals}
-wenn man eine Variable als \texttt{lazy} deklariert, dann sollte
-man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen 
-
-\lstinputlisting[label=src:lazy_vals.scala]{beispiele/lazy_vals.scala} 
 
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
