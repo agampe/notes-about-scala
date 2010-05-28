@@ -1282,52 +1282,36 @@ Rückgabewert der Fkt.:
 
 
 \section{Varianz}
-$\Rightarrow$ es legt Regeln fest, nach denen parametrisierte Typen als Parameter
-  übergeben werden können
+Regeln festlegen, nach denen parametrisierte Typen als Parameter übergeben
+werden können
+
+
+\subsection{Varianzregeln}
+\begin{itemize}
+  \item $\Delta$ Container sollten invariant sein
+  \item unver-$\Delta$ Container sollten kovariant sein
+  \item die Inputs von Transformationen sollten kontravariant sein
+  \und die Outputs von Transformationen sollten kovariant sein
+\end{itemize}
   
 
 \subsection{Invariante Parametertypen}
 \begin{itemize}
   \item in Scala ist \texttt{Array[T]} \itbf{invariant}, d.h. 
-  man kann nur \texttt{Array[Strin]} an \texttt{foo(a: Array[String])}
+  man kann nur \texttt{Array[String]} an \texttt{foo(a: Array[String])}
   übergeben
-  \item invariante Typparameter schützen uns, wenn wir mit veränderlichen
-  Datentypen arbeiten
+  \item invariante Typparameter schützen, wenn wir mit
+  \textit{veränderlichen} Datentypen hantieren
 \end{itemize}
 
 
 \subsection{Kovariante Parametertypen}
 \begin{itemize}
-  \item sind gekennzeichnet durch ein \texttt{+} vor dem Typparameter,
-  \uline{z.B.} \texttt{List[+T]}
-  \item ein kovarianter Typ ist nützlich, wenn wir es mit einem
-  \textit{read-only} container zu tun haben
+  \item Kennzeichen: \texttt{+} vorm Typparameter, \uline{z.B.} 
+  \texttt{List[+T]}
+  \item Anwendung: wenn wir mit \textit{read-only} container umgehen
   
   \lstinputlisting[label=src:covariant_parameter_types.scala]{beispiele/covariant_parameter_types.scala}
-\end{itemize}
-
-
-\subsection{Kovariante Methoden}
-\begin{itemize}
-  \item \textbf{kovariant} heißt, dass der return-Wert von Funktionen in
-  abgeleiteten Klassen geändert werden kann:
-  
-  \begin{verbatim}
-  nabstract class A { def f(a: A): Any; }
-class B extends A { def f(a: A): A = a; }
-class C extends B { override def f(a: A): C = this; }
-  \end{verbatim}
-  \item Methoden sind aber niemals in ihren Parametern kontravariant, d.h. es
-  können keine weiteren Parameter ergänzt werden
-\end{itemize}
-
-
-\subsection{Varianzregeln}
-\begin{itemize}
-  \item veränderliche Container sollten invariant sein
-  \item unveränderliche Container sollten kovariant sein
-  \item die Inputs von Transformationen sollten kontravariant sein
-  \und die Outputs von Transformationen sollten kovariant sein
 \end{itemize}
 \pagebreak
 
