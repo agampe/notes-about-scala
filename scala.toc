@@ -48,15 +48,14 @@
 \contentsline {section}{\numberline {10}FP in Scala}{43}{section.10}
 \contentsline {subsection}{\numberline {10.1}Was FP ist}{43}{subsection.10.1}
 \contentsline {subsection}{\numberline {10.2}FP in Scala}{43}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}Rekursion}{43}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}Tail Calls und Tail-Call Optimierung}{44}{subsection.10.4}
-\contentsline {subsection}{\numberline {10.5}Funktionale Datenstrukturen}{44}{subsection.10.5}
-\contentsline {subsection}{\numberline {10.6}Traversieren, Mapping, Filtering, Folding und Reducing}{44}{subsection.10.6}
-\contentsline {subsection}{\numberline {10.7}Pattern Matching}{45}{subsection.10.7}
-\contentsline {subsection}{\numberline {10.8}Partielle Funktionen}{45}{subsection.10.8}
-\contentsline {subsection}{\numberline {10.9}Currying}{46}{subsection.10.9}
-\contentsline {subsection}{\numberline {10.10}Implicits}{46}{subsection.10.10}
-\contentsline {subsection}{\numberline {10.11}Lazy Vals}{47}{subsection.10.11}
+\contentsline {subsection}{\numberline {10.3}Tail Calls}{43}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}Funktionale Datenstrukturen}{44}{subsection.10.4}
+\contentsline {subsection}{\numberline {10.5}Traversieren, Mapping, Filtering, Folding und Reducing}{44}{subsection.10.5}
+\contentsline {subsection}{\numberline {10.6}Pattern Matching}{45}{subsection.10.6}
+\contentsline {subsection}{\numberline {10.7}Partielle Funktionen}{45}{subsection.10.7}
+\contentsline {subsection}{\numberline {10.8}Currying}{46}{subsection.10.8}
+\contentsline {subsection}{\numberline {10.9}Implicits}{46}{subsection.10.9}
+\contentsline {subsection}{\numberline {10.10}Lazy Vals}{47}{subsection.10.10}
 \contentsline {section}{\numberline {11}Scala Typsystem}{48}{section.11}
 \contentsline {subsection}{\numberline {11.1}Parametriesierte Typen}{48}{subsection.11.1}
 \contentsline {subsection}{\numberline {11.2}Typen Bounds}{48}{subsection.11.2}
