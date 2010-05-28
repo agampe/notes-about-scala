@@ -41,7 +41,7 @@
 \contentsline {subsection}{\numberline {7.3}Funktionen in Container}{38}{subsection.7.3}
 \contentsline {section}{\numberline {8}Pattern-Matching}{39}{section.8}
 \contentsline {section}{\numberline {9}Varianz}{40}{section.9}
-\contentsline {subsection}{\numberline {9.1}Invariante Parametertypen}{41}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.1}Invariante Parametertypen}{40}{subsection.9.1}
 \contentsline {subsection}{\numberline {9.2}Kovariante Parametertypen}{41}{subsection.9.2}
 \contentsline {subsection}{\numberline {9.3}Kovariante Methoden}{41}{subsection.9.3}
 \contentsline {subsection}{\numberline {9.4}Varianzregeln}{41}{subsection.9.4}

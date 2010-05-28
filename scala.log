@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.2.9)  28 MAY 2010 08:56
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.2.9)  28 MAY 2010 09:08
 entering extended mode
  %&-line parsing enabled.
 **\nonstopmode \input{"/home/helex/proggen/scala/scala.tex"}
@@ -954,22 +954,22 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 (/home/helex/proggen/scala/beispiele/pattern_matching_fibonacci.scala)
 (/home/helex/proggen/scala/beispiele/matching_any_type.scala)
 (/home/helex/proggen/scala/beispiele/pattern_datatypes.scala)
-(/home/helex/proggen/scala/beispiele/pattern_matching_case_class.scala [39])
+(/home/helex/proggen/scala/beispiele/pattern_matching_case_class.scala)
+[39] (/home/helex/proggen/scala/beispiele/pattern_matching_nested.scala)
 (/home/helex/proggen/scala/beispiele/pattern_matching_lists.scala)
-(/home/helex/proggen/scala/beispiele/pattern_matching_nested.scala)
-Overfull \hbox (52.80544pt too wide) in paragraph at lines 1295--1298
+Overfull \hbox (52.80544pt too wide) in paragraph at lines 1290--1293
 []\OT1/ppl/m/n/10.95 in Sca-la ist \OT1/cmtt/m/n/10.95 Array[T] \OT1/ppl/b/it/1
 0.95 in-va-ri-ant\OT1/ppl/m/n/10.95 , d.h. man kann nur \OT1/cmtt/m/n/10.95 Arr
 ay[Strin] \OT1/ppl/m/n/10.95 an \OT1/cmtt/m/n/10.95 foo(a: Array[String])
  []
 
 [40] (/home/helex/proggen/scala/beispiele/covariant_parameter_types.scala)
-Overfull \hbox (19.52855pt too wide) in paragraph at lines 1316--1318
+Overfull \hbox (19.52855pt too wide) in paragraph at lines 1311--1313
 []\OT1/ppl/b/n/10.95 kovariant \OT1/ppl/m/n/10.95 hei^^Yt, dass der return-Wert
  von Funk-tio-nen in ab-ge-lei-te-ten Klas-sen ge[]andert
  []
 
-[41] <bilder/typhierarchie.png, id=1486, 586.19pt x 576.1525pt>
+[41] <bilder/typhierarchie.png, id=1485, 586.19pt x 576.1525pt>
 File: bilder/typhierarchie.png Graphic file (type png)
 
 <use bilder/typhierarchie.png> [42 </home/helex/proggen/scala/bilder/typhierarc
@@ -984,7 +984,7 @@ hie.png>]
 (/home/helex/proggen/scala/beispiele/filter.scala)
 (/home/helex/proggen/scala/beispiele/folding_reducing.scala) [47]
 (/home/helex/proggen/scala/beispiele/partial_functions_easy.scala)
-Overfull \hbox (0.42108pt too wide) in paragraph at lines 1498--1500
+Overfull \hbox (0.42108pt too wide) in paragraph at lines 1493--1495
 []\OT1/ppl/m/n/10.95 stammt vom Ma-the-ma-ti-ker Has-kell Cur-ry u. trans-for-m
 iert ei-ne Funk-ti-on, die meh-
  []
@@ -992,7 +992,7 @@ iert ei-ne Funk-ti-on, die meh-
 (/home/helex/proggen/scala/beispiele/curried_functions.scala)
 (/home/helex/proggen/scala/beispiele/implicit.scala [48])
 (/home/helex/proggen/scala/beispiele/lazy_vals.scala) [49] [50]
-Overfull \hbox (2.91792pt too wide) in paragraph at lines 1632--1634
+Overfull \hbox (2.91792pt too wide) in paragraph at lines 1627--1629
 []\OT1/ppl/m/n/10.95 Scalas Ab-strak-ti-on kann als Ba-sis f[]ur Dienst-orienti
 ertes Komponenten-Model
  []
@@ -1003,9 +1003,9 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12678 strings out of 94101
- 189710 string characters out of 1165811
- 323271 words of memory out of 1500000
+ 12677 strings out of 94101
+ 189694 string characters out of 1165811
+ 318249 words of memory out of 1500000
  14181 multiletter control sequences out of 10000+50000
  32498 words of font info for 90 fonts, out of 1200000 for 2000
  637 hyphenation exceptions out of 8191
@@ -1021,9 +1021,9 @@ usr/share/texmf-texlive/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-t
 exlive/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texmf-texlive/fonts/typ
 e1/urw/palatino/uplr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/u
 plri8a.pfb>
-Output written on scala.pdf (51 pages, 553955 bytes).
+Output written on scala.pdf (51 pages, 553635 bytes).
 PDF statistics:
- 1996 PDF objects out of 2073 (max. 8388607)
- 1204 named destinations out of 1440 (max. 131072)
+ 1995 PDF objects out of 2073 (max. 8388607)
+ 1203 named destinations out of 1440 (max. 131072)
  590 words of extra memory for PDF output out of 10000 (max. 10000000)
 

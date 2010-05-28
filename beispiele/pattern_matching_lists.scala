@@ -4,7 +4,6 @@ def sumOdd(in: List[Int]): Int = in match {
   case _ :: rest => sumOdd(rest)
 }
 
-
 def noPairs[T](in: List[T]): List[T] = in match {
   case Nil => Nil
   case a :: b :: rest if a == b => noPairs(a :: rest)
