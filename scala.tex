@@ -323,6 +323,16 @@ Günther veröffentlich.)}
     \item \texttt{None} ist ein Objekt \und in einem Scala Programm gibt es
     nur eine Instanz von \texttt{None}
   \end{itemize}
+  \item alle \texttt{AnyVal} Instanzen sind immutable \und alle 
+  \texttt{Anyvalue} Typen sind \textit{abstract final}
+  \item \uline{Nerdwissen}:
+  \begin{itemize}
+    \item das sogenannte \textbf{Predef Objekt} lädt automatisch
+    wichtige Sachen in ein Scala Programm
+    \item Objekte werden automatisch und \textit{lazy} zur Laufzeit
+    instanziiert
+    \item Typahierachieübersicht siehe Odersky-Paper
+  \end{itemize}
 \end{itemize}
   
 
@@ -498,6 +508,25 @@ Einfach Klassen von \texttt{Enumeration} erben lassen \und es ist dann
 keine besondere Notation für die Elemente der Aufzählung nötig
 
 \lstinputlisting[label=src:enumeration.scala]{beispiele/enumeration.scala}
+
+
+\subsection{Linearisierung der Objekthierarchie}
+betrachte folgendes Bsp.:
+
+\lstinputlisting[label=src:linearization_object_hierarchiy.scala]{beispiele/linearization_object_hierarchiy.scala}
+
+
+hier ist der Linearisierungsalgo, den Scala verwendet:
+
+\begin{enumerate}
+  \item Put the actual type of the instance as the first element.
+  \item Starting with the rightmost parent type and working left, compute the linearization
+of each type, appending its linearization to the cumulative linearization. (Ignore
+ScalaObject, AnyRef, and Any for now.)
+  \item Working from left to right, remove any type if it appears again to the right of the
+current position.
+  \item Append ScalaObject, AnyRef, and Any.
+\end{enumerate}
 \pagebreak
 
 
@@ -1313,52 +1342,6 @@ werden können
   
   \lstinputlisting[label=src:covariant_parameter_types.scala]{beispiele/covariant_parameter_types.scala}
 \end{itemize}
-\pagebreak
-
-
-\section{Scalas Objekt System}
-\begin{itemize}
-  \item das sogenannte \textbf{Predef Objekt} lädt automatisch
-wichtige Sachen in ein Scala Programm
-  \item Objekte werden automatisch und \textit{lazy} zur Laufzeit
-  instamziiert 
-  \item 
-\end{itemize}
-
-
-\subsection{Typhierarchie}
-siehe folgendes Bild
-
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.7]{bilder/typhierarchie.png}
-\end{center}
-\end{figure}
-
-
-\begin{itemize}
-  \item alle \texttt{AnyVal} Instanzen sind immutable \und 
-  alle \texttt{Anyvalue} Typen sind \textit{abstract final}
-\end{itemize}
-
-
-\subsection{Linearisierung der Objekthierarchie}
-betrachte folgendes Beispiel:
-
-\lstinputlisting[label=src:linearization_object_hierarchiy.scala]{beispiele/linearization_object_hierarchiy.scala}
-
-
-hier ist der Linearisierungsalso, den Scala verwendet:
-
-\begin{enumerate}
-  \item Put the actual type of the instance as the first element.
-  \item Starting with the rightmost parent type and working left, compute the linearization
-of each type, appending its linearization to the cumulative linearization. (Ignore
-ScalaObject, AnyRef, and Any for now.)
-  \item Working from left to right, remove any type if it appears again to the right of the
-current position.
-  \item Append ScalaObject, AnyRef, and Any.
-\end{enumerate}
 \pagebreak
 
 
