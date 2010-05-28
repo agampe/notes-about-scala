@@ -1030,22 +1030,22 @@ von Objekten via Pattern-Matching
 
 \subsection{List[T]}
 \begin{itemize}
-  \item List[T] stellen eine verkettete Liste vom Typ T dar, d.h. ist eine
-  sequentielle Liste welche Javas primitve Datentypen beinhaltet 
-  (\texttt{Int, Float, Double}), da sich um 
+  \item List[T] ist eine verkettete Liste vom 
+  Typ T\footnote{ist also verkettet} $\Rightarrow$ ist sequentielle Liste,
+  welche Javas primitve Datentypen beinhaltet (\texttt{Int, Float,
+  Double}), da sich um 
   \textbf{boxing}\footnote{also Umwandlung von primitiven Datentypen in
   Objekten} kümmert
   \item \textbf{Listen-Konstruktoren}: \texttt{Nil} ist Repräsentant für
   eine leere Liste, \texttt{::} (cons genannt) \uline{z.B.} 
-  \texttt{x :: xs}, d.h. ist eine Liste, bei der das erste Element \texttt{x}
-  ist \und gefolgt wird aus (Elemente der) Liste \texttt{xs}
+  \texttt{x :: xs} $\Rightarrow$ Liste mit ersten Element \texttt{x}
+  und zweiten Element/Liste \texttt{xs}
   
   \lstinputlisting[label=src:cons.scala]{beispiele/cons.scala}
   
-  $\Rightarrow$ das letzte Element einer \enquote{cons} muss immer einer
-  Liste sein (mit \texttt{Nil} drücken wir die leere Liste aus)
-  \item \textbf{Listen sind homogen}\footnote{d.h. innerhalb einer Liste müssen
-  alle Elemente vom selben Typ sein}
+  $\Rightarrow$ mit \texttt{Nil} drücken wir die leere Liste aus
+  \item \textbf{Listen sind homogen}\footnote{d.h. innerhalb einer Liste
+  müssen alle Elemente vom selben Typ sein}:
   
   \lstinputlisting[label=src:listen_1.scala]{beispiele/listen_1.scala}
   
@@ -1054,13 +1054,12 @@ von Objekten via Pattern-Matching
   \lstinputlisting[label=src:collection_append.scala]{beispiele/collection_append.scala}
   
   die alte Variable x bleibt unverändert und an die neue Liste mit den Wert
-  99 als head wird einfach die alte Liste x drangehangen $\Rightarrow$ 
-  diese Operation läuft in O(1)
-  \item \textbf{Listen mergen}:\texttt{:::}-Operator:
+  99 als head wird alte Liste x drangehangen\footnote{läuft in O(1)}
+  \item \textbf{Listen mergen}: via \texttt{:::}
   
   \lstinputlisting[label=src:collection_mergen.scala]{beispiele/collection_mergen.scala}
   
-  \item \itbf{typische Listen-Operatoren}:
+  \item \textbf{typische Listen-Ops}:
   
   \lstinputlisting[label=src:collection_ops.scala]{beispiele/collection_ops.scala}
   
@@ -1069,7 +1068,7 @@ von Objekten via Pattern-Matching
   
   \lstinputlisting[label=src:collection_universel.scala]{beispiele/collection_universel.scala}
   
-  $\Rightarrow$ wir konvertieren einen String in \texttt{List[Char]} \und 
+  $\Rightarrow$ konvertieren einen String in \texttt{List[Char]} \und 
   filtern via Methode aus Java aus dieser Char-Liste die Zahlen heraus
 \end{itemize}
 
