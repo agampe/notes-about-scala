@@ -8,6 +8,7 @@
 \BOOKMARK [2][-]{subsection.2.5}{for-Schleife}{section.2}
 \BOOKMARK [2][-]{subsection.2.6}{try-catch, throw und finally}{section.2}
 \BOOKMARK [2][-]{subsection.2.7}{Enumerations}{section.2}
+\BOOKMARK [2][-]{subsection.2.8}{Linearisierung der Objekthierarchie}{section.2}
 \BOOKMARK [1][-]{section.3}{Ausdr\374cke und Funktionen}{}
 \BOOKMARK [2][-]{subsection.3.1}{Funktionen}{section.3}
 \BOOKMARK [3][-]{subsubsection.3.1.1}{Verschachtelte Funktionen und Parameter}{subsection.3.1}
@@ -41,31 +42,27 @@
 \BOOKMARK [2][-]{subsection.7.3}{Funktionen in Container}{section.7}
 \BOOKMARK [1][-]{section.8}{Pattern-Matching}{}
 \BOOKMARK [1][-]{section.9}{Varianz}{}
-\BOOKMARK [2][-]{subsection.9.1}{Invariante Parametertypen}{section.9}
-\BOOKMARK [2][-]{subsection.9.2}{Kovariante Parametertypen}{section.9}
-\BOOKMARK [2][-]{subsection.9.3}{Kovariante Methoden}{section.9}
-\BOOKMARK [2][-]{subsection.9.4}{Varianzregeln}{section.9}
-\BOOKMARK [1][-]{section.10}{Scalas Objekt System}{}
-\BOOKMARK [2][-]{subsection.10.1}{Typhierarchie}{section.10}
-\BOOKMARK [2][-]{subsection.10.2}{Linearisierung der Objekthierarchie}{section.10}
-\BOOKMARK [1][-]{section.11}{FP in Scala}{}
-\BOOKMARK [2][-]{subsection.11.1}{Was FP ist}{section.11}
-\BOOKMARK [2][-]{subsection.11.2}{FP in Scala}{section.11}
-\BOOKMARK [2][-]{subsection.11.3}{Rekursion}{section.11}
-\BOOKMARK [2][-]{subsection.11.4}{Tail Calls und Tail-Call Optimierung}{section.11}
-\BOOKMARK [2][-]{subsection.11.5}{Funktionale Datenstrukturen}{section.11}
-\BOOKMARK [2][-]{subsection.11.6}{Traversieren, Mapping, Filtering, Folding und Reducing}{section.11}
-\BOOKMARK [2][-]{subsection.11.7}{Pattern Matching}{section.11}
-\BOOKMARK [2][-]{subsection.11.8}{Partielle Funktionen}{section.11}
-\BOOKMARK [2][-]{subsection.11.9}{Currying}{section.11}
-\BOOKMARK [2][-]{subsection.11.10}{Implicits}{section.11}
-\BOOKMARK [2][-]{subsection.11.11}{Lazy Vals}{section.11}
-\BOOKMARK [1][-]{section.12}{Scala Typsystem}{}
-\BOOKMARK [2][-]{subsection.12.1}{Parametriesierte Typen}{section.12}
-\BOOKMARK [2][-]{subsection.12.2}{Typen Bounds}{section.12}
-\BOOKMARK [2][-]{subsection.12.3}{Nothing und Null}{section.12}
-\BOOKMARK [1][-]{section.13}{Fragen}{}
-\BOOKMARK [2][-]{subsection.13.1}{Tempror\344res f\374r DA}{section.13}
-\BOOKMARK [3][-]{subsubsection.13.1.1}{Statische versus Dynamsich typisierte Sprachen}{subsection.13.1}
-\BOOKMARK [3][-]{subsubsection.13.1.2}{Typinferenz}{subsection.13.1}
-\BOOKMARK [1][-]{section.14}{Sachen f\374r MT}{}
+\BOOKMARK [2][-]{subsection.9.1}{Varianzregeln}{section.9}
+\BOOKMARK [2][-]{subsection.9.2}{Invariante Parametertypen}{section.9}
+\BOOKMARK [2][-]{subsection.9.3}{Kovariante Parametertypen}{section.9}
+\BOOKMARK [1][-]{section.10}{FP in Scala}{}
+\BOOKMARK [2][-]{subsection.10.1}{Was FP ist}{section.10}
+\BOOKMARK [2][-]{subsection.10.2}{FP in Scala}{section.10}
+\BOOKMARK [2][-]{subsection.10.3}{Rekursion}{section.10}
+\BOOKMARK [2][-]{subsection.10.4}{Tail Calls und Tail-Call Optimierung}{section.10}
+\BOOKMARK [2][-]{subsection.10.5}{Funktionale Datenstrukturen}{section.10}
+\BOOKMARK [2][-]{subsection.10.6}{Traversieren, Mapping, Filtering, Folding und Reducing}{section.10}
+\BOOKMARK [2][-]{subsection.10.7}{Pattern Matching}{section.10}
+\BOOKMARK [2][-]{subsection.10.8}{Partielle Funktionen}{section.10}
+\BOOKMARK [2][-]{subsection.10.9}{Currying}{section.10}
+\BOOKMARK [2][-]{subsection.10.10}{Implicits}{section.10}
+\BOOKMARK [2][-]{subsection.10.11}{Lazy Vals}{section.10}
+\BOOKMARK [1][-]{section.11}{Scala Typsystem}{}
+\BOOKMARK [2][-]{subsection.11.1}{Parametriesierte Typen}{section.11}
+\BOOKMARK [2][-]{subsection.11.2}{Typen Bounds}{section.11}
+\BOOKMARK [2][-]{subsection.11.3}{Nothing und Null}{section.11}
+\BOOKMARK [1][-]{section.12}{Fragen}{}
+\BOOKMARK [2][-]{subsection.12.1}{Tempror\344res f\374r DA}{section.12}
+\BOOKMARK [3][-]{subsubsection.12.1.1}{Statische versus Dynamsich typisierte Sprachen}{subsection.12.1}
+\BOOKMARK [3][-]{subsubsection.12.1.2}{Typinferenz}{subsection.12.1}
+\BOOKMARK [1][-]{section.13}{Sachen f\374r MT}{}

@@ -4,68 +4,65 @@
 \contentsline {subsection}{\numberline {2.1}Paradigmen}{10}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Operationen sind Objekte}{11}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Varablendeklarationen}{12}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}if/else und while}{12}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.4}if/else und while}{13}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}for-Schleife}{13}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}try-catch, throw und finally}{13}{subsection.2.6}
 \contentsline {subsection}{\numberline {2.7}Enumerations}{14}{subsection.2.7}
-\contentsline {section}{\numberline {3}Ausdr\IeC {\"u}cke und Funktionen}{15}{section.3}
-\contentsline {subsection}{\numberline {3.1}Funktionen}{15}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Verschachtelte Funktionen und Parameter}{15}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Parameter}{16}{subsubsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.3}Callback}{16}{subsubsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.4}Anonyme Funktionen}{17}{subsubsection.3.1.4}
-\contentsline {subsection}{\numberline {3.2}Schwanzrekursion}{17}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Currying}{18}{subsection.3.3}
-\contentsline {section}{\numberline {4}Klassen und Objekte}{19}{section.4}
-\contentsline {subsection}{\numberline {4.1}Klassen}{21}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Klassenimport}{21}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Klassenhierarchie}{21}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Overriding}{22}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Abstraktion}{22}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Companion Objekte}{23}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Komposition}{24}{subsection.4.7}
-\contentsline {subsection}{\numberline {4.8}Dekomposition}{25}{subsection.4.8}
-\contentsline {subsection}{\numberline {4.9}Case-Klassen}{26}{subsection.4.9}
-\contentsline {subsection}{\numberline {4.10}Pattern Matching}{27}{subsection.4.10}
-\contentsline {subsection}{\numberline {4.11}traits}{28}{subsection.4.11}
-\contentsline {section}{\numberline {5}Generische Typen und Methoden}{30}{section.5}
-\contentsline {subsection}{\numberline {5.1}Tuples}{31}{subsection.5.1}
-\contentsline {section}{\numberline {6}Listen}{32}{section.6}
-\contentsline {subsection}{\numberline {6.1}List[T]}{32}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Transformation}{33}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Tupel}{35}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Map[K,V]}{36}{subsection.6.4}
-\contentsline {section}{\numberline {7}Funktionen}{37}{section.7}
-\contentsline {subsection}{\numberline {7.1}Partielle Anwendungen}{37}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Typparameter}{38}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Funktionen in Container}{38}{subsection.7.3}
-\contentsline {section}{\numberline {8}Pattern-Matching}{39}{section.8}
-\contentsline {section}{\numberline {9}Varianz}{40}{section.9}
-\contentsline {subsection}{\numberline {9.1}Invariante Parametertypen}{40}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Kovariante Parametertypen}{41}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Kovariante Methoden}{41}{subsection.9.3}
-\contentsline {subsection}{\numberline {9.4}Varianzregeln}{41}{subsection.9.4}
-\contentsline {section}{\numberline {10}Scalas Objekt System}{42}{section.10}
-\contentsline {subsection}{\numberline {10.1}Typhierarchie}{42}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Linearisierung der Objekthierarchie}{42}{subsection.10.2}
-\contentsline {section}{\numberline {11}FP in Scala}{45}{section.11}
-\contentsline {subsection}{\numberline {11.1}Was FP ist}{45}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}FP in Scala}{45}{subsection.11.2}
-\contentsline {subsection}{\numberline {11.3}Rekursion}{45}{subsection.11.3}
-\contentsline {subsection}{\numberline {11.4}Tail Calls und Tail-Call Optimierung}{46}{subsection.11.4}
-\contentsline {subsection}{\numberline {11.5}Funktionale Datenstrukturen}{46}{subsection.11.5}
-\contentsline {subsection}{\numberline {11.6}Traversieren, Mapping, Filtering, Folding und Reducing}{46}{subsection.11.6}
-\contentsline {subsection}{\numberline {11.7}Pattern Matching}{47}{subsection.11.7}
-\contentsline {subsection}{\numberline {11.8}Partielle Funktionen}{47}{subsection.11.8}
-\contentsline {subsection}{\numberline {11.9}Currying}{48}{subsection.11.9}
-\contentsline {subsection}{\numberline {11.10}Implicits}{48}{subsection.11.10}
-\contentsline {subsection}{\numberline {11.11}Lazy Vals}{49}{subsection.11.11}
-\contentsline {section}{\numberline {12}Scala Typsystem}{50}{section.12}
-\contentsline {subsection}{\numberline {12.1}Parametriesierte Typen}{50}{subsection.12.1}
-\contentsline {subsection}{\numberline {12.2}Typen Bounds}{50}{subsection.12.2}
-\contentsline {subsection}{\numberline {12.3}Nothing und Null}{50}{subsection.12.3}
-\contentsline {section}{\numberline {13}Fragen}{50}{section.13}
-\contentsline {subsection}{\numberline {13.1}Tempror\IeC {\"a}res f\IeC {\"u}r DA}{51}{subsection.13.1}
-\contentsline {subsubsection}{\numberline {13.1.1}Statische versus Dynamsich typisierte Sprachen}{51}{subsubsection.13.1.1}
-\contentsline {subsubsection}{\numberline {13.1.2}Typinferenz}{51}{subsubsection.13.1.2}
-\contentsline {section}{\numberline {14}Sachen f\IeC {\"u}r MT}{51}{section.14}
+\contentsline {subsection}{\numberline {2.8}Linearisierung der Objekthierarchie}{14}{subsection.2.8}
+\contentsline {section}{\numberline {3}Ausdr\IeC {\"u}cke und Funktionen}{16}{section.3}
+\contentsline {subsection}{\numberline {3.1}Funktionen}{16}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Verschachtelte Funktionen und Parameter}{16}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Parameter}{17}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Callback}{17}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Anonyme Funktionen}{18}{subsubsection.3.1.4}
+\contentsline {subsection}{\numberline {3.2}Schwanzrekursion}{18}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Currying}{19}{subsection.3.3}
+\contentsline {section}{\numberline {4}Klassen und Objekte}{20}{section.4}
+\contentsline {subsection}{\numberline {4.1}Klassen}{22}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Klassenimport}{22}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Klassenhierarchie}{22}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Overriding}{23}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Abstraktion}{23}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Companion Objekte}{24}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Komposition}{25}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}Dekomposition}{26}{subsection.4.8}
+\contentsline {subsection}{\numberline {4.9}Case-Klassen}{27}{subsection.4.9}
+\contentsline {subsection}{\numberline {4.10}Pattern Matching}{28}{subsection.4.10}
+\contentsline {subsection}{\numberline {4.11}traits}{29}{subsection.4.11}
+\contentsline {section}{\numberline {5}Generische Typen und Methoden}{31}{section.5}
+\contentsline {subsection}{\numberline {5.1}Tuples}{32}{subsection.5.1}
+\contentsline {section}{\numberline {6}Listen}{33}{section.6}
+\contentsline {subsection}{\numberline {6.1}List[T]}{33}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Transformation}{34}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Tupel}{36}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Map[K,V]}{37}{subsection.6.4}
+\contentsline {section}{\numberline {7}Funktionen}{38}{section.7}
+\contentsline {subsection}{\numberline {7.1}Partielle Anwendungen}{38}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Typparameter}{39}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Funktionen in Container}{39}{subsection.7.3}
+\contentsline {section}{\numberline {8}Pattern-Matching}{40}{section.8}
+\contentsline {section}{\numberline {9}Varianz}{42}{section.9}
+\contentsline {subsection}{\numberline {9.1}Varianzregeln}{42}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Invariante Parametertypen}{42}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Kovariante Parametertypen}{42}{subsection.9.3}
+\contentsline {section}{\numberline {10}FP in Scala}{43}{section.10}
+\contentsline {subsection}{\numberline {10.1}Was FP ist}{43}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}FP in Scala}{43}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Rekursion}{43}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}Tail Calls und Tail-Call Optimierung}{44}{subsection.10.4}
+\contentsline {subsection}{\numberline {10.5}Funktionale Datenstrukturen}{44}{subsection.10.5}
+\contentsline {subsection}{\numberline {10.6}Traversieren, Mapping, Filtering, Folding und Reducing}{44}{subsection.10.6}
+\contentsline {subsection}{\numberline {10.7}Pattern Matching}{45}{subsection.10.7}
+\contentsline {subsection}{\numberline {10.8}Partielle Funktionen}{45}{subsection.10.8}
+\contentsline {subsection}{\numberline {10.9}Currying}{46}{subsection.10.9}
+\contentsline {subsection}{\numberline {10.10}Implicits}{46}{subsection.10.10}
+\contentsline {subsection}{\numberline {10.11}Lazy Vals}{47}{subsection.10.11}
+\contentsline {section}{\numberline {11}Scala Typsystem}{48}{section.11}
+\contentsline {subsection}{\numberline {11.1}Parametriesierte Typen}{48}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Typen Bounds}{48}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Nothing und Null}{48}{subsection.11.3}
+\contentsline {section}{\numberline {12}Fragen}{48}{section.12}
+\contentsline {subsection}{\numberline {12.1}Tempror\IeC {\"a}res f\IeC {\"u}r DA}{49}{subsection.12.1}
+\contentsline {subsubsection}{\numberline {12.1.1}Statische versus Dynamsich typisierte Sprachen}{49}{subsubsection.12.1.1}
+\contentsline {subsubsection}{\numberline {12.1.2}Typinferenz}{49}{subsubsection.12.1.2}
+\contentsline {section}{\numberline {13}Sachen f\IeC {\"u}r MT}{49}{section.13}
