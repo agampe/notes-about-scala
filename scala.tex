@@ -313,11 +313,18 @@ Günther veröffentlich.)}
   \item Scala unterscheidet nicht zwischen Identifier \und Operatorennamen,
   d.h. \texttt{xs filter (pivot $>$)} ist äquivalent zu 
   \texttt{xs.filter(pivot $>$)}
-  \item alle Funktionen haben die \texttt{apply}-Methode, welche die Funktion 
-  ausführen
-
+  \item alle Funktionen haben die \texttt{apply}-Methode, welche die 
+  Funktion ausführen
+  \item \textbf{Option[T]}
+  \begin{itemize}
+    \item ist Alternative zu Javas \texttt{null}
+    \item \texttt{Option} hat nur die Werte \texttt{Some[T]} \oder 
+    \texttt{None} haben
+    \item \texttt{None} ist ein Objekt \und in einem Scala Programm gibt es
+    nur eine Instanz von \texttt{None}
+  \end{itemize}
 \end{itemize}
-
+  
 
 \subsection{Paradigmen}
 \ulbf{\kreis{1. } OOP-Paradigma}
@@ -1179,16 +1186,7 @@ von Objekten via Pattern-Matching
   \item mit \texttt{.contains} kann man testen, ob ein Schlüssel in der
   der Map enthalten ist
 \end{itemize}
-
-
-\subsection{Option[T]}
-\begin{itemize}
-  \item ist eine mächtige Alternative zu Javas \texttt{null}
-  \item \texttt{Option} hat nur die Werte \texttt{Some[T]} \oder 
-  \texttt{None} haben
-  \item \texttt{None} ist ein Objekt \und in einem Scala Programm gibt es
-  nur eine Instanz von \texttt{None}
-\end{itemize}
+\pagebreak
 
 
 \section{Spaß mit Funktionen}
