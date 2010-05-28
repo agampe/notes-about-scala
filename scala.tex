@@ -369,6 +369,21 @@ Günther veröffentlich.)}
     sich Dinge $\Delta$ können, desto weniger Fehler können sich
     in den Code schleichen
   \end{itemize}
+  
+  \item Unterschied zwischen \texttt{def x = e} \und \texttt{val x = e}:
+  \begin{itemize}
+    \item \texttt{def} - hier wird \texttt{e} nicht ausgewertet, sondern erst,
+    wenn \texttt{x} verwendet wird
+    \item \texttt{val} - hier wird \texttt{e} sofort 
+    ausgewertet\footnote{sobald man \texttt{x} verwendet, ist der Ausdruck 
+    \texttt{e} bereits vorhanden}
+  \end{itemize}
+  \item \ulab{Frage}: Wie werden Ausdrücke ausgewertet? \begin{itemize}
+    \item schnappe die die am meisten links stehende Operation
+    \item werte die Operanden aus
+    \item verwende die Operation entsprechend mit den Werten der Operanden
+  \end{itemize}
+
 \end{itemize}
   
 
@@ -567,24 +582,6 @@ current position.
 
 \section{Funktionen}
 \begin{itemize}
-  \item Unterschied zwischen \texttt{def x = e} \und \texttt{val x = e}:
-  \begin{itemize}
-    \item \texttt{def} - hier wird \texttt{e} nicht ausgewertet, sondern erst,
-    wenn \texttt{x} verwendet wird
-    \item \texttt{val} - hier wird \texttt{e} sofort 
-    ausgewertet\footnote{sobald man \texttt{x} verwendet, ist der Ausdruck 
-    \texttt{e} bereits vorhanden}
-  \end{itemize}
-  \item \ulab{Frage}: Wie werden Ausdrücke ausgewertet? \begin{itemize}
-    \item schnappe die die am meisten links stehende Operation
-    \item werte die Operanden aus
-    \item verwende die Operation entsprechend mit den Werten der Operanden
-  \end{itemize}
-\end{itemize}
-
-
-\subsection{Funktionen}
-\begin{itemize}
   \item FKt. sind in Scala eine Instanz von Klassen:
   
   \lstinputlisting[label=src:functions.scala]{beispiele/functions.scala}
@@ -622,7 +619,7 @@ current position.
 \end{itemize}
 
 
-\subsubsection{Verschachtelte Funktionen und Parameter}
+\subsection{Verschachtelte Funktionen und Parameter}
 \begin{itemize}
   \item   \lstinputlisting[label=src:nested_functions.scala]{beispiele/nested_functions.scala}
   
@@ -636,7 +633,7 @@ current position.
 \end{itemize}
 
 
-\subsubsection{Parameter}
+\subsection{Parameter}
 \begin{itemize}
   \item Funktionsparameter werden immer von Klammern eingeschlossen
   
@@ -658,7 +655,7 @@ current position.
 \end{itemize}
 
 
-\subsubsection{Typparameter}
+\subsection{Typparameter}
 Typparameter definieren den Typ von Parametern \oder den 
 Rückgabewert der Fkt.:
   
