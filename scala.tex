@@ -1189,32 +1189,28 @@ von Objekten via Pattern-Matching
 \pagebreak
 
 
-\section{Spaß mit Funktionen}
+\section{Funktionen}
 \begin{itemize}
-  \item Funktionen sind in Scala eine Instanz von Klassen:
+  \item FKt. sind in Scala eine Instanz von Klassen:
   
   \lstinputlisting[label=src:functions.scala]{beispiele/functions.scala}
   
-  \item \textbf{Funktionen als Parameter übergeben}
-  \begin{itemize}
-    \item im folgenden Beispiel definieren wir eine Methode w42, die eine
-    Funktion als Parameter übernimmt, welche \texttt{Int} als Input hat 
-    \und \texttt{String} zurückgibt
-    
-    \lstinputlisting[label=src:function_as_parameter.scala]{beispiele/function_as_parameter.scala}
-    
-  \end{itemize}
+  \item \textbf{Funktionen als Parameter übergeben}:
+  
+  definieren eine Methode w42, die eine Funktion als Parameter übernimmt:
+  
+  \lstinputlisting[label=src:function_as_parameter.scala]{beispiele/function_as_parameter.scala}
+
 \end{itemize}
 
 
-\subsection{Partielle Anwendungen und Funktionen}
+\subsection{Partielle Anwendungen}
 \begin{itemize}
-  \item Methoden \und Funktionen sind in Scala etwas verschiedenes
-  \item in Scala ist alles bis auf Methoden eine Instanz $\Rightarrow$ 
-  Methoden sind keine Funktionen
-  \item Methoden werden an Instanzen angehangen \und können auf
-  Instanzen angewendet werden
-  \item in Scala können wir partiell angehauchte Funktionen von Methoden her ableiten - betrachten folgende Funktionen:
+  \item \textbf{in Scala ist alles bis auf Methoden eine 
+  Instanz}\footnote{Methoden sind keine Funktionen in Scala}
+  \item Methoden werden an Instanzen angehangen \und angewendet
+  \item in Scala können wir partiell angehauchte Funktionen von Methoden
+  her ableiten:
   
   \lstinputlisting[label=src:partial_functions.scala]{beispiele/partial_functions.scala}
   
@@ -1234,21 +1230,19 @@ von Objekten via Pattern-Matching
 \end{itemize}
 
 
-\subsection{Funktionen und Typparameter}
-\begin{itemize}
-  \item Methoden können Typparameter haben 
-  \item Typparameter definieren den Typ von Parametern \oder den 
-  Rückgabewert der Funktion:
+\subsection{Typparameter}
+Typparameter definieren den Typ von Parametern \oder den 
+Rückgabewert der Fkt.:
   
   \lstinputlisting[label=src:typparameter_functions.scala]{beispiele/typparameter_functions.scala}
-\end{itemize}
 
 
-\subsection{Funktionen in Container packen}
+\subsection{Funktionen in Container}
 \begin{itemize}
   \item Funktionen sind Instanzen \und deswegen kann man alles, was man
   mit Instanzen machen kann auch mit Funktionen machen
-  \item Im folgendne Erstellen wir ein Array von Funktionen:
+  \item Array von Funktionen\footnote{erinnert frappierend an
+  Wörterbuch der Algorithmen}:
   
   \lstinputlisting[label=src:function_container.scala]{beispiele/function_container.scala}  
 \end{itemize}
