@@ -1075,73 +1075,68 @@ von Objekten via Pattern-Matching
 
 \subsection{Transformation}
 \begin{itemize}
-  \item \texttt{map} Funktion transformiert alle Elemente einer Collection
-  basierend auf eine Funktion. Sollte die Funktion, welche an \texttt{map}
-  übergeben wird, einen anderen Typ zurückgeben, als die ursprüngliche
-  Collection, so wird der Typ der Funktion zurückgegeben
+  \item \texttt{map} transformiert alle Elemente einer Collection
+  basierend auf eine Funktion:
   
   \lstinputlisting[label=src:collection_transformation_map.scala]{beispiele/collection_transformation_map.scala}
   
-  \item mit Listen kann man ebenfalls komplexe Datenbankabfragen machen
-  \und uns Elemente in einer Liste ausgeben lassen:
+  
+  mit Listen kann man komplexe DB-Queries machen
+  \und Elemente in Liste ausgeben:
   
   \lstinputlisting[label=src:collection_db_query.scala]{beispiele/collection_db_query.scala}
   
-  \item \texttt{List} hat eine \texttt{sort}-Methode:
+  \item \texttt{List} hat \texttt{sort}-Methode:
   
   \lstinputlisting[label=src:collection_sort.scala]{beispiele/collection_sort.scala}
   
-  nun noch eine runde komplexer: Wir wollen alle validen 
-  \texttt{Persons}-Records aus der DB, welche nach Alter sortiert sind und
-  dabei den Namen ausgeben:
-  
-  \lstinputlisting[label=src:collection_sort_complex.scala]{beispiele/collection_sort_complex.scala}
   \item \texttt{reduceLeft}: Operation auf adjazenten Elemente einer
-  Collection durchführen, d.h. nehme mir zwei Elemente der Liste, führe die
-  entsprechende Operation aus \und gehe dann zum nächsten Element und mache
-  dasselbe nochmal solange bis die Liste keine Elemente mehr besitzt:
+  Collection rekursiv durchführen bis alles abgegrast ist:
   
   \lstinputlisting[label=src:collection_reduce_left.scala]{beispiele/collection_reduce_left.scala}
   
   \item \texttt{foldLeft} arbeitet wie \texttt{reduceLeft}, nur dass es 
-  einen \textit{Seed} als Startpunkt nimmt, wobei der Seed-Typ den Rückgabewert von \texttt{foldLeft} \und nicht von der Funktion bestimmt
+  einen \textit{Seed} als Startpunkt nimmt, wobei der Seed-Typ den Rückgabewert von \texttt{foldLeft} ist:
   
   \lstinputlisting[label=src:collection_foldLeft.scala]{beispiele/collection_foldLeft.scala}
   
-  \item Erstellung einer geschachtelten Collection:
+  \item geschachtelten Collection erstellen:
   
   \lstinputlisting[label=src:collection_nested.scala]{beispiele/collection_nested.scala}
   
-  wollen wir die Ergebnisse einer geschachtelten Schleife platten, so
-  die \texttt{flatMap}-Methode verwenden
+  wollen wir die Ergebnisse einer geschachtelten Schleife 
+  \enquote{platten}, so \texttt{flatMap}-Methode verwenden
   
-  \item \textbf{for-Comprehension}
-\begin{itemize}
-    \item angenommen wir haben eine Liste von Personen mit \texttt{namen} \und 
-    \texttt{age} Feldern \und wir wollem die Namen aller Personen ausgeben, die
+  \item \textbf{for-Comprehension}\footnote{for-Comprehension ist 
+  kein Schleifenkonstrukt sondern syntaktische Vereinfachung}
+  \begin{itemize}
+    \item angenommen haben Liste von Personen mit \texttt{namen} \und 
+    \texttt{age} \und wir wollem die Namen aller Personen ausgeben, die
     alle über 20 sind
     
     \lstinputlisting[label=src:for_comprehension.scala]{beispiele/for_comprehension.scala}
     
     \item genereller Aufbau von for-comprehension:
     
+    \begin{shadowminipage}
     \lstinputlisting[label=src:for_comprehension_generell.scala]{beispiele/for_comprehension_generell.scala}
+    \end{shadowminipage}
     
-    s $\ldots$ ist eine Sequenz von \textit{Generatoren, Definitionen} \und 
-    \textit{Filtern}
-    \item ein \textit{Generator} hat die Form \texttt{\textbf{val} x $<-$ e}, wobei
-    \texttt{e} eine Liste mit Werten ist \und an \texttt{x} werden sukzessiv die
-    Elemente aus \texttt{e} gehangen
-    \item eine \textit{Definition} hat die Form \texttt{\textbf{val} x = e}, d.h. 
+    
+    s $\ldots$ ist eine Sequenz von \textit{Generatoren, Definitionen}
+    \und \textit{Filtern}
+    \item ein \textit{Generator} hat die Form 
+    \texttt{\textbf{val} x $<-$ e}, wobei
+    \texttt{e} eine Liste mit Werten ist \und an \texttt{x} 
+    werden sukzessiv die Elemente aus \texttt{e} gehangen
     \texttt{x} ist ein Name für die Werte von \texttt{e}
-    \item ein \textit{Filter} ist ein Ausdruck \texttt{f} vom booleschen Typ
+    \item ein \textit{Filter} ist ein Ausdruck \texttt{f} vom 
+    booleschen Typ
     \item angenommen wir wollen das Produkt der Zahlen von 1 bis 10
     zwischen den geraden \und ungeraden Zahlen bilden:
     
     \lstinputlisting[label=src:collection_for_comprehesion.scala]{beispiele/collection_for_comprehesion.scala}
-    
-    $\Rightarrow$ for-Comprehension ist keine Schleifenkonstrukt sondern
-    einfach nur eine syntaktische Vereinfachung
+ 
   \end{itemize}
 \end{itemize}
 

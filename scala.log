@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.2.9)  24 MAY 2010 16:53
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.2.9)  28 MAY 2010 08:03
 entering extended mode
  %&-line parsing enabled.
 **\nonstopmode \input{"/home/helex/proggen/scala/scala.tex"}
@@ -915,109 +915,106 @@ a) (/home/helex/proggen/scala/beispiele/case_class.scala [26])
 (/home/helex/proggen/scala/beispiele/tupleator.scala) [31]
 (/home/helex/proggen/scala/beispiele/listen.scala)
 (/home/helex/proggen/scala/beispiele/cons.scala)
-(/home/helex/proggen/scala/beispiele/listen_1.scala) [32]
-(/home/helex/proggen/scala/beispiele/collection_append.scala)
+(/home/helex/proggen/scala/beispiele/listen_1.scala)
+(/home/helex/proggen/scala/beispiele/collection_append.scala [32])
 (/home/helex/proggen/scala/beispiele/collection_mergen.scala)
 (/home/helex/proggen/scala/beispiele/collection_ops.scala)
 (/home/helex/proggen/scala/beispiele/collection_universel.scala)
-Overfull \hbox (3.6404pt too wide) in paragraph at lines 1079--1083
-\OT1/ppl/m/n/10.95 ti-on. Soll-te die Funk-ti-on, wel-che an \OT1/cmtt/m/n/10.9
-5 map []\OT1/ppl/m/n/10.95 uber-ge-ben wird, einen an-de-ren Typ zur[]uck-
- []
-
 (/home/helex/proggen/scala/beispiele/collection_transformation_map.scala)
-[33] (/home/helex/proggen/scala/beispiele/collection_db_query.scala)
+(/home/helex/proggen/scala/beispiele/collection_db_query.scala) [33]
 (/home/helex/proggen/scala/beispiele/collection_sort.scala)
-(/home/helex/proggen/scala/beispiele/collection_sort_complex.scala)
-Overfull \hbox (1.43973pt too wide) in paragraph at lines 1100--1104
+Overfull \hbox (20.5689pt too wide) in paragraph at lines 1093--1095
 []\OT1/cmtt/m/n/10.95 reduceLeft\OT1/ppl/m/n/10.95 : Ope-ra-ti-on auf ad-ja-zen
--ten Ele-men-te ei-ner Col-lec-ti-on durchf[]uhren, d.h.
+-ten Ele-men-te ei-ner Col-lec-ti-on re-kur-siv durchf[]uhren
  []
 
-(/home/helex/proggen/scala/beispiele/collection_reduce_left.scala) [34]
+(/home/helex/proggen/scala/beispiele/collection_reduce_left.scala)
 (/home/helex/proggen/scala/beispiele/collection_foldLeft.scala)
-(/home/helex/proggen/scala/beispiele/collection_nested.scala)
+(/home/helex/proggen/scala/beispiele/collection_nested.scala) [34]
 (/home/helex/proggen/scala/beispiele/for_comprehension.scala)
 (/home/helex/proggen/scala/beispiele/for_comprehension_generell.scala)
+Overfull \hbox (16.4928pt too wide) in paragraph at lines 1123--1124
+[][] 
+ []
+
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1133.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1129.
 
-
-(/home/helex/proggen/scala/beispiele/collection_for_comprehesion.scala [35])
+(/home/helex/proggen/scala/beispiele/collection_for_comprehesion.scala)
 (/home/helex/proggen/scala/beispiele/tupel_example.scala)
-(/home/helex/proggen/scala/beispiele/tupel_creation.scala)
-(/home/helex/proggen/scala/beispiele/map_examples.scala [36])
-(/home/helex/proggen/scala/beispiele/functions.scala)
-(/home/helex/proggen/scala/beispiele/function_as_parameter.scala [37])
-(/home/helex/proggen/scala/beispiele/partial_functions.scala)
+(/home/helex/proggen/scala/beispiele/tupel_creation.scala [35])
+(/home/helex/proggen/scala/beispiele/map_examples.scala)
+(/home/helex/proggen/scala/beispiele/functions.scala [36])
+(/home/helex/proggen/scala/beispiele/function_as_parameter.scala)
+(/home/helex/proggen/scala/beispiele/partial_functions.scala) [37]
 (/home/helex/proggen/scala/beispiele/partial_notation.scala)
 (/home/helex/proggen/scala/beispiele/partial_codeblocks.scala)
-Overfull \hbox (4.35252pt too wide) in paragraph at lines 1249--1251
+Overfull \hbox (4.35252pt too wide) in paragraph at lines 1243--1245
 []\OT1/ppl/m/n/10.95 Typparameter de-fi-nie-ren den Typ von Pa-ra-me-tern od. d
 en R[]uck-ga-be-wert der Funk-
  []
 
-[38] (/home/helex/proggen/scala/beispiele/typparameter_functions.scala)
-(/home/helex/proggen/scala/beispiele/function_container.scala)
-(/home/helex/proggen/scala/beispiele/pattern_matching_fibonacci.scala [39])
+(/home/helex/proggen/scala/beispiele/typparameter_functions.scala)
+(/home/helex/proggen/scala/beispiele/function_container.scala) [38]
+(/home/helex/proggen/scala/beispiele/pattern_matching_fibonacci.scala)
 (/home/helex/proggen/scala/beispiele/matching_any_type.scala)
-(/home/helex/proggen/scala/beispiele/pattern_datatypes.scala)
+(/home/helex/proggen/scala/beispiele/pattern_datatypes.scala) [39]
 (/home/helex/proggen/scala/beispiele/pattern_matching_case_class.scala)
-(/home/helex/proggen/scala/beispiele/pattern_matching_lists.scala [40])
-(/home/helex/proggen/scala/beispiele/pattern_matching_nested.scala)
-Overfull \hbox (52.80544pt too wide) in paragraph at lines 1309--1312
+(/home/helex/proggen/scala/beispiele/pattern_matching_lists.scala)
+(/home/helex/proggen/scala/beispiele/pattern_matching_nested.scala) [40]
+Overfull \hbox (52.80544pt too wide) in paragraph at lines 1303--1306
 []\OT1/ppl/m/n/10.95 in Sca-la ist \OT1/cmtt/m/n/10.95 Array[T] \OT1/ppl/b/it/1
 0.95 in-va-ri-ant\OT1/ppl/m/n/10.95 , d.h. man kann nur \OT1/cmtt/m/n/10.95 Arr
 ay[Strin] \OT1/ppl/m/n/10.95 an \OT1/cmtt/m/n/10.95 foo(a: Array[String])
  []
 
-(/home/helex/proggen/scala/beispiele/covariant_parameter_types.scala) [41]
-Overfull \hbox (19.52855pt too wide) in paragraph at lines 1330--1332
+(/home/helex/proggen/scala/beispiele/covariant_parameter_types.scala)
+Overfull \hbox (19.52855pt too wide) in paragraph at lines 1324--1326
 []\OT1/ppl/b/n/10.95 kovariant \OT1/ppl/m/n/10.95 hei^^Yt, dass der return-Wert
  von Funk-tio-nen in ab-ge-lei-te-ten Klas-sen ge[]andert
  []
 
-[42] <bilder/typhierarchie.png, id=1515, 586.19pt x 576.1525pt>
+[41] <bilder/typhierarchie.png, id=1500, 586.19pt x 576.1525pt>
 File: bilder/typhierarchie.png Graphic file (type png)
 
-<use bilder/typhierarchie.png> [43 </home/helex/proggen/scala/bilder/typhierarc
+<use bilder/typhierarchie.png> [42 </home/helex/proggen/scala/bilder/typhierarc
 hie.png>]
 (/home/helex/proggen/scala/beispiele/linearization_object_hierarchiy.scala)
-[44] [45] (/home/helex/proggen/scala/beispiele/fp_list_map.scala)
-(/home/helex/proggen/scala/beispiele/fp_list_map_value.scala) [46]
+[43] [44] (/home/helex/proggen/scala/beispiele/fp_list_map.scala)
+(/home/helex/proggen/scala/beispiele/fp_list_map_value.scala) [45]
 (/home/helex/proggen/scala/beispiele/factorial_recursive_and_tail_call.scala)
 (/home/helex/proggen/scala/beispiele/lists_fp.scala)
-(/home/helex/proggen/scala/beispiele/foreach.scala [47])
+(/home/helex/proggen/scala/beispiele/foreach.scala [46])
 (/home/helex/proggen/scala/beispiele/map.scala)
 (/home/helex/proggen/scala/beispiele/filter.scala)
-(/home/helex/proggen/scala/beispiele/folding_reducing.scala) [48]
+(/home/helex/proggen/scala/beispiele/folding_reducing.scala) [47]
 (/home/helex/proggen/scala/beispiele/partial_functions_easy.scala)
-Overfull \hbox (0.42108pt too wide) in paragraph at lines 1512--1514
+Overfull \hbox (0.42108pt too wide) in paragraph at lines 1506--1508
 []\OT1/ppl/m/n/10.95 stammt vom Ma-the-ma-ti-ker Has-kell Cur-ry u. trans-for-m
 iert ei-ne Funk-ti-on, die meh-
  []
 
 (/home/helex/proggen/scala/beispiele/curried_functions.scala)
-(/home/helex/proggen/scala/beispiele/implicit.scala [49])
-(/home/helex/proggen/scala/beispiele/lazy_vals.scala) [50] [51]
-Overfull \hbox (2.91792pt too wide) in paragraph at lines 1646--1648
+(/home/helex/proggen/scala/beispiele/implicit.scala [48])
+(/home/helex/proggen/scala/beispiele/lazy_vals.scala) [49] [50]
+Overfull \hbox (2.91792pt too wide) in paragraph at lines 1640--1642
 []\OT1/ppl/m/n/10.95 Scalas Ab-strak-ti-on kann als Ba-sis f[]ur Dienst-orienti
 ertes Komponenten-Model
  []
 
-[52] AED: lastpage setting LastPage (/home/helex/proggen/scala/scala.aux)
+[51] AED: lastpage setting LastPage (/home/helex/proggen/scala/scala.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12712 strings out of 94101
- 190439 string characters out of 1165811
- 319361 words of memory out of 1500000
- 14185 multiletter control sequences out of 10000+50000
+ 12691 strings out of 94101
+ 189916 string characters out of 1165811
+ 328336 words of memory out of 1500000
+ 14182 multiletter control sequences out of 10000+50000
  32498 words of font info for 90 fonts, out of 1200000 for 2000
  637 hyphenation exceptions out of 8191
- 43i,12n,45p,946b,2007s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 43i,12n,45p,946b,1980s stack positions out of 5000i,500n,6000p,200000b,5000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/blue
 sky/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmssbx10.pfb>
@@ -1029,9 +1026,9 @@ usr/share/texmf-texlive/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-t
 exlive/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texmf-texlive/fonts/typ
 e1/urw/palatino/uplr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/u
 plri8a.pfb>
-Output written on scala.pdf (52 pages, 559997 bytes).
+Output written on scala.pdf (51 pages, 556311 bytes).
 PDF statistics:
- 2031 PDF objects out of 2073 (max. 8388607)
- 1231 named destinations out of 1440 (max. 131072)
+ 2012 PDF objects out of 2073 (max. 8388607)
+ 1216 named destinations out of 1440 (max. 131072)
  598 words of extra memory for PDF output out of 10000 (max. 10000000)
 
