@@ -565,7 +565,7 @@ current position.
 \pagebreak
 
 
-\section{Ausdrücke und Funktionen}
+\section{Funktionen}
 \begin{itemize}
   \item Unterschied zwischen \texttt{def x = e} \und \texttt{val x = e}:
   \begin{itemize}
@@ -585,7 +585,18 @@ current position.
 
 \subsection{Funktionen}
 \begin{itemize}
+  \item FKt. sind in Scala eine Instanz von Klassen:
+  
+  \lstinputlisting[label=src:functions.scala]{beispiele/functions.scala}
+  
+  \item \textbf{Funktionen als Parameter übergeben}:
+  
+  definieren eine Methode w42, die eine Funktion als Parameter übernimmt:
+  
+  \lstinputlisting[label=src:function_as_parameter.scala]{beispiele/function_as_parameter.scala}
+
   \item Funktionen können in Scala Symbole wie $+, -, *, and, ?$ enthalten
+  $\Rightarrow$ sind sogenannte Varianzparameter
   \item Funktionen können die folgende Form
   haben: \texttt{Function[A, B]}, wobei \texttt{A} der Parametertyp 
   \und \texttt{B} der Rückgabewert ist
@@ -596,7 +607,7 @@ current position.
     \texttt{A $=>$ B}
   \end{center}
     
-  \item Funktione, welche andere Funktionen als Parameter nehmen werden
+  \item Funktionen, welche andere Funktionen als Parameter nehmen werden
   \textit{high-order} Funktionen genannt
     \item falls man eine Variable Liste an Parametern haben möchte, dann muss *
   in die Parameterliste einer Funktionsdef setzen:
@@ -647,6 +658,24 @@ current position.
 \end{itemize}
 
 
+\subsubsection{Typparameter}
+Typparameter definieren den Typ von Parametern \oder den 
+Rückgabewert der Fkt.:
+  
+  \lstinputlisting[label=src:typparameter_functions.scala]{beispiele/typparameter_functions.scala}
+
+
+\subsection{Funktionen in Container}
+\begin{itemize}
+  \item Funktionen sind Instanzen \und deswegen kann man alles, was man
+  mit Instanzen machen kann auch mit Funktionen machen
+  \item Array von Funktionen\footnote{erinnert frappierend an
+  Wörterbuch der Algorithmen}:
+  
+  \lstinputlisting[label=src:function_container.scala]{beispiele/function_container.scala}  
+\end{itemize}
+
+
 \subsubsection{Callback}
 Fkt. mit callback Fkt. haben folgende Syntax: 
   \textsc{() =$>$ Unit} und ist eine Funktion, die keine Parameter \und 
@@ -663,6 +692,40 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   \textsc{=$>$} gemacht
   
   \lstinputlisting[label=src:callback_anonymous.scala]{beispiele/callback_anonymous.scala}
+\end{itemize}
+
+
+\subsection{Partielle Methoden und Funktionen}
+\begin{itemize}
+  \item \textbf{in Scala ist alles bis auf Methoden eine 
+  Instanz}\footnote{Methoden sind keine Funktionen in Scala}
+  \item Methoden werden an Instanzen angehangen \und angewendet
+  \item in Scala können wir partiell angehauchte Funktionen von Methoden
+  her ableiten:
+  
+  \lstinputlisting[label=src:partial_functions.scala]{beispiele/partial_functions.scala}
+  
+  \texttt{p} braucht einen zweiten Parameter, um die Anforderungen an
+  die Funktion plus 42 zu erfüllen \und wir sagen \texttt{p} ist
+  partielle Anwendung von \texttt{plus}
+  
+  \item partielle Methodendefs können mit der folgenden Syntax besser
+  beschrieben werden:
+  
+  \lstinputlisting[label=src:partial_notation.scala]{beispiele/partial_notation.scala}
+  
+  
+  durch diese Notation kann man Codeblöcke als Parameter übergeben:
+  
+  \lstinputlisting[label=src:partial_codeblocks.scala]{beispiele/partial_codeblocks.scala}
+  
+    \item wenn an eine Funktion ein Unterstrich übergeben wird, dann handelt
+  es sich um eine partielle Funktionen
+  \item partielle Funktionen sind Aurücke, in denen nicht alle Argumente 
+  einer Funktion auch von der Funktion übernommen werden
+  
+  \lstinputlisting[label=src:partial_functions_easy.scala]{beispiele/partial_functions_easy.scala}  
+
 \end{itemize}
 
 
@@ -1283,74 +1346,6 @@ von Objekten via Pattern-Matching
   \item mit \texttt{-= key} kann man Elemente aus einer Map entfernen
   \item mit \texttt{.contains} kann man testen, ob ein Schlüssel in der
   der Map enthalten ist
-\end{itemize}
-\pagebreak
-
-
-\section{Funktionen}
-\begin{itemize}
-  \item FKt. sind in Scala eine Instanz von Klassen:
-  
-  \lstinputlisting[label=src:functions.scala]{beispiele/functions.scala}
-  
-  \item \textbf{Funktionen als Parameter übergeben}:
-  
-  definieren eine Methode w42, die eine Funktion als Parameter übernimmt:
-  
-  \lstinputlisting[label=src:function_as_parameter.scala]{beispiele/function_as_parameter.scala}
-
-\end{itemize}
-
-
-\subsection{Partielle Methoden und Funktionen}
-\begin{itemize}
-  \item \textbf{in Scala ist alles bis auf Methoden eine 
-  Instanz}\footnote{Methoden sind keine Funktionen in Scala}
-  \item Methoden werden an Instanzen angehangen \und angewendet
-  \item in Scala können wir partiell angehauchte Funktionen von Methoden
-  her ableiten:
-  
-  \lstinputlisting[label=src:partial_functions.scala]{beispiele/partial_functions.scala}
-  
-  \texttt{p} braucht einen zweiten Parameter, um die Anforderungen an
-  die Funktion plus 42 zu erfüllen \und wir sagen \texttt{p} ist
-  partielle Anwendung von \texttt{plus}
-  
-  \item partielle Methodendefs können mit der folgenden Syntax besser
-  beschrieben werden:
-  
-  \lstinputlisting[label=src:partial_notation.scala]{beispiele/partial_notation.scala}
-  
-  
-  durch diese Notation kann man Codeblöcke als Parameter übergeben:
-  
-  \lstinputlisting[label=src:partial_codeblocks.scala]{beispiele/partial_codeblocks.scala}
-  
-    \item wenn an eine Funktion ein Unterstrich übergeben wird, dann handelt
-  es sich um eine partielle Funktionen
-  \item partielle Funktionen sind Aurücke, in denen nicht alle Argumente 
-  einer Funktion auch von der Funktion übernommen werden
-  
-  \lstinputlisting[label=src:partial_functions_easy.scala]{beispiele/partial_functions_easy.scala}  
-
-\end{itemize}
-
-
-\subsection{Typparameter}
-Typparameter definieren den Typ von Parametern \oder den 
-Rückgabewert der Fkt.:
-  
-  \lstinputlisting[label=src:typparameter_functions.scala]{beispiele/typparameter_functions.scala}
-
-
-\subsection{Funktionen in Container}
-\begin{itemize}
-  \item Funktionen sind Instanzen \und deswegen kann man alles, was man
-  mit Instanzen machen kann auch mit Funktionen machen
-  \item Array von Funktionen\footnote{erinnert frappierend an
-  Wörterbuch der Algorithmen}:
-  
-  \lstinputlisting[label=src:function_container.scala]{beispiele/function_container.scala}  
 \end{itemize}
 \pagebreak
 
