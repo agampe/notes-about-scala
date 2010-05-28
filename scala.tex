@@ -1006,19 +1006,19 @@ von Objekten via Pattern-Matching
 
 \section{Listen}
 \begin{itemize}
-  \item Listen in Scala unterscheiden sich aber in folgenden Punkten von
+  \item Listen in Scala unterscheiden sich folgendermaßen von
   anderen Sprachen: \begin{enumerate}
-    \item Listen sind unveränderbar
-    \item Listen haben eine rekursive Struktur
-    \item Listen haben viel mehr Operationen als Arrays
+    \item sind unver-$\Delta$
+    \item haben rek. Struktur
+    \item haben viel mehr Ops. als Arrays
   \end{enumerate}
   
   \lstinputlisting[label=src:listen.scala]{beispiele/listen.scala}
   
   \item Vorteile Unver-$\Delta$:
   \begin{itemize}
-    \item weniger globale Zustände
-    \item weniger Dinge können sich $\Delta$
+    \item weniger globale Zustände $\Rightarrow$ weniger Dinge können 
+    sich $\Delta$
     \item Fkt. werden weniger anfällig für globale Zustände von Variablen 
     \und Funktionen werden mehr transformativ $\Rightarrow$ Methoden
     referenzieren viel weniger auf den externen Zustand von Variablen
