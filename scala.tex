@@ -1387,15 +1387,12 @@ werden können
 \end{itemize}
 
 
-\subsection{Tail Calls und Tail-Call Optimierung}
-\begin{itemize}
-  \item Tail Call, d.h. wenn eine Funktion sich erst bei ihren
-  finalen Durchlauf selbst aufruft $\Rightarrow$ es ist die leichteste
-  Art der Rekursion, die man in eine normale Schleife umwandeln kann
-  \item Schleifen verhindern die Gefahr eines Stackoverflows
-  
+\subsection{Tail Calls}
+Tail Call, d.h. wenn eine Funktion sich erst bei ihren
+finalen Durchlauf selbst aufruft $\Rightarrow$ Schleifen verhindern die
+Gefahr eines Stackoverflows:
+
   \lstinputlisting[label=src:factorial_recursive_and_tail_call.scala]{beispiele/factorial_recursive_and_tail_call.scala}
-\end{itemize}
 
 
 \subsection{Funktionale Datenstrukturen}
