@@ -1,4 +1,4 @@
-object Numbers extends Aplication{
+object Numbers extends Application{
   for {i <- 1 to 10}
     println(i)
 }
