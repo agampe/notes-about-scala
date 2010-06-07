@@ -45,18 +45,18 @@
 \begin{itemize}
   \item Hello Helex:
   
-  \lstinputlisting{beispiele/hello_helex.scala}
+  \lstinputlisting{examples/hello_helex.scala}
   
   $\Rightarrow$ Datei muss wie das Objekt heißen, damit es ausgeführt werden
   kann
   \item Zahlen:
   
-  \lstinputlisting{beispiele/numbers.scala}
+  \lstinputlisting{examples/numbers.scala}
   
   \item ein Programm, dass ein String in Int parsed und dabei alle Zahlen 
   der Eingabe aufsummiert:
   
-  \lstinputlisting{beispiele/input_parsing.scala}
+  \lstinputlisting{examples/input_parsing.scala}
   
   \begin{itemize}
     \item \itbf{Option}:
@@ -148,7 +148,7 @@
   \item \textbf{Klassen mit Argumenten}: Argumente dienen als
   Konstruktoren für die Klasse
   
-    \lstinputlisting{beispiele/klassen_constructor.scala}
+    \lstinputlisting{examples/klassen_constructor.scala}
 
   \item Scala-Objekt ist Instanz einer Klasse \und kann deswegen als
   Parameter von Methoden agieren kann
@@ -172,7 +172,7 @@
   \item \textbf{call-by name} kann man in Scala durch $=>$ für Funktionsaufrufe 
   anfordern:
   
-  \lstinputlisting{beispiele/call_by_name.scala}
+  \lstinputlisting{examples/call_by_name.scala}
   
   $\Rightarrow$ es kommen verschiedene Zeiten heraus $\Rightarrow$ in
   \textit{delayed} wird bereits reingegangen bevor \textit{nano} 
@@ -264,7 +264,7 @@
   diese keine Seiteneffekte verursachen
   \item \itbf{Generatoren}:
   
-  \lstinputlisting{beispiele/generators.scala}
+  \lstinputlisting{examples/generators.scala}
   
   der \textit{left-arrow} Operator wird eben Generator genannt, der er die
   einzelnen Elemente aus der Collection generiert
@@ -274,22 +274,22 @@
   die Argumente einer solchen Funktion werden jedesmal ausgewertet, wenn der
   formale Parameter erwähnt wird
   
-    \lstinputlisting{beispiele/unausgewertete_parameter_uebergabe.scala}
+    \lstinputlisting{examples/unausgewertete_parameter_uebergabe.scala}
   \item die Behandlung von Variablenzugriffen als Methodenaufrufen ermögicht
   es in Scala \textbf{properties} zu definieren. Im folgenden Beispiel wird
   die Eigenschaft \textit{degree} definiert, welche nur einen Wert entspricht,
   der größer \oder gleich -273 ist
   
-  \lstinputlisting{beispiele/properties.scala}
+  \lstinputlisting{examples/properties.scala}
   \item für jede Variable \textbf{var} \textit{x: T} definiert Scala
   die folgenden \textit{setter} und \textit{getter} Methoden:
   
-  \lstinputlisting{beispiele/getter_setter.scala}
+  \lstinputlisting{examples/getter_setter.scala}
   
   diese Methoden referenzieren und updaten die entsprechende Speicherzelle für
   die Variable, welche nicht direkt durch Scala-Programme beeinflussbar ist
   \item Kommentare:
-\lstinputlisting{beispiele/comments.scala}
+\lstinputlisting{examples/comments.scala}
   \item \textbf{def} wird zur Festlegung von Funktionen verwendet
   \item \textbf{Array Typen} werden Array[T] geschrieben \und 
   \textbf{Array-Zugriffe} werden mit a(i) statt a[i] geschrieben
@@ -435,7 +435,7 @@ Sachen gewährleistet:
   \item betrachten die folgende Funktion, welche überprüft, ob ein Array eine
   Element mit einer bestimmten Eigenschaft (Prädikat) hat:
   
-  \lstinputlisting{beispiele/array.scala}
+  \lstinputlisting{examples/array.scala}
   
   \begin{itemize}
     \item der Elementtyp des Arrays ist beliebig, wird durch den Parameter [T]
@@ -471,7 +471,7 @@ Sachen gewährleistet:
   \item Klasse \texttt{Array[T]} erbt von der Funktion \texttt{Function1[int, T]}
   \und fügt Methoden für Array-Update, Array-Länge usw. hinzu
   
-  \lstinputlisting{beispiele/refining_functions.scala}
+  \lstinputlisting{examples/refining_functions.scala}
 \end{itemize}
 
 
@@ -497,7 +497,7 @@ Sachen gewährleistet:
   Rekursion\footnote{beachte hierbei die \textit{tail-rekursion} bei
   funktionalen Sprachen}
   
-  \lstinputlisting{beispiele/if_else_ternary_while.scala}
+  \lstinputlisting{examples/if_else_ternary_while.scala}
   
   \item das Ergebnis von if \und while ist immer \texttt{Unit}    
 \end{itemize}
@@ -507,15 +507,15 @@ Sachen gewährleistet:
 \begin{itemize}
   \item einfache Variante ist wie in Java:
   
-  \lstinputlisting{beispiele/for_easy.scala}
+  \lstinputlisting{examples/for_easy.scala}
   
   \item verschachtelte Variante:
   
-  \lstinputlisting{beispiele/for_middle.scala}
+  \lstinputlisting{examples/for_middle.scala}
   
   \item in for-Schleifen kann man auch guards packen:
   
-  \lstinputlisting{beispiele/for_guards.scala}
+  \lstinputlisting{examples/for_guards.scala}
 \end{itemize}
 
 
@@ -523,7 +523,7 @@ Sachen gewährleistet:
 \begin{itemize}
   \item throws bzw. try/finally funzt wie in Java:
   
-  \lstinputlisting{beispiele/throw_try_finally.scala}
+  \lstinputlisting{examples/throw_try_finally.scala}
   
   \item try/catch ist anders:
   \begin{itemize}
@@ -531,7 +531,7 @@ Sachen gewährleistet:
     \item es weist einen default Wert zu, sobald alle anderen Tests
     durchgefallen sind
     
-    \lstinputlisting{beispiele/try_finally.scala}    
+    \lstinputlisting{examples/try_finally.scala}    
   \end{itemize}
 \end{itemize}
 
@@ -540,13 +540,13 @@ Sachen gewährleistet:
 Einfach Klassen von \texttt{Enumeration} erben lassen \und es ist dann
 keine besondere Notation für die Elemente der Aufzählung nötig
 
-\lstinputlisting{beispiele/enumeration.scala}
+\lstinputlisting{examples/enumeration.scala}
 
 
 \subsection{Linearisierung der Objekthierarchie}
 betrachte folgendes Bsp.:
 
-\lstinputlisting{beispiele/linearization_object_hierarchiy.scala}
+\lstinputlisting{examples/linearization_object_hierarchiy.scala}
 
 
 hier ist der Linearisierungsalgo, den Scala verwendet:
@@ -567,13 +567,13 @@ current position.
 \begin{itemize}
   \item FKt. sind in Scala eine Instanz von Klassen:
   
-  \lstinputlisting{beispiele/functions.scala}
+  \lstinputlisting{examples/functions.scala}
   
   \item \textbf{Funktionen als Parameter übergeben}:
   
   definieren eine Methode w42, die eine Funktion als Parameter übernimmt:
   
-  \lstinputlisting{beispiele/function_as_parameter.scala}
+  \lstinputlisting{examples/function_as_parameter.scala}
 
   \item Funktionen können in Scala Symbole wie $+, -, *, and, ?$ enthalten
   $\Rightarrow$ sind sogenannte Varianzparameter
@@ -592,26 +592,26 @@ current position.
     \item falls man eine Variable Liste an Parametern haben möchte, dann muss *
   in die Parameterliste einer Funktionsdef setzen:
   
-\lstinputlisting{beispiele/method_declaration_4.scala}
+\lstinputlisting{examples/method_declaration_4.scala}
     
   \item man kann auch Schranken für Typen definieren. Im folgenden Beispiel müssen alle Typen vom Typ \texttt{Number} \oder von einer Subklasse von
   \texttt{Number} sein:
   
-  \lstinputlisting{beispiele/method_declaration_6.scala}
+  \lstinputlisting{examples/method_declaration_6.scala}
 
 \end{itemize}
 
 
 \subsection{Verschachtelte Funktionen und Parameter}
 \begin{itemize}
-  \item   \lstinputlisting{beispiele/nested_functions.scala}
+  \item   \lstinputlisting{examples/nested_functions.scala}
   
   fact kann man nur innerhalb des Scopes von factorial aufrufen, sonst kommt
   es zu einem Compilerfehler.
   
   \item weitergabe von Parametern innerhalb verschachtelten Funktionen:
   
-  \lstinputlisting{beispiele/parameter_passing_nested_functions.scala}  
+  \lstinputlisting{examples/parameter_passing_nested_functions.scala}  
 
 \end{itemize}
 
@@ -633,7 +633,7 @@ current position.
   \item Scala benutzt per Def. call-by-value, aber kann auf call-by-name
   wechseln durch Voranstellung von $=>$:
   
-  \lstinputlisting{beispiele/comparison_call_by_value_call_by_name.scala}
+  \lstinputlisting{examples/comparison_call_by_value_call_by_name.scala}
   
 \end{itemize}
 
@@ -642,7 +642,7 @@ current position.
 Typparameter definieren den Typ von Parametern \oder den 
 Rückgabewert der Fkt.:
   
-  \lstinputlisting{beispiele/typparameter_functions.scala}
+  \lstinputlisting{examples/typparameter_functions.scala}
 
 
 \subsection{Funktionen in Container}
@@ -652,7 +652,7 @@ Rückgabewert der Fkt.:
   \item Array von Funktionen\footnote{erinnert frappierend an
   Wörterbuch der Algorithmen}:
   
-  \lstinputlisting{beispiele/function_container.scala}  
+  \lstinputlisting{examples/function_container.scala}  
 \end{itemize}
 
 
@@ -661,7 +661,7 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   \textsc{() =$>$ Unit} und ist eine Funktion, die keine Parameter \und 
   kein return-Wert hat
   
-  \lstinputlisting{beispiele/callback.scala}
+  \lstinputlisting{examples/callback.scala}
 
 
 \subsubsection{Anonyme Funktionen}
@@ -671,7 +671,7 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   \item die Anwesenheit von anonymen Funktion wird durch die Syntax:
   \textsc{=$>$} gemacht
   
-  \lstinputlisting{beispiele/callback_anonymous.scala}
+  \lstinputlisting{examples/callback_anonymous.scala}
 \end{itemize}
 
 
@@ -683,7 +683,7 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   \item in Scala können wir partiell angehauchte Funktionen von Methoden
   her ableiten:
   
-  \lstinputlisting{beispiele/partial_functions.scala}
+  \lstinputlisting{examples/partial_functions.scala}
   
   \texttt{p} braucht einen zweiten Parameter, um die Anforderungen an
   die Funktion plus 42 zu erfüllen \und wir sagen \texttt{p} ist
@@ -692,28 +692,28 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   \item partielle Methodendefs können mit der folgenden Syntax besser
   beschrieben werden:
   
-  \lstinputlisting{beispiele/partial_notation.scala}
+  \lstinputlisting{examples/partial_notation.scala}
   
   
   durch diese Notation kann man Codeblöcke als Parameter übergeben:
   
-  \lstinputlisting{beispiele/partial_codeblocks.scala}
+  \lstinputlisting{examples/partial_codeblocks.scala}
   
     \item wenn an eine Funktion ein Unterstrich übergeben wird, dann handelt
   es sich um eine partielle Funktionen
   \item partielle Funktionen sind Aurücke, in denen nicht alle Argumente 
   einer Funktion auch von der Funktion übernommen werden
   
-  \lstinputlisting{beispiele/partial_functions_easy.scala}  
+  \lstinputlisting{examples/partial_functions_easy.scala}  
 
 \end{itemize}
 
 
 \subsection{Schwanzrekursion}
-\lstinputlisting{beispiele/gcd.scala}
+\lstinputlisting{examples/gcd.scala}
 
 
-\lstinputlisting{beispiele/factorial.scala}
+\lstinputlisting{examples/factorial.scala}
 
 
 \begin{itemize}
@@ -726,7 +726,7 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   $\Rightarrow$ im folgenden Code wird nun gezeigt, wie man Schwanzrekursion
   erzeugen kann:
   
-  \lstinputlisting{beispiele/nested_functions.scala}
+  \lstinputlisting{examples/nested_functions.scala}
 \end{itemize}
 
 
@@ -735,12 +735,12 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   \item betrachten \texttt{sum}, bei der man die Grenzen a \und b nicht mehr
   angeben muss
   
-  \lstinputlisting{beispiele/currying.scala}
+  \lstinputlisting{examples/currying.scala}
   
   \item wir werden nun Funktionen, die Funktionen zurückgegeben,
   behandelt?
   
-  \lstinputlisting{beispiele/currying_1.scala}
+  \lstinputlisting{examples/currying_1.scala}
   
   hier wird \texttt{sum} zuerst zur Quadratfunktion \texttt{(x $=>$ x * x)}
   angewendet \und die reslutierende Funktion wird dann auf die Argumentenliste
@@ -749,7 +749,7 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   Syntax \und die obige sum-Funktion kann auch wie folgt kürzer geschrieben
   werden
   
-  \lstinputlisting{beispiele/currying_3.scala}
+  \lstinputlisting{examples/currying_3.scala}
   
 \end{itemize}
 
@@ -760,16 +760,16 @@ Fkt. mit callback Fkt. haben folgende Syntax:
 \begin{itemize}
   \item haben einen Stack für Integer
   
-  \lstinputlisting{beispiele/stack_integer.scala}
+  \lstinputlisting{examples/stack_integer.scala}
   
   \item diesen Stack durch \textbf{Typen Parameter} ganz leicht generisch machen
   
-  \lstinputlisting{beispiele/stack_generisch.scala}
+  \lstinputlisting{examples/stack_generisch.scala}
   
   \item dasselbe Prinzip kann man auch bei Methoden anwenden \und generische
   Methoden sind auch ein Ausdruck von Polymorphi:
   
-  \lstinputlisting{beispiele/generische_funktionen.scala}
+  \lstinputlisting{examples/generische_funktionen.scala}
 \end{itemize}
 \pagebreak
 
@@ -794,11 +794,11 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   hat pure Seiteneffekte, denn ansonsten ist die Funktion sinnlos,
   da sie ja nichts zurückgibt
   
-  \lstinputlisting{beispiele/fp_list_map.scala}
+  \lstinputlisting{examples/fp_list_map.scala}
   
   \item anonyme Fkt. auch auf ein val drücken:
   
-  \lstinputlisting{beispiele/fp_list_map_value.scala}
+  \lstinputlisting{examples/fp_list_map_value.scala}
   
   $\Rightarrow$ \texttt{factor} ist kein formaler Parameter sondern eine
   Referenz zu einer Variable in einen bestimmten \textit{scope}, d.h. 
@@ -821,14 +821,14 @@ Tail Call, d.h. wenn eine Funktion sich erst bei ihren
 finalen Durchlauf selbst aufruft $\Rightarrow$ Schleifen verhindern die
 Gefahr eines Stackoverflows:
 
-  \lstinputlisting{beispiele/factorial_recursive_and_tail_call.scala}
+  \lstinputlisting{examples/factorial_recursive_and_tail_call.scala}
 
 
 \subsection{Funktionale Datenstrukturen}
 \begin{itemize}
   \item \textbf{Listen}: tauchen ganz oft in FP auf
   
-  \lstinputlisting{beispiele/lists_fp.scala}
+  \lstinputlisting{examples/lists_fp.scala}
   
   \item \textbf{hash/dictionary/map}
     
@@ -841,18 +841,18 @@ Gefahr eines Stackoverflows:
 \begin{itemize}
   \item traveriseren via \texttt{foreach}:
   
-  \lstinputlisting{beispiele/foreach.scala}
+  \lstinputlisting{examples/foreach.scala}
     
   \item \texttt{filter} wird verwendet, um beim Traversieren durch eine
   Collection bestimmte Elemente herauszufiltern:
   
-  \lstinputlisting{beispiele/filter.scala}
+  \lstinputlisting{examples/filter.scala}
   
   \item \texttt{folding} \und \texttt{reducing} werden beide verwendet, um
   eine collection zu schrumpfen, wobei folding immer mit einem 
   \textit{seed} beginnt:
   
-  \lstinputlisting{beispiele/folding_reducing.scala}  
+  \lstinputlisting{examples/folding_reducing.scala}  
 \end{itemize}
 
 
@@ -864,7 +864,7 @@ Gefahr eines Stackoverflows:
   \item in Scala werdem curried Funktion mit mehreren Parameterlisten
   definiert:
   
-  \lstinputlisting{beispiele/curried_functions.scala}
+  \lstinputlisting{examples/curried_functions.scala}
   
   \item \uline{Verwendung}: spezialisierte Fkt. hat, die nur für 
   bestimmte Daten geignet ist
@@ -875,7 +875,7 @@ Gefahr eines Stackoverflows:
 wenn man eine Variable als \texttt{lazy} deklariert, dann sollte
 man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen 
 
-\lstinputlisting{beispiele/lazy_vals.scala} 
+\lstinputlisting{examples/lazy_vals.scala} 
 \pagebreak
 
 
@@ -888,7 +888,7 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
     \item haben viel mehr Ops. als Arrays
   \end{enumerate}
   
-  \lstinputlisting{beispiele/listen.scala}
+  \lstinputlisting{examples/listen.scala}
   
   \item Vorteile Unver-$\Delta$:
   \begin{itemize}
@@ -916,32 +916,32 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
   \texttt{x :: xs} $\Rightarrow$ Liste mit ersten Element \texttt{x}
   und zweiten Element/Liste \texttt{xs}
   
-  \lstinputlisting{beispiele/cons.scala}
+  \lstinputlisting{examples/cons.scala}
   
   $\Rightarrow$ mit \texttt{Nil} drücken wir die leere Liste aus
   \item \textbf{Listen sind homogen}\footnote{d.h. innerhalb einer Liste
   müssen alle Elemente vom selben Typ sein}:
   
-  \lstinputlisting{beispiele/listen_1.scala}
+  \lstinputlisting{examples/listen_1.scala}
   
   \item \textbf{Item an Liste dranhängen}:
   
-  \lstinputlisting{beispiele/collection_append.scala}
+  \lstinputlisting{examples/collection_append.scala}
   
   die alte Variable x bleibt unverändert und an die neue Liste mit den Wert
   99 als head wird alte Liste x drangehangen\footnote{läuft in O(1)}
   \item \textbf{Listen mergen}: via \texttt{:::}
   
-  \lstinputlisting{beispiele/collection_mergen.scala}
+  \lstinputlisting{examples/collection_mergen.scala}
   
   \item \textbf{typische Listen-Ops}:
   
-  \lstinputlisting{beispiele/collection_ops.scala}
+  \lstinputlisting{examples/collection_ops.scala}
   
   \item \texttt{filter} funzt bei jeder Collection, welche einen
   bestimmten Typ enthält:
   
-  \lstinputlisting{beispiele/collection_universel.scala}
+  \lstinputlisting{examples/collection_universel.scala}
   
   $\Rightarrow$ konvertieren einen String in \texttt{List[Char]} \und 
   filtern via Methode aus Java aus dieser Char-Liste die Zahlen heraus
@@ -953,31 +953,31 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
   \item \texttt{map} transformiert alle Elemente einer Collection
   basierend auf eine Funktion:
   
-  \lstinputlisting{beispiele/collection_transformation_map.scala}
+  \lstinputlisting{examples/collection_transformation_map.scala}
   
   
   mit Listen kann man komplexe DB-Queries machen
   \und Elemente in Liste ausgeben:
   
-  \lstinputlisting{beispiele/collection_db_query.scala}
+  \lstinputlisting{examples/collection_db_query.scala}
   
   \item \texttt{List} hat \texttt{sort}-Methode:
   
-  \lstinputlisting{beispiele/collection_sort.scala}
+  \lstinputlisting{examples/collection_sort.scala}
   
   \item \texttt{reduceLeft}: Operation auf adjazenten Elemente einer
   Collection rekursiv durchführen bis alles abgegrast ist:
   
-  \lstinputlisting{beispiele/collection_reduce_left.scala}
+  \lstinputlisting{examples/collection_reduce_left.scala}
   
   \item \texttt{foldLeft} arbeitet wie \texttt{reduceLeft}, nur dass es 
   einen \textit{Seed} als Startpunkt nimmt, wobei der Seed-Typ den Rückgabewert von \texttt{foldLeft} ist:
   
-  \lstinputlisting{beispiele/collection_foldLeft.scala}
+  \lstinputlisting{examples/collection_foldLeft.scala}
   
   \item geschachtelten Collection erstellen:
   
-  \lstinputlisting{beispiele/collection_nested.scala}
+  \lstinputlisting{examples/collection_nested.scala}
   
   wollen wir die Ergebnisse einer geschachtelten Schleife 
   \enquote{platten}, so \texttt{flatMap}-Methode verwenden
@@ -989,12 +989,12 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
     \texttt{age} \und wir wollem die Namen aller Personen ausgeben, die
     alle über 20 sind
     
-    \lstinputlisting{beispiele/for_comprehension.scala}
+    \lstinputlisting{examples/for_comprehension.scala}
     
     \item genereller Aufbau von for-comprehension:
     
     \begin{shadowminipage}
-    \lstinputlisting{beispiele/for_comprehension_generell.scala}
+    \lstinputlisting{examples/for_comprehension_generell.scala}
     \end{shadowminipage}
     
     
@@ -1010,7 +1010,7 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
     \item angenommen wir wollen das Produkt der Zahlen von 1 bis 10
     zwischen den geraden \und ungeraden Zahlen bilden:
     
-    \lstinputlisting{beispiele/collection_for_comprehesion.scala}
+    \lstinputlisting{examples/collection_for_comprehesion.scala}
  
   \end{itemize}
 \end{itemize}
@@ -1020,7 +1020,7 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
 \begin{itemize}
   \item wollen Fkt. schreiben, die 3 return-Werte hat:
   
-  \lstinputlisting{beispiele/tupel_example.scala}
+  \lstinputlisting{examples/tupel_example.scala}
   
   \begin{itemize}
     \item der Compiler übersetzt \texttt{(Int, Double, Double)} in
@@ -1031,14 +1031,14 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
   \end{itemize}
   \item man kann Tupel auf viele verschiedene Arten anlegen:
   
-  \lstinputlisting{beispiele/tupel_creation.scala}
+  \lstinputlisting{examples/tupel_creation.scala}
   
   \item um auf Elemente von Tuppeln zuzugreifen verwendet man
   \texttt{t.\_N}, wobei N für das gewünschte Element steht
   \item ein anderes Beispiel mit der \texttt{tupleator} Methode, die aus den
   Argumenten ein Tupel entsprechend der Anzahl der Argumente generiert
   
-  \lstinputlisting{beispiele/tupleator.scala}
+  \lstinputlisting{examples/tupleator.scala}
 \end{itemize}
 
 
@@ -1053,7 +1053,7 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
   gibt wird eine Exception geworfen (was auch Sinn macht, denn man
   kann ja nicht auf was zugreifen, was es gar nicht gibt):
  
-  \lstinputlisting{beispiele/map_examples.scala}
+  \lstinputlisting{examples/map_examples.scala}
 
   macht man den \texttt{Map}-Zugriff mit get, so wird die 
   \texttt{Option} (\texttt{Some} \oder \texttt{None}) zurückgegeben
@@ -1067,14 +1067,14 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
 \begin{itemize}
   \item Klasse für rationale Zahlen:
   
-  \lstinputlisting{beispiele/rational_numbers.scala}
+  \lstinputlisting{examples/rational_numbers.scala}
   
   \item \textbf{private members}: durch spezielles Keyword gekennzeichnet
   \und können nicht außerhalb der Klasse angesprochen werden
   \item \textbf{Objekterstellung}\footnote{erfolgt nach 
   \textit{lazy evaluation}}:
   
-  \lstinputlisting{beispiele/object_creation.scala}
+  \lstinputlisting{examples/object_creation.scala}
   
   
   $\Rightarrow$ mittels Punktnotation kann auf die Attribute zugegriffen
@@ -1083,33 +1083,33 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
   keine Klasse angegeben, so erbt es per \textit{default} von
   \texttt{scala.AnyRef}
   
-  \lstinputlisting{beispiele/vererbung.scala}
+  \lstinputlisting{examples/vererbung.scala}
   
   \item eine Klasse erbt alle Methoden \und Variablen der Oberklasse, will
   man eine geerbte Methode überschreiben, so muss man das Schlüsselwort
   \textbf{override} verwenden
   
-  \lstinputlisting{beispiele/override.scala}
+  \lstinputlisting{examples/override.scala}
     
   \item \textbf{Abstrakte Klassen}: 
   
-  \lstinputlisting{beispiele/abstrakte_klassen.scala}
+  \lstinputlisting{examples/abstrakte_klassen.scala}
   
   \texttt{IntSet} ist als abstrakte Klasse gekennzeichnet, d.h. von ihr können
   keine Objekte erzeugt werden
   
   Implementierung einer abstrakten Klasse
   
-  \lstinputlisting{beispiele/implementierung_einer_abstrakten_klasse.scala}
+  \lstinputlisting{examples/implementierung_einer_abstrakten_klasse.scala}
   
   \item \textbf{traits}: traits sind wie abstrakte Klassen, nur dass sie
   dafür geschaffen wurde, um an andere Klassen ergänzt zu werden
   
-  \lstinputlisting{beispiele/traits.scala}
+  \lstinputlisting{examples/traits.scala}
   \item \textbf{objects}: statt class kann man auch objects davor schreiben
   \und dadurch ist das \textbf{Singleton-Pattern} sichergestellt:
   
-  \lstinputlisting{beispiele/object.scala}
+  \lstinputlisting{examples/object.scala}
   
   \item jede Deklaration ohne ein Sichtbarkeits/Scopewort ist per default
   \textit{public}\footnote{dafür gibts kein Schlüsselwort}
@@ -1131,7 +1131,7 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
   jedes Java-Interface kann als Scala-\textit{trait} angesehen werden
   \item ein Beispiel für eine verschachtelte Klasse:
   
-  \lstinputlisting{beispiele/nested_classes.scala}
+  \lstinputlisting{examples/nested_classes.scala}
 \end{itemize}
 
 
@@ -1173,20 +1173,20 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
 \begin{itemize}
   \item Syntax:
   
-  \lstinputlisting{beispiele/import.scala}
+  \lstinputlisting{examples/import.scala}
   
   \item mehrere Klassen \oder Objekte können vom selben Paket importiert
   werden, indem sie einfach in \textit{brackets} geschrieben werden
   
-  \lstinputlisting{beispiele/import_bracktes.scala}
+  \lstinputlisting{examples/import_bracktes.scala}
   
   \item können alias für Imports definieren:
   
-  \lstinputlisting{beispiele/import_alias.scala}
+  \lstinputlisting{examples/import_alias.scala}
   
   \item man kann auch bestimmte Klassen vom import \enquote{excluden}
   
-  \lstinputlisting{beispiele/import_exclude.scala}
+  \lstinputlisting{examples/import_exclude.scala}
   
 \end{itemize}
 
@@ -1215,17 +1215,17 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
 
   \item die folgende Klasse \texttt{GenCell} ist generisch
   
-  \lstinputlisting{beispiele/gencell.scala}
+  \lstinputlisting{examples/gencell.scala}
   
   \item ebenso wie Klassen können auch Methoden Typenparameter besitzen.
   
   die folgende Methode vertauscht den Inhalt von zwei Zellen:
   
-  \lstinputlisting{beispiele/gencell_swap.scala}
+  \lstinputlisting{examples/gencell_swap.scala}
   
   \item Anwendung von swap:
   
-  \lstinputlisting{beispiele/gencell_swap_usage.scala}
+  \lstinputlisting{examples/gencell_swap_usage.scala}
   
   Scala hat jedoch ein hochentwickeltes \textit{type inference system}, welches
   die korrekten Typen anhand der Argumente erkennt $\Rightarrow$ im obigen 
@@ -1250,13 +1250,13 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
   genannt
   \item \textbf{Apply}: wird als \textit{factory} Methode verwendet
   
-  \lstinputlisting{beispiele/apply.scala}
+  \lstinputlisting{examples/apply.scala}
   
   \item \textbf{Unapply}: wirkt irgendwie als Extraktionmechanismus von
   bestimmten Werten einer Instanz $\Rightarrow$ Pattern Matching
   benutzt diesen Mechanismus ausführlich
   
-  \lstinputlisting{beispiele/unapply.scala}
+  \lstinputlisting{examples/unapply.scala}
 \end{itemize}
 
 
@@ -1268,7 +1268,7 @@ Klassen-Komposition
 \begin{itemize}
   \item fangen einfach mal mit einem kleinen Beispiel an:
   
-  \lstinputlisting{beispiele/abstract_list_iterator.scala}
+  \lstinputlisting{examples/abstract_list_iterator.scala}
   
   \begin{itemize}
     \item \textbf{traits} ist eine spezielle Form einer abstrakten Klasse, welche
@@ -1280,7 +1280,7 @@ Klassen-Komposition
   
   \item \textbf{mixin-class composition}: betrachten folgende Interatoren
   
-  \lstinputlisting{beispiele/iterators_for_mixin_class_composition.scala}
+  \lstinputlisting{examples/iterators_for_mixin_class_composition.scala}
   
   \begin{itemize}
     \item nun wollen die Funktionen des \texttt{RichIterators} und des
@@ -1288,7 +1288,7 @@ Klassen-Komposition
     Einfachvererbung \und Interfaces kann man das nicht machen
     \item \uline{Idee}: \textit{mixin-class composition}
     
-    \lstinputlisting{beispiele/mixin_class_composition.scala}
+    \lstinputlisting{examples/mixin_class_composition.scala}
     
   \end{itemize}
 \end{itemize}
@@ -1302,7 +1302,7 @@ von Objekten via Pattern-Matching
   \item wollen einen simplen Taschenrechner für algebraische Berechnungen \und 
   der Plus-Operation implementieren:
   
-  \lstinputlisting{beispiele/algebraic_calculator.scala}
+  \lstinputlisting{examples/algebraic_calculator.scala}
   
   \item so ein Ansatz verlangt, dass alle Operationen zu einer bestimmten
   Struktur durchwandert werden
@@ -1328,11 +1328,11 @@ von Objekten via Pattern-Matching
   aufzusetzen
   \item Klassen werden mit \textbf{case} \enquote{getagt}:
   
-  \lstinputlisting{beispiele/algebraic_calculator_case.scala}
+  \lstinputlisting{examples/algebraic_calculator_case.scala}
   \item nun folgt die Implementierung der \texttt{eval}-Funktion nach dem
   Pattern-Matching Prinzip:
   
-  \lstinputlisting{beispiele/algebraic_calculator_pattern_matching.scala}
+  \lstinputlisting{examples/algebraic_calculator_pattern_matching.scala}
   
   \item der matchende Ausdruck $x$ \textbf{match} $\{ case\: pat_1 => e_1
   case\: pat_2 => e_2 \ldots \}$ matchd den Wert $x$ gegen die Muster $pat_1, 
@@ -1359,12 +1359,12 @@ von Objekten via Pattern-Matching
   \item Instanzen von Case-Klassen können ohne die \texttt{new}-Anweisung
   erzeugt werden
   
-  \lstinputlisting{beispiele/case_class.scala}  
+  \lstinputlisting{examples/case_class.scala}  
   
   \item Case-Klassen erlauben die Erstellung von \textit{patterns}, welche
   zu case-class Konstruktoren gehören:
   
-  \lstinputlisting{beispiele/case_class_one_more_example.scala}
+  \lstinputlisting{examples/case_class_one_more_example.scala}
   
 \end{itemize}
 
@@ -1374,33 +1374,33 @@ von Objekten via Pattern-Matching
   \item ist eine generalsierte \texttt{switch}-Anweisung für Klassenhierarchien
   \item anstelle der switch-Anweisung gibt es eine \textbf{match}-Operation
   
-  \lstinputlisting{beispiele/match.scala}
+  \lstinputlisting{examples/match.scala}
   
   \item \textbf{Fibonaccizahlen} verschiedenen Varianten:
   
-  \lstinputlisting{beispiele/pattern_matching_fibonacci.scala}
+  \lstinputlisting{examples/pattern_matching_fibonacci.scala}
   
   \item \textbf{Matching Any Type}:
   
-  \lstinputlisting{beispiele/matching_any_type.scala}
+  \lstinputlisting{examples/matching_any_type.scala}
   
   \item \textbf{Datentypen testen}: schreiben eine Methode, die testet,
   ob ein hereinkommendes Objekt ein \texttt{String}, \texttt{Integer} \oder 
   was anderes ist
   
-  \lstinputlisting{beispiele/pattern_datatypes.scala}
+  \lstinputlisting{examples/pattern_datatypes.scala}
   
   \item \textbf{Case-Klassen} gehören auch zu dieser Klasse:
   
-  \lstinputlisting{beispiele/pattern_matching_case_class.scala}
+  \lstinputlisting{examples/pattern_matching_case_class.scala}
   
   \item \textbf{verschachteltes Pattern-Matching in case-Klassen}:
   
-  \lstinputlisting{beispiele/pattern_matching_nested.scala}
+  \lstinputlisting{examples/pattern_matching_nested.scala}
 
   \item \textbf{Pattern-Matching Listen}:
   
-  \lstinputlisting{beispiele/pattern_matching_lists.scala}
+  \lstinputlisting{examples/pattern_matching_lists.scala}
   
 \end{itemize}
 
@@ -1419,7 +1419,7 @@ von Objekten via Pattern-Matching
   
   $\Rightarrow$ können keine Argumente an ihre Elternklassen weitergeben
   
-  \lstinputlisting{beispiele/trait_creation.scala}
+  \lstinputlisting{examples/trait_creation.scala}
   
   $\Rightarrow$ Reihenfolge der Abarbeitung der trais ist von links nach
   rechts
@@ -1465,7 +1465,7 @@ werden können
   \texttt{List[+T]}
   \item Anwendung: wenn wir mit \textit{read-only} container umgehen
   
-  \lstinputlisting{beispiele/covariant_parameter_types.scala}
+  \lstinputlisting{examples/covariant_parameter_types.scala}
 \end{itemize}
 
 
