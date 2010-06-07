@@ -1149,18 +1149,29 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
   \item ein Beispiel für eine verschachtelte Klasse:
   
   \lstinputlisting[label=src:nested_classes.scala]{beispiele/nested_classes.scala}
-
 \end{itemize}
 
 
-\subsection{Klassenimport}
+\subsection{Import}
 \begin{itemize}
   \item Syntax:
   
   \lstinputlisting[label=src:import.scala]{beispiele/import.scala}
   
-  \item mehrere Klassen \oder Objekte können vom selben Paket importiert werden, 
-  indem sie einfach in \textit{brackets} geschrieben werden
+  \item mehrere Klassen \oder Objekte können vom selben Paket importiert
+  werden, indem sie einfach in \textit{brackets} geschrieben werden
+  
+  \lstinputlisting[label=src:import_bracktes.scala]{beispiele/import_bracktes.scala}
+  
+  \item können alias für Imports definieren:
+  
+  \lstinputlisting[label=src:import_alias.scala]{beispiele/n.scala}
+  
+  \item man kann auch bestimmte Klassen vom import \enquote{excluden}
+  
+  \lstinputlisting[label=src:import_exclude.scala]{beispiele/import_exclude.scala}
+  
+  \item 
 \end{itemize}
 
 
