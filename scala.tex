@@ -8,25 +8,10 @@
 \include{\home/style_proggen}
 
 %% meta-tags for pdf
-\newcommand{\pdfauthor}{Matthias Günther}
-\newcommand{\pdftitle}{git}
-\newcommand{\pdfsubject}{Aufzeichnungen zur Fortbildung}
-\newcommand{\pdfkeywords}{git, svn, SCM, SVN}
-\newcommand{\motto}{Scala - just scale your large applications}
-\newcommand{\tutor}{}
-\newcommand{\disclaimer}{(Die Autoren übernehmen keine Garantie und Haftung 
-für die Korrektheit des Skriptes. Das Skript ist unter den Namen von Matthias 
-Günther veröffentlich.)}
-\newcommand{\publisher}{Der Helex-Matze Verlag $\sum\limits_{i=1}^{n}i$}
-\newcommand{\pdfemail}{matthias.guenther@wikimatze.de}
-\newcommand{\correctiontext}{Kommentare/Korrekturen an}
-\newcommand{\homepagetext}{Homepage}
-\newcommand{\homepage}{wikimatze.de}
-\newcommand{\coverdisclaimer}{Copyright Skript-Covers}
-\newcommand{\covercopyright}{\textsc{Ubisoft} (\url{ubi.com})}
+\include{tex/metatags.tex}
 
-% label for programming-language
-
+%% label for programming-language
+\input{\home/style_scala}
 
 %% fancy-header
 \input{\home/style_header_oneside}
@@ -38,10 +23,8 @@ Günther veröffentlich.)}
 \input{\home/style_environments_normal}
 
 %% cover
-\input{\home/style_cover_german}
+%\input{\home/style_cover_german}
 
-% label for programming-language
-\input{\home/style_scala}
 \begin{document}
 \input{\home/style_starting_document_without_cover}
 
@@ -1484,8 +1467,6 @@ werden können
   
   \lstinputlisting[label=src:covariant_parameter_types.scala]{beispiele/covariant_parameter_types.scala}
 \end{itemize}
-
-
 
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

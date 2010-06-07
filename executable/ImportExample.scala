@@ -1,6 +1,5 @@
 import collection.mutable.{Map => Marf}
 
-
 object ImportExample extends Application{
   val mymap = Marf("dwarf" -> 1, "elves" -> 2) // instead of Map
   
