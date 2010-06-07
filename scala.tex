@@ -154,7 +154,8 @@
   \und lokalen Variablen innerhalb ihrer Umgebung zugreifen
   \item Funktionen-Def mit nur einer Zeile benötigen keine geschweiften Klammern
   \item \textbf{id: type}-Syntax wird von Scala verwendet 
-  \item \textbf{unit} wird statt void in Scala verwendet
+  \item \textbf{unit} wird statt \texttt{void} in Scala verwendet, d.h. es ist der
+  void Rückgabetyp
   \item Scala hat eine Darstellung on Javas \texttt{void}, nämlich 
   \texttt{Unit}\footnote{kann man explizit zurückgeben, wenn man einfach
   () beim Returnwert einer Funktion hinschreibt}
@@ -386,8 +387,7 @@
   \item neue Typen können insofern verwendet werden,
   indem diese Typen als \textit{buil-ins} eingebunden
   werden
-  \item n
-  \item n
+  \item die $++$ \und $--$ Ops aus Java gibts es in Scala nicht
 \end{itemize}
   
 
@@ -537,6 +537,14 @@ Sachen gewährleistet:
   \item in for-Schleifen kann man auch guards packen:
   
   \lstinputlisting{examples/for_guards.scala}
+\end{itemize}
+
+
+\subsection{foreach}
+\begin{itemize}
+  \item ist die bessere \und eher funktionale Variante 
+  
+  \lstinputlisting{examples/foreach.scala}
 \end{itemize}
 
 
@@ -860,10 +868,8 @@ Gefahr eines Stackoverflows:
 
 \subsection{Traversieren, Filtering, Folding und Reducing}
 \begin{itemize}
-  \item traveriseren via \texttt{foreach}:
-  
-  \lstinputlisting{examples/foreach.scala}
-    
+  \item traveriseren via \texttt{foreach}
+      
   \item \texttt{filter} wird verwendet, um beim Traversieren durch eine
   Collection bestimmte Elemente herauszufiltern:
   
