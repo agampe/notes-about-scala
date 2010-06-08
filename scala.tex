@@ -1133,35 +1133,41 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
   
   \lstinputlisting{examples/abstrakte_klassen.scala}
   
-  \texttt{IntSet} ist als abstrakte Klasse gekennzeichnet, d.h. von ihr können
-  keine Objekte erzeugt werden
+  \texttt{IntSet} ist als abstrakte Klasse gekennzeichnet, d.h. von 
+  ihr können keine Objekte erzeugt werden
   
   Implementierung einer abstrakten Klasse
   
   \lstinputlisting{examples/implementierung_einer_abstrakten_klasse.scala}
   
-  \item \textbf{traits}: traits sind wie abstrakte Klassen, nur dass sie
-  dafür geschaffen wurde, um an andere Klassen ergänzt zu werden
+  \item \textbf{traits}: traits sind wie abstrakte Klassen, nur 
+  dass sie dafür geschaffen wurde, um an andere Klassen ergänzt zu
+  werden
   
   \lstinputlisting{examples/traits.scala}
-  \item \textbf{objects}: statt class kann man auch objects davor schreiben
+  \item \textbf{objects}: statt class kann man auch objects davor 
+  schreiben
   \und dadurch ist das \textbf{Singleton-Pattern} sichergestellt:
   
   \lstinputlisting{examples/object.scala}
   
-  \item jede Deklaration ohne ein Sichtbarkeits/Scopewort ist per default
+  \item jede Deklaration ohne ein Sichtbarkeits/Scopewort ist per 
+  default
   \textit{public}\footnote{dafür gibts kein Schlüsselwort}
   \item mit \texttt{equal} vergleicht man, ob Objekte den gleichen
   Werte besitzen
   \item mit == \und != vergleicht man Wertgleichheit
-
 \end{itemize}
 
 
 \subsection{Klassen}
 \begin{itemize}
-  \item werden in Packeten definiert \und spielen eine ähnliche Rolle wie
-  in Java
+  \item in Klassen werden \textit{fields} \und \textit{Methoden} angelegt,
+  die als \texttt{members} bezeichnet werden
+  \item alle Methodenparameter sind vom Typ \texttt{val} $\Rightarrow$ 
+  können nicht ver-$\Delta$ werden
+  \item werden in Packeten definiert \und spielen eine ähnliche 
+  Rolle wie in Java
   \item jedes Java-Packet ist auch eine Scala-Packet (vice versa)
   \item jede Klasse kann via \textit{mixin} von mehr als einer Klasse
   erben, denn per default kann nur von einer Klasse gererbt werden
@@ -1170,6 +1176,13 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
   \item ein Beispiel für eine verschachtelte Klasse:
   
   \lstinputlisting{examples/nested_classes.scala}
+  
+  \item \texttt{private}: deklariert man solche Variablen so, so kann man auf
+  diese Variablen nur mit einer Methode der Klasse angesprochen werden, in
+  der diese definiert wurde $\Rightarrow$ normale Punktnotation geht nicht
+  
+  \lstinputlisting{examples/private_classes_example.scala}
+  
 \end{itemize}
 
 
