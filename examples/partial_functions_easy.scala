@@ -7,3 +7,4 @@ println(c("short", "pants"))
 val c2 = concatUpper("short", _: String)
 println(c2("pants"))
 
+
