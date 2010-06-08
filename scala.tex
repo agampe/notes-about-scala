@@ -666,7 +666,10 @@ current position.
 
 \subsection{Verschachtelte Funktionen und Parameter}
 \begin{itemize}
-  \item   \lstinputlisting{examples/nested_functions.scala}
+  \item wird auch als \textit{enclosing function bezeichnet}, d.h. durch
+  Schachtelung von Funktionen können Helper-Funktionen auf die Parameter ihrer
+  Elternfunktionen zurückgreifen
+  \item \lstinputlisting{examples/nested_functions.scala}
   
   fact kann man nur innerhalb des Scopes von factorial aufrufen, sonst kommt
   es zu einem Compilerfehler.
@@ -701,10 +704,30 @@ current position.
 
 
 \subsection{Typparameter}
-Typparameter definieren den Typ von Parametern \oder den 
-Rückgabewert der Fkt.:
-  
+\begin{itemize}
+  \item Typparameter definieren den Typ von Parametern \oder den
+  Rückgabewert der Fkt.:
+
   \lstinputlisting{examples/typparameter_functions.scala}
+\end{itemize}
+  
+
+\subsection{First-Class Funktionen}
+\begin{itemize}
+  \item d.h. man kann Fkt. in Funktionsliteralen
+  darstellen
+  
+  \lstinputlisting{examples/first_class_functions.scala}
+
+  \item man kann durch sogenanntes \textit{taget typing} die
+  Schreibweise von oben verkürzen:
+  
+  \lstinputlisting{examples/function_literals_short.scala}
+  
+  der Compiler weiss, dass der Filter auf eine Liste von Integern
+  angewendet wird \und deswegen werden die entsprechenden Typen
+  weggelassen \und der Code wird übersichtlicher
+\end{itemize}
 
 
 \subsection{Funktionen in Container}
@@ -714,7 +737,8 @@ Rückgabewert der Fkt.:
   \item Array von Funktionen\footnote{erinnert frappierend an
   Wörterbuch der Algorithmen}:
   
-  \lstinputlisting{examples/function_container.scala}  
+  \lstinputlisting{examples/function_container.scala}
+    
 \end{itemize}
 
 
