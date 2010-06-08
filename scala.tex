@@ -1256,7 +1256,17 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
   \item mit \texttt{that} greift man gerade auf das Objekt \texttt{SoUndSo}
   zu
   der aufrufenden Methode zu
-  \item n
+\end{itemize}
+
+
+\subsection{Self-Referenz}
+\begin{itemize}
+  \item das Schlüsselwort \texttt{self} zeigt auf eine
+  Objektinstanz der gerade ausgeführten Methode \oder wenn es
+  in einem Konstruktor verwendet wird, dann auf die Instanz,
+  die in dem Konstruktor angelegt wird:
+  
+  \lstinputlisting{examples/this.scala}
 \end{itemize}
 
 
