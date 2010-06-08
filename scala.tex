@@ -771,7 +771,7 @@ Fkt. mit callback Fkt. haben folgende Syntax:
 \end{itemize}
 
 
-\subsection{Partielle Methoden und Funktionen}
+\subsection{Partielle Funktionen}
 \begin{itemize}
   \item \textbf{in Scala ist alles bis auf Methoden eine 
   Instanz}\footnote{Methoden sind keine Funktionen in Scala}
@@ -800,8 +800,15 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   \item partielle Funktionen sind Aurücke, in denen nicht alle Argumente 
   einer Funktion auch von der Funktion übernommen werden
   
-  \lstinputlisting{examples/partial_functions_easy.scala}  
-
+  \lstinputlisting{examples/partial_functions_easy.scala}
+  
+  lässt man hinter den Funktionsaufruf ein Leerzeichen
+  \und setzt einen Underscore, so ist dieser der Platzhalter
+  für alle Parameter in der Funktionsliste
+  
+  $\Rightarrow$ beim Aufruf kann man sich dann ausuchen,
+  wie viele Parameter man der Funktion dann übergeben
+  will
 \end{itemize}
 
 
