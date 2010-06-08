@@ -201,6 +201,11 @@
   \texttt{final} deklarierten Klasse noch
   zusätzliche Methoden hinzu\footnote{einfach implicit vor Methodendef
   schreiben}
+  
+  \lstinputlisting{examples/implizit.scala}
+  
+  hier wird als \texttt{Int} nach \texttt{Rational} konvertiert
+  
   \item Scala ist FP, d.h. in dem Sinne, dass jede Funktion einen Wert hat
   \item Scala ist statisch Typisiert \und das Typsystem unterstützt:
   \begin{itemize}
@@ -521,16 +526,17 @@ Sachen gewährleistet:
 \end{itemize}
 
 
-\subsection{if/else und while}
+\subsection{if/else, while und do-while}
 \begin{itemize}
   \item if/else wird eher selten verwendet \und verhalten sich eher wie
   der Ternary-Operator; while-Schleifen sind ebenso effizient wie 
   Rekursion\footnote{beachte hierbei die \textit{tail-rekursion} bei
   funktionalen Sprachen}
   
-  \lstinputlisting{examples/if_else_ternary_while.scala}
+  \lstinputlisting{examples/if_else_ternary_while_do_while.scala}
   
-  \item das Ergebnis von if \und while ist immer \texttt{Unit}    
+  \item das Ergebnis von if \und while ist immer \texttt{Unit}, sofern man nichts
+  anders angibt
 \end{itemize}
 
 
