@@ -866,47 +866,7 @@ Gefahr eines Stackoverflows:
 \end{itemize}
 
 
-\subsection{Traversieren, Filtering, Folding und Reducing}
-\begin{itemize}
-  \item traveriseren via \texttt{foreach}
-      
-  \item \texttt{filter} wird verwendet, um beim Traversieren durch eine
-  Collection bestimmte Elemente herauszufiltern:
-  
-  \lstinputlisting{examples/filter.scala}
-  
-  \item \texttt{folding} \und \texttt{reducing} werden beide verwendet, um
-  eine collection zu schrumpfen, wobei folding immer mit einem 
-  \textit{seed} beginnt:
-  
-  \lstinputlisting{examples/folding_reducing.scala}  
-\end{itemize}
-
-
-\subsection{Currying}
-\begin{itemize}
-  \item stammt vom Mathematiker \textbf{Haskell Curry} \und transformiert
-  eine Fkt., die mehrere Parameter, nimmt in eine Kettenfunktion, die 
-  nur einen Parameter nimmt
-  \item in Scala werdem curried Funktion mit mehreren Parameterlisten
-  definiert:
-  
-  \lstinputlisting{examples/curried_functions.scala}
-  
-  \item \uline{Verwendung}: spezialisierte Fkt. hat, die nur für 
-  bestimmte Daten geignet ist
-\end{itemize}
-
-
-\subsection{Lazy Vals}
-wenn man eine Variable als \texttt{lazy} deklariert, dann sollte
-man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen 
-
-\lstinputlisting{examples/lazy_vals.scala} 
-\pagebreak
-
-
-\section{Listen}
+\subsection{Listen}
 \begin{itemize}
   \item Listen in Scala unterscheiden sich folgendermaßen von
   anderen Sprachen: \begin{enumerate}
@@ -919,35 +879,38 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
   
   \item Vorteile Unver-$\Delta$:
   \begin{itemize}
-    \item weniger globale Zustände $\Rightarrow$ weniger Dinge können 
-    sich $\Delta$
-    \item Fkt. werden weniger anfällig für globale Zustände von Variablen 
+    \item weniger globale Zustände $\Rightarrow$ weniger Dinge
+    können sich $\Delta$
+    \item Fkt. werden weniger anfällig für globale Zustände von
+    Variablen 
     \und Funktionen werden mehr transformativ $\Rightarrow$ Methoden
-    referenzieren viel weniger auf den externen Zustand von Variablen
+    referenzieren viel weniger auf den externen Zustand von
+    Variablen
     \item solche Methoden sind leichter mit automatischen 
     Tests\footnote{\texttt{ScalaCheck}} durchzuführen
   \end{itemize}
 \end{itemize}
 
 
-\subsection{List[T]}
+\subsubsection{List[T]}
 \begin{itemize}
   \item List[T] ist eine verkettete Liste vom 
-  Typ T\footnote{ist also verkettet} $\Rightarrow$ ist sequentielle Liste,
-  welche Javas primitve Datentypen beinhaltet (\texttt{Int, Float,
-  Double}), da sich um 
-  \textbf{boxing}\footnote{also Umwandlung von primitiven Datentypen in
-  Objekten} kümmert
-  \item \textbf{Listen-Konstruktoren}: \texttt{Nil} ist Repräsentant für
-  eine leere Liste, \texttt{::} (cons genannt) \uline{z.B.} 
+  Typ T\footnote{ist also verkettet} $\Rightarrow$ ist sequentielle
+  Liste, welche Javas primitve Datentypen beinhaltet 
+  (\texttt{Int, Float, Double}), da sich um 
+  \textbf{boxing}\footnote{also Umwandlung von primitiven
+  Datentypen in Objekten} kümmert
+  \item \textbf{Listen-Konstruktoren}: \texttt{Nil} ist
+  Repräsentant für eine leere Liste, \texttt{::} (cons genannt)
+  \uline{z.B.} 
   \texttt{x :: xs} $\Rightarrow$ Liste mit ersten Element \texttt{x}
   und zweiten Element/Liste \texttt{xs}
   
   \lstinputlisting{examples/cons.scala}
   
   $\Rightarrow$ mit \texttt{Nil} drücken wir die leere Liste aus
-  \item \textbf{Listen sind homogen}\footnote{d.h. innerhalb einer Liste
-  müssen alle Elemente vom selben Typ sein}:
+  \item \textbf{Listen sind homogen}\footnote{d.h. innerhalb einer
+  Liste müssen alle Elemente vom selben Typ sein}:
   
   \lstinputlisting{examples/listen_1.scala}
   
@@ -955,8 +918,9 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
   
   \lstinputlisting{examples/collection_append.scala}
   
-  die alte Variable x bleibt unverändert und an die neue Liste mit den Wert
-  99 als head wird alte Liste x drangehangen\footnote{läuft in O(1)}
+  die alte Variable x bleibt unverändert und an die neue Liste mit
+  den Wert 99 als head wird alte Liste x 
+  drangehangen\footnote{läuft in O(1)}
   \item \textbf{Listen mergen}: via \texttt{:::}
   
   \lstinputlisting{examples/collection_mergen.scala}
@@ -975,7 +939,7 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
 \end{itemize}
 
 
-\subsection{Transformation}
+\subsubsection{Transformation}
 \begin{itemize}
   \item \texttt{map} transformiert alle Elemente einer Collection
   basierend auf eine Funktion:
@@ -1043,7 +1007,7 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
 \end{itemize}
 
 
-\subsection{Tupel}
+\subsubsection{Tupel}
 \begin{itemize}
   \item wollen Fkt. schreiben, die 3 return-Werte hat:
   
@@ -1069,7 +1033,7 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
 \end{itemize}
 
 
-\subsection{Map[K,V]}
+\subsubsection{Map[K,V]}
 \begin{itemize}
   \item \texttt{Map} ist Sammlung von key/value Paaren
   \item \texttt{Map} Klasse ist unver-$\Delta$
@@ -1088,6 +1052,46 @@ man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen
   \item mit \texttt{.contains} kann man testen, ob ein Schlüssel in der
   der Map enthalten ist
 \end{itemize}
+
+
+\subsection{Traversieren, Filtering, Folding und Reducing}
+\begin{itemize}
+  \item traveriseren via \texttt{foreach}
+      
+  \item \texttt{filter} wird verwendet, um beim Traversieren durch eine
+  Collection bestimmte Elemente herauszufiltern:
+  
+  \lstinputlisting{examples/filter.scala}
+  
+  \item \texttt{folding} \und \texttt{reducing} werden beide verwendet, um
+  eine collection zu schrumpfen, wobei folding immer mit einem 
+  \textit{seed} beginnt:
+  
+  \lstinputlisting{examples/folding_reducing.scala}  
+\end{itemize}
+
+
+\subsection{Currying}
+\begin{itemize}
+  \item stammt vom Mathematiker \textbf{Haskell Curry} \und transformiert
+  eine Fkt., die mehrere Parameter, nimmt in eine Kettenfunktion, die 
+  nur einen Parameter nimmt
+  \item in Scala werdem curried Funktion mit mehreren Parameterlisten
+  definiert:
+  
+  \lstinputlisting{examples/curried_functions.scala}
+  
+  \item \uline{Verwendung}: spezialisierte Fkt. hat, die nur für 
+  bestimmte Daten geignet ist
+\end{itemize}
+
+
+\subsection{Lazy Vals}
+wenn man eine Variable als \texttt{lazy} deklariert, dann sollte
+man auch alle Verwendungen davon ebenfalls auf \textit{lazy} stellen 
+
+\lstinputlisting{examples/lazy_vals.scala} 
+\pagebreak
 
 
 \section{Klassen und Objekte}
