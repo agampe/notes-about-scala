@@ -870,7 +870,9 @@ Gefahr eines Stackoverflows:
 \begin{itemize}
   \item Listen in Scala unterscheiden sich folgendermaßen von
   anderen Sprachen: \begin{enumerate}
-    \item sind unver-$\Delta$
+    \item sind unver-$\Delta$ \und dessen Elemente müssen immer
+    vom selben Typ sein (was bei Arrays nicht der Fall sein
+    muss)
     \item haben rek. Struktur
     \item haben viel mehr Ops. als Arrays
   \end{enumerate}
@@ -1009,6 +1011,8 @@ Gefahr eines Stackoverflows:
 
 \subsubsection{Tupel}
 \begin{itemize}
+  \item sind wie Listen unver-$\Delta$ und können aber im Vergleich
+  zu Listen verschiedene Elemente haben
   \item wollen Fkt. schreiben, die 3 return-Werte hat:
   
   \lstinputlisting{examples/tupel_example.scala}
@@ -1035,7 +1039,7 @@ Gefahr eines Stackoverflows:
 
 \subsubsection{Map[K,V]}
 \begin{itemize}
-  \item \texttt{Map} ist Sammlung von key/value Paaren
+  \item \texttt{Map} Sammlung von key/value Paaren
   \item \texttt{Map} Klasse ist unver-$\Delta$
   \item jeder beliebige value kann von einen eindeutigen Schlüssel
   beschrieben werden
@@ -1048,8 +1052,9 @@ Gefahr eines Stackoverflows:
 
   macht man den \texttt{Map}-Zugriff mit get, so wird die 
   \texttt{Option} (\texttt{Some} \oder \texttt{None}) zurückgegeben
-  \item mit \texttt{-= key} kann man Elemente aus einer Map entfernen
-  \item mit \texttt{.contains} kann man testen, ob ein Schlüssel in der
+  \item mit \texttt{-= key} kann man Elemente aus einer Map
+  entfernen
+  \item mit \texttt{.contains} kann man testen, ob ein Schlüssel in
   der Map enthalten ist
 \end{itemize}
 
