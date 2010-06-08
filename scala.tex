@@ -812,6 +812,20 @@ Fkt. mit callback Fkt. haben folgende Syntax:
 \end{itemize}
 
 
+\subsection{Closures}
+\begin{itemize}
+  \item der Name stammt daher, dass die Funktion durch Bindung der freien
+  Variablen an seinen Rumpf entsteht:
+  
+  \lstinputlisting{examples/closure.scala}
+  
+  \item eine Funktion ohne freie Variablen wird \textit{closed term} genannt
+  \item was passiert nun, wenn die freien Variablen geändert werden,
+  wenn das Closure schon angelegt werden? Scala erkennt den Kontext \und 
+  passt sich an die Änderung der freien Variable an
+\end{itemize}
+
+
 \subsection{Schwanzrekursion}
 \lstinputlisting{examples/gcd.scala}
 
