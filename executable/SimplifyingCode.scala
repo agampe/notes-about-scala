@@ -1,4 +1,3 @@
-
 object SimplifyingCode extends Application{
   def containsNeg(nums: List[Int]): Boolean = {
     var exists = false
@@ -10,6 +9,6 @@ object SimplifyingCode extends Application{
   
   def containsNegShort(num: List[Int]) = num.exists(_ < 0)
   
-  println(containsNeg(List(1, 2, 3, 4)))
-  println(containsNegShort(List(-1, 2, 4)))
+  containsNeg(List(1, 2, 3, 4))
+  containsNegShort(List(-1, 2, 4))
 }

@@ -664,23 +664,6 @@ current position.
 \end{itemize}
 
 
-\subsection{Verschachtelte Funktionen und Parameter}
-\begin{itemize}
-  \item wird auch als \textit{enclosing function bezeichnet}, d.h. durch
-  Schachtelung von Funktionen können Helper-Funktionen auf die Parameter ihrer
-  Elternfunktionen zurückgreifen
-  \item \lstinputlisting{examples/nested_functions.scala}
-  
-  fact kann man nur innerhalb des Scopes von factorial aufrufen, sonst kommt
-  es zu einem Compilerfehler.
-  
-  \item weitergabe von Parametern innerhalb verschachtelten Funktionen:
-  
-  \lstinputlisting{examples/parameter_passing_nested_functions.scala}  
-
-\end{itemize}
-
-
 \subsection{Parameter}
 \begin{itemize}
   \item Funktionsparameter werden immer von Klammern eingeschlossen
@@ -710,7 +693,35 @@ current position.
 
   \lstinputlisting{examples/typparameter_functions.scala}
 \end{itemize}
+
+
+\subsection{Verschachtelte Funktionen und Parameter}
+\begin{itemize}
+  \item wird auch als \textit{enclosing function bezeichnet}, d.h. durch
+  Schachtelung von Funktionen können Helper-Funktionen auf die Parameter ihrer
+  Elternfunktionen zurückgreifen
+  \item \lstinputlisting{examples/nested_functions.scala}
   
+  fact kann man nur innerhalb des Scopes von factorial aufrufen, sonst kommt
+  es zu einem Compilerfehler.
+  
+  \item weitergabe von Parametern innerhalb verschachtelten Funktionen:
+  
+  \lstinputlisting{examples/parameter_passing_nested_functions.scala}  
+
+\end{itemize}
+
+
+\subsection{Wiederholende Parameter}
+\begin{itemize}
+  \item in die Argumentenliste einer Funktion packt man einfach ein 
+  \textit{asterisk}
+  
+  \lstinputlisting{examples/repeated_parameters_with_asterisks.scala}
+  
+  \texttt{String*} ist shortcut für \texttt{Array[String]}  
+\end{itemize}
+
 
 \subsection{First-Class Funktionen}
 \begin{itemize}
@@ -737,37 +748,6 @@ current position.
   man kann sich den Underscore als Blank vorstellen, der ausgefüllt
   werden muss
   
-\end{itemize}
-
-
-\subsection{Funktionen in Container}
-\begin{itemize}
-  \item Funktionen sind Instanzen \und deswegen kann man alles, was man
-  mit Instanzen machen kann auch mit Funktionen machen
-  \item Array von Funktionen\footnote{erinnert frappierend an
-  Wörterbuch der Algorithmen}:
-  
-  \lstinputlisting{examples/function_container.scala}
-    
-\end{itemize}
-
-
-\subsubsection{Callback}
-Fkt. mit callback Fkt. haben folgende Syntax: 
-  \textsc{() =$>$ Unit} und ist eine Funktion, die keine Parameter \und 
-  kein return-Wert hat
-  
-  \lstinputlisting{examples/callback.scala}
-
-
-\subsubsection{Anonyme Funktionen}
-\begin{itemize}
-  \item doof, wenn man Funktionen einen Namen geben muss, wenn man sie
-  nur einmal verwenden $\Rightarrow$ hierfür sind anonyme Funktionen da :)
-  \item die Anwesenheit von anonymen Funktion wird durch die Syntax:
-  \textsc{=$>$} gemacht
-  
-  \lstinputlisting{examples/callback_anonymous.scala}
 \end{itemize}
 
 
@@ -812,6 +792,37 @@ Fkt. mit callback Fkt. haben folgende Syntax:
 \end{itemize}
 
 
+\subsection{Funktionen in Container}
+\begin{itemize}
+  \item Funktionen sind Instanzen \und deswegen kann man alles, was man
+  mit Instanzen machen kann auch mit Funktionen machen
+  \item Array von Funktionen\footnote{erinnert frappierend an
+  Wörterbuch der Algorithmen}:
+  
+  \lstinputlisting{examples/function_container.scala}
+    
+\end{itemize}
+
+
+\subsubsection{Callback}
+Fkt. mit callback Fkt. haben folgende Syntax: 
+  \textsc{() =$>$ Unit} und ist eine Funktion, die keine Parameter \und 
+  kein return-Wert hat
+  
+  \lstinputlisting{examples/callback.scala}
+
+
+\subsubsection{Anonyme Funktionen}
+\begin{itemize}
+  \item doof, wenn man Funktionen einen Namen geben muss, wenn man sie
+  nur einmal verwenden $\Rightarrow$ hierfür sind anonyme Funktionen da :)
+  \item die Anwesenheit von anonymen Funktion wird durch die Syntax:
+  \textsc{=$>$} gemacht
+  
+  \lstinputlisting{examples/callback_anonymous.scala}
+\end{itemize}
+
+
 \subsection{Closures}
 \begin{itemize}
   \item der Name stammt daher, dass die Funktion durch Bindung der freien
@@ -826,14 +837,20 @@ Fkt. mit callback Fkt. haben folgende Syntax:
 \end{itemize}
 
 
-\subsection{Wiederholende Parameter}
+\subsection{Generische Typen und Methoden}
 \begin{itemize}
-  \item in die Argumentenliste einer Funktion packt man einfach ein 
-  \textit{asterisk}
+  \item haben einen Stack für Integer
   
-  \lstinputlisting{examples/repeated_parameters_with_asterisks.scala}
+  \lstinputlisting{examples/stack_integer.scala}
   
-  \texttt{String*} ist shortcut für \texttt{Array[String]}  
+  \item diesen Stack durch \textbf{Typen Parameter} ganz leicht generisch machen
+  
+  \lstinputlisting{examples/stack_generisch.scala}
+  
+  \item dasselbe Prinzip kann man auch bei Methoden anwenden \und generische
+  Methoden sind auch ein Ausdruck von Polymorphi:
+  
+  \lstinputlisting{examples/generische_funktionen.scala}
 \end{itemize}
 
 
@@ -855,49 +872,6 @@ Fkt. mit callback Fkt. haben folgende Syntax:
   erzeugen kann:
   
   \lstinputlisting{examples/nested_functions.scala}
-\end{itemize}
-
-
-\subsection{Currying}
-\begin{itemize}
-  \item betrachten \texttt{sum}, bei der man die Grenzen a \und b nicht mehr
-  angeben muss
-  
-  \lstinputlisting{examples/currying.scala}
-  
-  \item wir werden nun Funktionen, die Funktionen zurückgegeben,
-  behandelt?
-  
-  \lstinputlisting{examples/currying_1.scala}
-  
-  hier wird \texttt{sum} zuerst zur Quadratfunktion \texttt{(x $=>$ x * x)}
-  angewendet \und die reslutierende Funktion wird dann auf die Argumentenliste
-  \texttt{(1, 10)} angewendet
-  \item für Funktionen, die Funktionen zurückgeben, hat Scala eine besondere
-  Syntax \und die obige sum-Funktion kann auch wie folgt kürzer geschrieben
-  werden
-  
-  \lstinputlisting{examples/currying_3.scala}
-  
-\end{itemize}
-
-
-\ulbf{Generische Typen und Methoden}
-
-
-\begin{itemize}
-  \item haben einen Stack für Integer
-  
-  \lstinputlisting{examples/stack_integer.scala}
-  
-  \item diesen Stack durch \textbf{Typen Parameter} ganz leicht generisch machen
-  
-  \lstinputlisting{examples/stack_generisch.scala}
-  
-  \item dasselbe Prinzip kann man auch bei Methoden anwenden \und generische
-  Methoden sind auch ein Ausdruck von Polymorphi:
-  
-  \lstinputlisting{examples/generische_funktionen.scala}
 \end{itemize}
 \pagebreak
 
@@ -1177,6 +1151,19 @@ Gefahr eines Stackoverflows:
 
 \subsection{Currying}
 \begin{itemize}
+  \item betrachten \texttt{sum}, bei der man die Grenzen a \und b nicht mehr
+  angeben muss
+  
+  \lstinputlisting{examples/currying.scala}
+  
+  \item wir werden nun Funktionen, die Funktionen zurückgegeben,
+  behandelt?
+  
+  \lstinputlisting{examples/currying_1.scala}
+  
+  hier wird \texttt{sum} zuerst zur Quadratfunktion \texttt{(x $=>$ x * x)}
+  angewendet \und die reslutierende Funktion wird dann auf die Argumentenliste
+  \texttt{(1, 10)} angewendet 
   \item stammt vom Mathematiker \textbf{Haskell Curry} \und transformiert
   eine Fkt., die mehrere Parameter, nimmt in eine Kettenfunktion, die 
   nur einen Parameter nimmt
