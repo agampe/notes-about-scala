@@ -1,2 +1,2 @@
-val more = 1
-val addmore = (x: Int) => x + more
+def juhu(args: String*)
+  for (arg <- args) println(arg)
