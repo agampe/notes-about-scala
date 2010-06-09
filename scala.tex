@@ -403,6 +403,13 @@
   \end{verbatim}
   
   $\Rightarrow$ genauso funzen auch die anderen Typen
+  
+  \item trait mit den Namen \texttt{Ordered} implementiert die folgende
+  Ops $<=, >=, <, >$ \und macht sich gut, wenn man bestimmte Werte
+  ergänzen möchte
+  
+  \lstinputlisting{examples/trait_ordered.scala}
+  
 \end{itemize}
 
 
@@ -1600,7 +1607,8 @@ von Objekten via Pattern-Matching
   hinzugefügt werden kann}
   \item trait besitzt eine gemeinsame Basisklasse mit der Klasse, 
   auf die das trait angewendet wird
-  \item traits sind die Grundlage für \textit{reuse}
+  \item traits sind die Grundlage für \textit{reuse} \und können via
+  \texttt{extends} \oder \texttt{with} von Klassen eingebunden werden
   \item in Scala können traits in Objekten erst bei Instanziierung
   einbinden
   \item traits unterstützen nicht beliebige Konstruktoren \und nehmen auch
@@ -1613,8 +1621,14 @@ von Objekten via Pattern-Matching
   $\Rightarrow$ Reihenfolge der Abarbeitung der trais ist von links nach
   rechts
 
-  \item traits können auch als abstrakt deklariert haben
-
+  \item traits können auch als abstrakt deklariert haben (was auch immer
+  das bringen soll) \und können eigene Felder deklarieren, die dann
+  von den \enquote{erbenden} Klassen benutzt werden können
+  \item durch traits kann man einer Klasse einfach neue Funktionen
+  einbinden, ohne dass man sich Sorgen um ein etwaige Vererbung machen
+  muss
+  \item \uline{Hauptanwendungsgebiet}: \textit{turning a thin interface
+  into a rich interface}
   \item \textbf{Klassen \oder traits?} falls ein traits mehr als einmal 
   als Elternteil von anderen Klassen dient, so als Klasse machen; vermeide
   konkrete Felder in traits, welche nicht mit geeigneten default-Werten
