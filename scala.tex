@@ -623,11 +623,11 @@ hier ist der Linearisierungsalgo, den Scala verwendet:
 
 \begin{enumerate}
   \item Put the actual type of the instance as the first element.
-  \item Starting with the rightmost parent type and working left, compute the linearization
-of each type, appending its linearization to the cumulative linearization. (Ignore
-ScalaObject, AnyRef, and Any for now.)
-  \item Working from left to right, remove any type if it appears again to the right of the
-current position.
+  \item Starting with the rightmost parent type and working left, compute the 
+  linearization of each type, appending its linearization to the cumulative 
+  linearization. (Ignore ScalaObject, AnyRef, and Any for now.)
+  \item Working from left to right, remove any type if it appears again to the 
+  right of the current position.
   \item Append ScalaObject, AnyRef, and Any.
 \end{enumerate}
 
@@ -639,6 +639,14 @@ current position.
   
   \lstinputlisting{examples/packages.scala}
   
+\end{itemize}
+
+
+\subsection{Symbols}
+\begin{itemize}
+  \item sind genauso wie in Ruby
+  
+  \lstinputlisting{examples/symbols.scala}  
 \end{itemize}
 \pagebreak
 
